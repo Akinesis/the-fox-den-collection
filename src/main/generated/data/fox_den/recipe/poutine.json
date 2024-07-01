@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "fox_den:cheese"
+    },
+    "F": {
+      "item": "fox_den:fries"
+    },
+    "S": {
+      "item": "fox_den:brown_sauce"
+    }
+  },
+  "pattern": [
+    "CSC",
+    "FFF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fox_den:poutine"
+  }
+}

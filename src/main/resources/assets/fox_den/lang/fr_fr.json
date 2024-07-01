@@ -1,0 +1,37 @@
+{
+  "itemGroup.fox_den.item_group": "The Fox's Den Collection",
+
+  "item.fox_den.cheese": "Fromage",
+  "item.fox_den.blue_cheese": "Bleu",
+  "item.fox_den.yeast": "Levure",
+  "item.fox_den.oil_bucket": "Seau d'huile",
+  "item.fox_den.fries": "Frittes",
+  "item.fox_den.brown_sauce": "Sauce brune",
+  "item.fox_den.poutine": "Poutine",
+
+  "block.fox_den.cheese_block": "Bloc de fromage",
+  "block.fox_den.milk_cauldron": "Chaudron de lait",
+  "block.fox_den.yeast_milk_cauldron": "Chaudron de lait levuré",
+  "block.fox_den.cheese_cauldron": "Chaudron de fromage",
+  "block.fox_den.blue_cheese_cauldron": "Chaudron de bleu",
+  "block.fox_den.oil_cauldron": "Chaudron d'huile",
+
+  "item.fox_den.steel_helmet": "Casque en acier",
+  "item.fox_den.steel_chestplate": "Plastron en acier",
+  "item.fox_den.steel_leggings": "Jambières en acier",
+  "item.fox_den.steel_boots": "Bottes en acier",
+
+  "item.fox_den.bone_helmet": "Casque squelettique",
+  "item.fox_den.bone_chestplate": "Plastron squelettique",
+  "item.fox_den.bone_leggings": "Jambières squelettiques",
+  "item.fox_den.bone_boots": "Bottes squelettiques",
+
+  "item.fox_den.steel_ingot": "Lingot d'acier",
+  "item.fox_den.steel_blend": "Mélange d'acier",
+
+  "effect.fox_den.skeleton_love": "Amour squelettique",
+
+  "container.foxden.enchant.material.one": "%s %s",
+
+  "tag.item.fox_den.enchantment_ingredients":"Ingredients d'enchentement"
+}

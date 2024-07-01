@@ -1,0 +1,37 @@
+{
+  "itemGroup.fox_den.item_group": "The Fox's Den Collection",
+
+  "item.fox_den.cheese": "Cheese",
+  "item.fox_den.blue_cheese": "Blue Cheese",
+  "item.fox_den.yeast": "Yeast",
+  "item.fox_den.oil_bucket": "Oil Bucket",
+  "item.fox_den.fries": "Fries",
+  "item.fox_den.brown_sauce": "Brown Sauce",
+  "item.fox_den.poutine": "Poutine",
+
+  "block.fox_den.cheese_block": "Cheese Block",
+  "block.fox_den.milk_cauldron": "Milk Cauldron",
+  "block.fox_den.yeast_milk_cauldron": "Yeast Milk Cauldron",
+  "block.fox_den.cheese_cauldron": "Cheese Cauldron",
+  "block.fox_den.blue_cheese_cauldron": "Blue Cheese Cauldron",
+  "block.fox_den.oil_cauldron": "Oil Cauldron",
+
+  "item.fox_den.steel_helmet": "Steel Helmet",
+  "item.fox_den.steel_chestplate": "Steel Chestplate",
+  "item.fox_den.steel_leggings": "Steel Leggings",
+  "item.fox_den.steel_boots": "Steel Boots",
+
+  "item.fox_den.bone_helmet": "Bone Helmet",
+  "item.fox_den.bone_chestplate": "Bone Chestplate",
+  "item.fox_den.bone_leggings": "Bone Leggings",
+  "item.fox_den.bone_boots": "Bone Boots",
+
+  "item.fox_den.steel_ingot": "Steel Ingot",
+  "item.fox_den.steel_blend": "Steel Blend",
+
+  "effect.fox_den.skeleton_love": "Skeleton Love",
+
+  "container.foxden.enchant.material.one": "%s %s",
+
+  "tag.item.fox_den.enchantment_ingredients":"Enchantment Ingredients"
+}
