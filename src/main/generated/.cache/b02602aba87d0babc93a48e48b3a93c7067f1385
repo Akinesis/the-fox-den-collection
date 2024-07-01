@@ -1,4 +1,4 @@
-// 1.21	2024-06-28T18:57:21.9077458	The fox den collection/Model Definitions
+// 1.21	2024-07-01T14:24:26.2219408	The fox den collection/Model Definitions
 e5260b144bab0239fc49ff9fbf86739d1ab4bdf8 assets\fox_den\models\item\bone_boots_redstone_trim.json
 1e2b1da0d4d0b3573fb09529659506ec998fdb69 assets\fox_den\models\item\bone_leggings_emerald_trim.json
 c762fff79e54a628a7d375b4e5552fcd87bd4173 assets\fox_den\models\item\steel_chestplate_redstone_trim.json
@@ -6,7 +6,6 @@ cb88747051c4660154f81ddf20ad5e696da1e6f6 assets\fox_den\models\item\steel_chestp
 bb3fe90b7b76c7190a513b44a1022dfb5541bcd9 assets\fox_den\models\item\steel_boots.json
 54913644118de3bef3c01d5d0c436d278ac222b6 assets\fox_den\models\item\bone_helmet_amethyst_trim.json
 4f1e9d1d8ee93de6e1b20d3fa5ae52077b10db3d assets\fox_den\models\item\bone_leggings_lapis_trim.json
-c298ed1bb4778df6729663f900f1adb4eb914b52 assets\fox_den\models\item\essence_of_protection.json
 a6317c37eb610052273cd150729fd869f261bc35 assets\fox_den\models\item\steel_blend.json
 ef905ad2adda5540f0b50f2a636a63570c44d824 assets\fox_den\models\item\steel_leggings_diamond_trim.json
 ee0660ed3aad7b614b12361c31bae1db63005f63 assets\fox_den\models\item\steel_boots_netherite_trim.json

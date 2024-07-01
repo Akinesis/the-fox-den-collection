@@ -1,11 +1,9 @@
 package cutefox.foxden.datagen;
 
 import cutefox.foxden.TheFoxDenCollection;
-import cutefox.foxden.registery.ModItemTags;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -40,12 +38,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BONE_HELMET)
                 .add(ModItems.STEEL_HELMET);
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE);
-
-        getOrCreateTagBuilder(ModItemTags.ENCHANTEMNT_INGREDIENT)
-                .add(Items.EXPERIENCE_BOTTLE)
-                .add(Items.TURTLE_SCUTE)
-                .add(Items.WIND_CHARGE)
-                .add(ModItems.ESSENCE_OF_PROTECTION);
 
 
 

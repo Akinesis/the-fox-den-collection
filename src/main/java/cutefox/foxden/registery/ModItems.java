@@ -5,7 +5,6 @@ import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils;
 import cutefox.foxden.item.BoneArmorItem;
 import cutefox.foxden.item.SteelArmorItem;
-import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
@@ -64,18 +63,8 @@ public class ModItems {
 
     //region ENCHANTMENT INGREDIENTS
 
-    //.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-    public static final Item ESSENCE_OF_PROTECTION = registerItem("essence_of_protection", new Item(new Item.Settings().maxCount(1).fireproof().component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)));
-    public static final Item ESSENCE_OF_FIRE_PROTECTION = registerItem("essence_of_fire_protection", new Item(new Item.Settings().maxCount(1).fireproof().component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)));
-
-    //endregion
-
-    public static Item CUSTOM_ENCHANTING_TABLE;
-
     public static void registerBlockItems(){
         CHEESE_BLOCK = registerItem("cheese_block", new BlockItem(ModBlocks.CHEESE_BLOCK, new Item.Settings()));
-        CUSTOM_ENCHANTING_TABLE = registerItem("custom_enchanting_table", new BlockItem(ModBlocks.CUSTOM_ENCHANTING_TABLE, new Item.Settings()));
-
     }
 
     private static Item registerItem(String id, Item item){

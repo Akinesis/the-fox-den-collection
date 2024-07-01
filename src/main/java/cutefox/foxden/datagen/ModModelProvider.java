@@ -42,11 +42,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
         //endregion
 
-        //region ENCHANTMENT INGREDIENTS
-        itemModelGenerator.register(ModItems.ESSENCE_OF_PROTECTION, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ESSENCE_OF_FIRE_PROTECTION, Models.GENERATED);
-        //endregion
-
         //region ARMOR
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_CHESTPLATE);

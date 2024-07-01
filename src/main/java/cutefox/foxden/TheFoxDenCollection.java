@@ -37,11 +37,7 @@ public class TheFoxDenCollection implements ModInitializer {
 		ModItems.registerModItems();
 		ModArmorMaterials.registerModItems();
 		ModBlockEntityType.registerModBlocksEntities();
-		ModScreenHandlerType.registerModScreenHandlers();
-		ModEnchantmentTags.registerModTags();
 		ModEnchantIngredientMap.createMap();
-		ModTradeOffers.removeEnchantedBooks();
-		ModItemTags.registerModTags();
 
 		Registry.register(Registries.ITEM_GROUP, Utils.id("item_group"), ITEM_GROUP);
 
@@ -113,7 +109,6 @@ public class TheFoxDenCollection implements ModInitializer {
 				entries.add(ModItems.BONE_CHESTPLATE);
 				entries.add(ModItems.BONE_HELMET);
 				entries.add(ModItems.BONE_LEGGINGS);
-				entries.add(ModItems.ESSENCE_OF_PROTECTION);
 			})
 			.build();
 

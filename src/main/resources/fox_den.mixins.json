@@ -3,14 +3,10 @@
 	"package": "cutefox.foxden.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin",
 		"LivingEntityMixin",
 		"SkeletonMixin",
 		"RangedWeaponItemMixin",
-		"PlayerMixin",
-		"EnchantingTableMixin",
-		"AnvilScreenHandlerMixin",
-		"ForgingScreenHandlerMixin"
+		"PlayerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
