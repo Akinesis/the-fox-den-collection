@@ -1,17 +1,25 @@
 package cutefox.foxden;
 
-import cutefox.foxden.datagen.ModEnchantIngredientMap;
+import cutefox.foxden.item.SpaceRangerArmorItem;
+import cutefox.foxden.networking.SpaceRangerArmorWingsPayload;
 import cutefox.foxden.registery.*;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.NbtComponent;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.server.world.ServerWorld;
@@ -37,13 +45,13 @@ public class TheFoxDenCollection implements ModInitializer {
 		ModItems.registerModItems();
 		ModArmorMaterials.registerModItems();
 		ModBlockEntityType.registerModBlocksEntities();
-		ModEnchantIngredientMap.createMap();
 
 		Registry.register(Registries.ITEM_GROUP, Utils.id("item_group"), ITEM_GROUP);
 
 		ModLootTableModifiers.modifyLootTables();
 
 		addEventListner();
+		registerNetworking();
 
 		ModItems.registerBlockItems();
 
@@ -83,8 +91,32 @@ public class TheFoxDenCollection implements ModInitializer {
 			return ActionResult.PASS;
 		});
 
-		ServerLifecycleEvents.SERVER_STARTED.register(e -> {
-			ModEnchantIngredientMap.genMapFromJson(e.getWorld(ServerWorld.OVERWORLD));
+		EntityElytraEvents.CUSTOM.register((entity, tickElytra)->{
+			if(entity instanceof PlayerEntity player){
+					if(player.getInventory().getArmorStack(2).getItem().equals(ModItems.SPACE_RANGER_CHESTPLATE)){
+
+						NbtComponent b = player.getInventory().getArmorStack(2).get(DataComponentTypes.CUSTOM_DATA);
+
+						if(b != null && b.contains("deployed"))
+							return b.copyNbt().getBoolean("deployed");
+
+						return false;
+					}
+				}
+			return false;
+		});
+
+	}
+
+	private static void registerNetworking(){
+		PayloadTypeRegistry.playC2S().register(SpaceRangerArmorWingsPayload.ID, SpaceRangerArmorWingsPayload.CODEC);
+
+		ServerPlayNetworking.registerGlobalReceiver(SpaceRangerArmorWingsPayload.ID, (payload, context)->{
+			NbtCompound nbt = new NbtCompound();
+			nbt.putBoolean("deployed", payload.deployed());
+			NbtComponent component = NbtComponent.of(nbt);
+
+			context.player().getInventory().getArmorStack(2).set(DataComponentTypes.CUSTOM_DATA, component);
 		});
 	}
 
@@ -109,6 +141,10 @@ public class TheFoxDenCollection implements ModInitializer {
 				entries.add(ModItems.BONE_CHESTPLATE);
 				entries.add(ModItems.BONE_HELMET);
 				entries.add(ModItems.BONE_LEGGINGS);
+				entries.add(ModItems.SPACE_RANGER_HELMET);
+				entries.add(ModItems.SPACE_RANGER_CHESTPLATE);
+				entries.add(ModItems.SPACE_RANGER_LEGGINGS);
+				entries.add(ModItems.SPACE_RANGER_BOOTS);
 			})
 			.build();
 

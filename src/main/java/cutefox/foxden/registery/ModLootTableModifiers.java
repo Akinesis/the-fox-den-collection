@@ -1,7 +1,7 @@
 package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
-import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.entity.EntityType;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -15,7 +15,7 @@ public class ModLootTableModifiers {
         TheFoxDenCollection.LOGGER.info("Registering all event for : "+TheFoxDenCollection.MOD_ID);
 
 
-        LootTableEvents.MODIFY.register((key, tableBuilder, source) ->  {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) ->  {
 
             if(EntityType.SKELETON.getLootTableId() == key && source.isBuiltin()){
                 LootPool.Builder pool = LootPool.builder()

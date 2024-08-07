@@ -7,7 +7,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 
 public class ModArmorItem extends ArmorItem {
 
-    public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
+    public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, net.minecraft.item.Item.Settings settings) {
         super(material, type, settings);
     }
 

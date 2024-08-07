@@ -22,6 +22,7 @@ public class ModArmorMaterials {
 
     public static final RegistryEntry<ArmorMaterial> STEEL;
     public static final RegistryEntry<ArmorMaterial> BONE;
+    public static final RegistryEntry<ArmorMaterial> SPACE_STEEL;
 
     public static final HashMap<RegistryEntry<ArmorMaterial>, RegistryEntry<StatusEffect>> MATERIAL_TO_STATUS;
 
@@ -37,6 +38,7 @@ public class ModArmorMaterials {
             map.put(ArmorItem.Type.HELMET, 2);
             map.put(ArmorItem.Type.BODY, 7);
         }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.05F, () -> Ingredient.ofItems(Items.IRON_INGOT));
+
         BONE = register("bone", Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
             map.put(ArmorItem.Type.BOOTS, 1);
             map.put(ArmorItem.Type.LEGGINGS, 4);
@@ -44,6 +46,14 @@ public class ModArmorMaterials {
             map.put(ArmorItem.Type.HELMET, 2);
             map.put(ArmorItem.Type.BODY, 11);
         }), 15, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> Ingredient.ofItems(Items.BONE));
+
+        SPACE_STEEL = register("space_steel", Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+            map.put(ArmorItem.Type.BOOTS, 2);
+            map.put(ArmorItem.Type.LEGGINGS, 6);
+            map.put(ArmorItem.Type.CHESTPLATE, 7);
+            map.put(ArmorItem.Type.HELMET, 2);
+            map.put(ArmorItem.Type.BODY, 10);
+        }), 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2.0F, 0.1F, () -> Ingredient.ofItems(ModItems.STEEL_INGOT));
 
         MATERIAL_TO_STATUS = new HashMap<>();
         MATERIAL_TO_STATUS.put(BONE, ModStatusEffects.SKELETON_LOVE);

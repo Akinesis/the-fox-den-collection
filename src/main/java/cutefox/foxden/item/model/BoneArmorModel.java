@@ -2,7 +2,6 @@ package cutefox.foxden.item.model;
 
 import cutefox.foxden.Utils;
 import cutefox.foxden.item.BoneArmorItem;
-import cutefox.foxden.item.SteelArmorItem;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.GeoModel;
 

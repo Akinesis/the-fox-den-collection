@@ -26,7 +26,7 @@ public class ModArmorItem_old extends ArmorItem {
         addValue(ModArmorMaterials.BONE, ModStatusEffects.SKELETON_LOVE, 0);
     }
 
-    public ModArmorItem_old(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
+    public ModArmorItem_old(RegistryEntry<ArmorMaterial> material, Type type, net.minecraft.item.Item.Settings settings) {
         super(material, type, settings);
     }
 

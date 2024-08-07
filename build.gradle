@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.6-SNAPSHOT'
+	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -26,18 +26,6 @@ repositories {
 	}
 
 }
-
-/*loom {
-    splitEnvironmentSourceSets()
-
-	mods {
-		"fox_den" {
-			sourceSet sourceSets.main
-			sourceSet sourceSets.client
-		}
-	}
-
-}*/
 
 dependencies {
 	// To change the versions see the gradle.properties file

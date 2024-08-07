@@ -21,22 +21,26 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
                 .add(ModItems.BONE_BOOTS)
-                .add(ModItems.STEEL_BOOTS);
+                .add(ModItems.STEEL_BOOTS)
+                .add(ModItems.SPACE_RANGER_BOOTS);
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE);
 
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
                 .add(ModItems.BONE_LEGGINGS)
-                .add(ModItems.STEEL_LEGGINGS);
+                .add(ModItems.STEEL_LEGGINGS)
+                .add(ModItems.SPACE_RANGER_LEGGINGS);
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE);
 
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
                 .add(ModItems.BONE_CHESTPLATE)
-                .add(ModItems.STEEL_CHESTPLATE);
+                .add(ModItems.STEEL_CHESTPLATE)
+                .add(ModItems.SPACE_RANGER_CHESTPLATE);
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE);
 
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
                 .add(ModItems.BONE_HELMET)
-                .add(ModItems.STEEL_HELMET);
+                .add(ModItems.STEEL_HELMET)
+                .add(ModItems.SPACE_RANGER_BOOTS);
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE);
 
 

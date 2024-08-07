@@ -52,6 +52,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.BONE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.BONE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.BONE_BOOTS);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_BOOTS);
         //endregion
 
     }

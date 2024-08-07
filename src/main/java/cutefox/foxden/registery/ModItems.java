@@ -1,16 +1,20 @@
 package cutefox.foxden.registery;
 
-import cutefox.foxden.FoodComponents;
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils;
 import cutefox.foxden.item.BoneArmorItem;
+import cutefox.foxden.item.SpaceRangerArmorItem;
 import cutefox.foxden.item.SteelArmorItem;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ModItems {
 
@@ -21,6 +25,8 @@ public class ModItems {
     public static void registerModItems(){
         TheFoxDenCollection.LOGGER.info("Registering mod iems for : "+ TheFoxDenCollection.MOD_ID);
     }
+
+    public static final Map<ArmorMaterial, Item> ARMOR_SET = new HashMap<>();
 
     //region FOOD ITEMS
     public static final Item CHEESE = registerItem("cheese", new Item(foodItem(FoodComponents.CHEESE)));
@@ -61,7 +67,17 @@ public class ModItems {
             new BoneArmorItem(ModArmorMaterials.BONE, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(13))));
     //endregion
 
-    //region ENCHANTMENT INGREDIENTS
+    //region SPACE RANGER ARMOR
+    public static final Item SPACE_RANGER_HELMET = registerItem("space_ranger_helmet",
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(13))));
+    public static final Item SPACE_RANGER_CHESTPLATE = registerItem("space_ranger_chestplate",
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(13))));
+    public static final Item SPACE_RANGER_LEGGINGS = registerItem("space_ranger_leggings",
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(13))));
+    public static final Item SPACE_RANGER_BOOTS = registerItem("space_ranger_boots",
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(13))));
+    //endregion
+
 
     public static void registerBlockItems(){
         CHEESE_BLOCK = registerItem("cheese_block", new BlockItem(ModBlocks.CHEESE_BLOCK, new Item.Settings()));

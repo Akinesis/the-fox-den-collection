@@ -37,7 +37,7 @@ public class BoneArmorItem extends ArmorItem implements GeoItem {
 
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public BoneArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
+    public BoneArmorItem(RegistryEntry<ArmorMaterial> material, Type type, net.minecraft.item.Item.Settings settings) {
         super(material, type, settings);
     }
 

@@ -1,9 +1,9 @@
-// 1.21	2024-07-01T14:24:26.2009974	The fox den collection/Tags for minecraft:item
+// 1.21	2024-07-10T19:14:15.8147551	The fox den collection/Tags for minecraft:item
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\leg_armor.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\head_armor.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\foot_armor.json
-cd33d8b507fcb4c809c486cf020156108b295c33 data\minecraft\tags\item\chest_armor.json
+7c011fa1cd205b1e5a1b2fbabb8b9cb915c42819 data\minecraft\tags\item\chest_armor.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\chest_armor.json
-ffcdfcc7c466af88b15b49d34e54195b02c60851 data\minecraft\tags\item\head_armor.json
-e366d0a424eb04dbb29ed7702963663ab7d01cd0 data\minecraft\tags\item\foot_armor.json
-d18c2b365b7be3d5d2d7aa5efe73c3b7a369b022 data\minecraft\tags\item\leg_armor.json
+480373eab86e969251caa3ce293550c6e8374877 data\minecraft\tags\item\head_armor.json
+b8b54cf60c73c88492bb81f0ee18e733d57cc425 data\minecraft\tags\item\foot_armor.json
+40e849872acb3cb5b6bd2743d37f7caa82638e9a data\minecraft\tags\item\leg_armor.json
