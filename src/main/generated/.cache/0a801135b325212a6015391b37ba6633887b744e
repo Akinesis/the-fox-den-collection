@@ -1,21 +1,25 @@
-// 1.21	2024-07-10T19:14:15.8177475	The fox den collection/Recipes
-8499ad2adc10af6335ec23b7f95234f79fc013fb data\fox_den\recipe\steel_blend.json
+// 1.21	2024-08-07T16:08:44.3259242	The fox den collection/Recipes
 d30eb482ac68dccfa1668db7f276dc691063f69c data\fox_den\advancement\recipes\combat\steel_helmet.json
 35d504191ed6cc93bdc1d721d6dcfea692f95af6 data\fox_den\advancement\recipes\food\poutine.json
-8293808cacc26ef30cbf1b098b0ebd90c0a60dce data\fox_den\recipe\steel_leggings.json
-f93bfb8e664f9916b56195df7a8f89d04539e431 data\fox_den\recipe\steel_ingot.json
 9fa2fcf554129f4ea82c108c88cbc361b21419c2 data\fox_den\recipe\poutine.json
-b58e19a95116b8bd7e667f2ea168ef9f3e6224d2 data\fox_den\recipe\steel_boots.json
 a2ab376223119099a09e15fa261af8214dd4a423 data\fox_den\recipe\yeast.json
-d45af372371aa6ca3b79a305543c0a2f141d7a75 data\fox_den\advancement\recipes\misc\steel_ingot.json
-bcb97b19836188218cbbf7f5e271f40928c1405f data\fox_den\recipe\brown_sauce.json
+1cea8c839098b1e5c52e73ee6d2051efdeba1229 data\fox_den\recipe\leather.json
 a0c770f5647c25b42860eaeab4d97660f34fcf74 data\fox_den\advancement\recipes\food\yeast.json
-5609f74105d6998b702b872b01f5b3e52e7e24fc data\fox_den\advancement\recipes\misc\steel_blend.json
-f639829fafaa5b2ad61b811f871e39ef9e7bfe8c data\fox_den\advancement\recipes\food\oil_bucket.json
+0ba15547677de97b72df5541446513425999ab21 data\fox_den\recipe\rotten_leather.json
 1042fcaebef47df19f23ddf1e8750e4dd8c6c012 data\fox_den\recipe\steel_helmet.json
 4f2709e3d392256e0039926e04a5896e6587f042 data\fox_den\advancement\recipes\combat\steel_leggings.json
 3a08bd5301e9fef6f6d2498d23fb2ce551f2a013 data\fox_den\advancement\recipes\combat\steel_boots.json
-de85ca30e06540b05cf9ac845a4016452efa3a96 data\fox_den\advancement\recipes\combat\steel_chestplate.json
 633c35f25841212cd5f918beb79a9455740f6711 data\fox_den\recipe\oil_bucket.json
 f7695f4931f756633c239e9e7affcf0cd6bc0b46 data\fox_den\recipe\steel_chestplate.json
+8499ad2adc10af6335ec23b7f95234f79fc013fb data\fox_den\recipe\steel_blend.json
+8293808cacc26ef30cbf1b098b0ebd90c0a60dce data\fox_den\recipe\steel_leggings.json
+f93bfb8e664f9916b56195df7a8f89d04539e431 data\fox_den\recipe\steel_ingot.json
+a5259e8caa54b7a7189873b7c1ae132153d74f59 data\fox_den\advancement\recipes\misc\leather.json
+b58e19a95116b8bd7e667f2ea168ef9f3e6224d2 data\fox_den\recipe\steel_boots.json
+d45af372371aa6ca3b79a305543c0a2f141d7a75 data\fox_den\advancement\recipes\misc\steel_ingot.json
+bcb97b19836188218cbbf7f5e271f40928c1405f data\fox_den\recipe\brown_sauce.json
+5609f74105d6998b702b872b01f5b3e52e7e24fc data\fox_den\advancement\recipes\misc\steel_blend.json
+f639829fafaa5b2ad61b811f871e39ef9e7bfe8c data\fox_den\advancement\recipes\food\oil_bucket.json
+de85ca30e06540b05cf9ac845a4016452efa3a96 data\fox_den\advancement\recipes\combat\steel_chestplate.json
+3d75ab696a55574587ff6f75aecbe9a4ca59b402 data\fox_den\advancement\recipes\misc\rotten_leather.json
 6417b57aee8a8781e752bba12bcdb07f13112210 data\fox_den\advancement\recipes\food\brown_sauce.json

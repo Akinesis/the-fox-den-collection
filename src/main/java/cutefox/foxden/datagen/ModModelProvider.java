@@ -40,6 +40,7 @@ public class ModModelProvider extends FabricModelProvider {
         //region MISC
         itemModelGenerator.register(ModItems.STEEL_BLEND, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ROTTEN_LEATHER, Models.GENERATED);
         //endregion
 
         //region ARMOR

@@ -75,12 +75,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
                 .criterion(hasItem(Items.CHARCOAL), conditionsFromItem(Items.CHARCOAL))
                 .offerTo(exporter, Utils.id(getRecipeName(ModItems.STEEL_BLEND)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROTTEN_LEATHER, 1)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', Items.ROTTEN_FLESH)
+                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
+                .criterion(hasItem(Items.ROTTEN_FLESH), conditionsFromItem(Items.ROTTEN_FLESH))
+                .offerTo(exporter, Utils.id(getRecipeName(ModItems.ROTTEN_LEATHER)));
         //endregion
 
         //region SMELTING
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.STEEL_BLEND), RecipeCategory.MISC, ModItems.STEEL_INGOT, 1,200)
                 .criterion(hasItem(ModItems.STEEL_BLEND), conditionsFromItem(ModItems.STEEL_BLEND))
                 .offerTo(exporter, Utils.id(getRecipeName(ModItems.STEEL_INGOT)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.ROTTEN_LEATHER), RecipeCategory.MISC, Items.LEATHER, 1,200)
+                .criterion(hasItem(ModItems.ROTTEN_LEATHER), conditionsFromItem(ModItems.ROTTEN_LEATHER))
+                .offerTo(exporter, Utils.id(getRecipeName(Items.LEATHER)));
+
         //endregion
 
         //region STEEL ARMORS

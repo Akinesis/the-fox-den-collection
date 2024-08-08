@@ -4,6 +4,7 @@ import cutefox.foxden.TheFoxDenCollection;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.entity.EntityType;
 import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTables;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
@@ -24,6 +25,17 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.BONE_LEGGINGS))
                         .with(ItemEntry.builder(ModItems.BONE_CHESTPLATE))
                         .with(ItemEntry.builder(ModItems.BONE_HELMET))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1,1)));
+                tableBuilder.pool(pool);
+            }
+
+            if(LootTables.END_CITY_TREASURE_CHEST == key && source.isBuiltin()){
+                LootPool.Builder pool = LootPool.builder()
+                        .conditionally(RandomChanceLootCondition.builder(.15f))
+                        .with(ItemEntry.builder(ModItems.SPACE_RANGER_BOOTS))
+                        .with(ItemEntry.builder(ModItems.SPACE_RANGER_LEGGINGS))
+                        .with(ItemEntry.builder(ModItems.SPACE_RANGER_CHESTPLATE))
+                        .with(ItemEntry.builder(ModItems.SPACE_RANGER_HELMET))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1,1)));
                 tableBuilder.pool(pool);
             }

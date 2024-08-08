@@ -9,12 +9,17 @@
   "item.fox_den.brown_sauce": "Sauce brune",
   "item.fox_den.poutine": "Poutine",
 
+
   "block.fox_den.cheese_block": "Bloc de fromage",
   "block.fox_den.milk_cauldron": "Chaudron de lait",
   "block.fox_den.yeast_milk_cauldron": "Chaudron de lait levuré",
   "block.fox_den.cheese_cauldron": "Chaudron de fromage",
   "block.fox_den.blue_cheese_cauldron": "Chaudron de bleu",
   "block.fox_den.oil_cauldron": "Chaudron d'huile",
+
+  "item.fox_den.steel_ingot": "Lingot d'acier",
+  "item.fox_den.steel_blend": "Mélange d'acier",
+  "item.fox_den.rotten_leather": "Cuir pourris",
 
   "item.fox_den.steel_helmet": "Casque en acier",
   "item.fox_den.steel_chestplate": "Plastron en acier",
@@ -30,9 +35,6 @@
   "item.fox_den.space_ranger_chestplate": "Plastron de ranger de l'espace",
   "item.fox_den.space_ranger_leggings": "Jambières de ranger de l'espace",
   "item.fox_den.space_ranger_boots": "Bottes de ranger de l'espace",
-
-  "item.fox_den.steel_ingot": "Lingot d'acier",
-  "item.fox_den.steel_blend": "Mélange d'acier",
 
   "effect.fox_den.skeleton_love": "Amour squelettique",
 

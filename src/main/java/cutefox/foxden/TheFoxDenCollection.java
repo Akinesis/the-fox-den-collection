@@ -133,6 +133,7 @@ public class TheFoxDenCollection implements ModInitializer {
 				entries.add(ModItems.BROWN_SAUCE);
 				entries.add(ModItems.STEEL_BLEND);
 				entries.add(ModItems.STEEL_INGOT);
+				entries.add(ModItems.ROTTEN_LEATHER);
 				entries.add(ModItems.STEEL_BOOTS);
 				entries.add(ModItems.STEEL_CHESTPLATE);
 				entries.add(ModItems.STEEL_HELMET);
