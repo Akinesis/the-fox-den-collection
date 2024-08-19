@@ -43,6 +43,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ROTTEN_LEATHER, Models.GENERATED);
         //endregion
 
+        itemModelGenerator.register(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+
         //region ARMOR
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_CHESTPLATE);

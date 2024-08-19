@@ -1,0 +1,47 @@
+{
+    "type": "origins:multiple",
+	
+	"name": "Aviaire",
+    "description": "Vous avez les ailes de vos ancètres. Mais ne savez pas volé.",
+	
+	"chicken_wings":{
+		"type": "origins:elytra_flight",
+		"render_elytra": true,
+		"texture_location": "fox_den:textures/entity/bird_wings.png"
+	},
+	
+	"chicken_flight":{
+		"type": "origins:prevent_elytra_flight",
+		"condition":{
+			"type": "origins:equipped_item",
+			"equipment_slot": "chest",
+			"inverted": true,
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:elytra"
+				}
+			}
+		}
+	},
+	
+	"chicken_glide": {
+		"type": "origins:modify_falling",
+		"velocity": 0.03,
+		"take_fall_damage": false,
+		"condition":{
+			"type":"origins:or",
+			"conditions":[
+				{
+					"type": "origins:fall_flying",
+					"inverted": true
+				},
+				{
+					"type": "origins:on_block",
+					"inverted": true
+				}
+			]
+		}
+    }
+
+}

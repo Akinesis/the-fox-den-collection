@@ -1,6 +1,8 @@
 package cutefox.foxden.block.cauldron;
 
 import com.mojang.serialization.MapCodec;
+import cutefox.foxden.Utils.ConfigBuilder;
+import cutefox.foxden.Utils.FoxDenDefaultConfig;
 import cutefox.foxden.registery.ModBlocks;
 import cutefox.foxden.registery.ModItems;
 import cutefox.foxden.registery.ModStatusEffects;
@@ -43,11 +45,14 @@ public class MilkCauldronBlock extends AbstractCauldronBlock{
 
         Map<Item, CauldronBehavior> behaviorMap = this.behaviorMap.map();
 
-        CauldronBehavior.EMPTY_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
-        CauldronBehavior.LAVA_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
-        CauldronBehavior.WATER_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
-        CauldronBehavior.POWDER_SNOW_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
-        OilCauldronBlock.OIL_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
+
+        if(ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.POUTINE)){
+            CauldronBehavior.EMPTY_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
+            CauldronBehavior.LAVA_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
+            CauldronBehavior.WATER_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
+            CauldronBehavior.POWDER_SNOW_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
+            OilCauldronBlock.OIL_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
+        }
 
         behaviorMap.put(Items.BUCKET, (state, world, pos, player, hand, stack) -> {
             return emptyCauldron(state, world, pos, player, hand, stack, new ItemStack(Items.MILK_BUCKET), (statex) -> {

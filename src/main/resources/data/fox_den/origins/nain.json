@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "origins:fire_immunity",
+		"foxdenorigins:holy_fire",
+        "origins:elytra",
+        "origins:throw_ender_pearl",
+        "origins:fresh_air"
+    ],
+    "icon": {
+        "id":"minecraft:stone_pickaxe"
+	},
+    "order": 4,
+    "impact": 1,
+    "name": "Nain",
+    "description": "Mineur émérite habitant dans les grottes."
+}

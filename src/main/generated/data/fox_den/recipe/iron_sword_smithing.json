@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fox_den:upgrade_template"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "minecraft:stone_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:iron_sword"
+  },
+  "template": {
+    "item": "fox_den:iron_upgrade_smithing_template"
+  }
+}

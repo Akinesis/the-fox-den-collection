@@ -24,6 +24,10 @@ repositories {
 			includeGroup("software.bernie.geckolib")
 		}
 	}
+	maven {
+		url = uri("https://yml.ccls.app/v${project.yaml_api_version}")
+	}
+	mavenCentral()
 
 }
 
@@ -38,6 +42,8 @@ dependencies {
 
 	modImplementation "software.bernie.geckolib:geckolib-fabric-${project.minecraft_version}:${project.geckolib_version}"
 	include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.3.6")))
+
+	modImplementation "app.ccls.yml:yamlapi:${project.yaml_api_version}"
 	
 }
 

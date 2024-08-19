@@ -1,4 +1,4 @@
-package cutefox.foxden;
+package cutefox.foxden.Utils;
 
 import net.minecraft.util.Identifier;
 

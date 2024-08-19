@@ -1,6 +1,8 @@
 package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
+import cutefox.foxden.Utils.ConfigBuilder;
+import cutefox.foxden.Utils.FoxDenDefaultConfig;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.entity.EntityType;
 import net.minecraft.loot.LootPool;
@@ -18,7 +20,8 @@ public class ModLootTableModifiers {
 
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) ->  {
 
-            if(EntityType.SKELETON.getLootTableId() == key && source.isBuiltin()){
+            if(EntityType.SKELETON.getLootTableId() == key && source.isBuiltin()
+                && ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.BONE_ARMOR)){
                 LootPool.Builder pool = LootPool.builder()
                         .conditionally(RandomChanceLootCondition.builder(.1f))
                         .with(ItemEntry.builder(ModItems.BONE_BOOTS))
@@ -29,7 +32,8 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(pool);
             }
 
-            if(LootTables.END_CITY_TREASURE_CHEST == key && source.isBuiltin()){
+            if(LootTables.END_CITY_TREASURE_CHEST == key && source.isBuiltin()
+             && ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.SPACE_ARMOR)){
                 LootPool.Builder pool = LootPool.builder()
                         .conditionally(RandomChanceLootCondition.builder(.15f))
                         .with(ItemEntry.builder(ModItems.SPACE_RANGER_BOOTS))

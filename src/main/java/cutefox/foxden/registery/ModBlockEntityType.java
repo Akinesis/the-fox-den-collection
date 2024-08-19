@@ -1,7 +1,7 @@
 package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
-import cutefox.foxden.Utils;
+import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.block.entity.OilCauldronBlockEntity;
 import cutefox.foxden.block.entity.YeastMilkBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;

@@ -1,10 +1,10 @@
-package cutefox.foxden;
+package cutefox.foxden.registery;
 
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
-public class FoodComponents {
+public class ModFoodComponents {
 
     public static final FoodComponent CHEESE = new FoodComponent.Builder()
             .nutrition(2).saturationModifier(0.8f)

@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "origins": [
+        "fox_den:slime",
+        "fox_den:aquarius",
+        "fox_den:elfe",
+        "fox_den:goblin",
+        "fox_den:golem",
+        "fox_den:nain",
+        "fox_den:vampire",
+        "fox_den:werwolf",
+        "fox_den:zombie",
+        "fox_den:tabaxi",
+        "fox_den:galinace"
+    ]
+}

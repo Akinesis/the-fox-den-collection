@@ -1,4 +1,4 @@
-// 1.21	2024-08-07T16:08:44.3289169	The fox den collection/Model Definitions
+// 1.21	2024-08-19T20:48:59.4398169	The fox den collection/Model Definitions
 e5260b144bab0239fc49ff9fbf86739d1ab4bdf8 assets\fox_den\models\item\bone_boots_redstone_trim.json
 1e2b1da0d4d0b3573fb09529659506ec998fdb69 assets\fox_den\models\item\bone_leggings_emerald_trim.json
 c762fff79e54a628a7d375b4e5552fcd87bd4173 assets\fox_den\models\item\steel_chestplate_redstone_trim.json
@@ -6,6 +6,7 @@ cb88747051c4660154f81ddf20ad5e696da1e6f6 assets\fox_den\models\item\steel_chestp
 3458aaa60ba045019e8cc14c6b2e327fb7f3c040 assets\fox_den\models\item\space_ranger_boots_netherite_trim.json
 bb3fe90b7b76c7190a513b44a1022dfb5541bcd9 assets\fox_den\models\item\steel_boots.json
 54913644118de3bef3c01d5d0c436d278ac222b6 assets\fox_den\models\item\bone_helmet_amethyst_trim.json
+b9eada25ae4658a978b28f8c8fd9413811bee7bc assets\fox_den\models\item\iron_upgrade_smithing_template.json
 4f1e9d1d8ee93de6e1b20d3fa5ae52077b10db3d assets\fox_den\models\item\bone_leggings_lapis_trim.json
 a6317c37eb610052273cd150729fd869f261bc35 assets\fox_den\models\item\steel_blend.json
 ef905ad2adda5540f0b50f2a636a63570c44d824 assets\fox_den\models\item\steel_leggings_diamond_trim.json
@@ -123,6 +124,7 @@ d61c5374247174cca3852ec4b566ce2f6383d435 assets\fox_den\models\item\space_ranger
 98cdbb9c70ec447b62f0d039976bfb787d803d20 assets\fox_den\models\item\space_ranger_leggings_copper_trim.json
 c78a0663e39ab18be29eaed678b6c1f640a3660e assets\fox_den\models\item\steel_helmet_gold_trim.json
 300eeb135b4f5030a331cf85d59b7358c6bd0eea assets\fox_den\models\item\bone_helmet_emerald_trim.json
+1b95e3158f04290949640c0a8624856f11a30ce8 assets\fox_den\models\item\diamond_upgrade_smithing_template.json
 ad0b06915762e86221745072d0a74729386d9377 assets\fox_den\models\item\space_ranger_chestplate_copper_trim.json
 08941493337eac3845c2c4a0bee3b5f6a49b3ddf assets\fox_den\models\item\steel_helmet_lapis_trim.json
 ea0d06589e4f4ec57f50f653d18df4f7630bec6a assets\fox_den\models\item\oil_bucket.json

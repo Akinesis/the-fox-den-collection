@@ -1,6 +1,6 @@
 package cutefox.foxden.networking;
 
-import cutefox.foxden.Utils;
+import cutefox.foxden.Utils.Utils;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;

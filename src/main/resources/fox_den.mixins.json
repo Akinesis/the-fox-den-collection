@@ -6,7 +6,8 @@
 		"LivingEntityMixin",
 		"SkeletonMixin",
 		"RangedWeaponItemMixin",
-		"PlayerMixin"
+		"PlayerMixin",
+		"RecipeManagerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

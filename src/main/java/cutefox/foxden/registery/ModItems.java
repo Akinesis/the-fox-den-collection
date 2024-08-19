@@ -1,7 +1,7 @@
 package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
-import cutefox.foxden.Utils;
+import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.item.BoneArmorItem;
 import cutefox.foxden.item.SpaceRangerArmorItem;
 import cutefox.foxden.item.SteelArmorItem;
@@ -29,14 +29,14 @@ public class ModItems {
     public static final Map<ArmorMaterial, Item> ARMOR_SET = new HashMap<>();
 
     //region FOOD ITEMS
-    public static final Item CHEESE = registerItem("cheese", new Item(foodItem(FoodComponents.CHEESE)));
-    public static final Item BLUE_CHEESE = registerItem("blue_cheese", new Item(foodItem(FoodComponents.BLUE_CHEESE)));
+    public static final Item CHEESE = registerItem("cheese", new Item(foodItem(ModFoodComponents.CHEESE)));
+    public static final Item BLUE_CHEESE = registerItem("blue_cheese", new Item(foodItem(ModFoodComponents.BLUE_CHEESE)));
     public static Item CHEESE_BLOCK;
     public static final Item YEAST = registerItem("yeast", new Item(new Item.Settings()));
     public static final Item OIL_BUCKET = registerItem("oil_bucket", new Item(new Item.Settings()));
-    public static final Item FRIES = registerItem("fries", new Item(foodItem(FoodComponents.FRIES)));
+    public static final Item FRIES = registerItem("fries", new Item(foodItem(ModFoodComponents.FRIES)));
     public static final Item BROWN_SAUCE = registerItem("brown_sauce", new Item(new Item.Settings().maxCount(16).recipeRemainder(null)));
-    public static final Item POUTINE = registerItem("poutine", new Item(foodItem(FoodComponents.POUTINE)));
+    public static final Item POUTINE = registerItem("poutine", new Item(foodItem(ModFoodComponents.POUTINE)));
 
     //endregion
 
@@ -44,6 +44,11 @@ public class ModItems {
     public static final Item STEEL_BLEND = registerItem("steel_blend", new Item(new Item.Settings()));
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
     public static final Item ROTTEN_LEATHER = registerItem("rotten_leather", new Item(new Item.Settings()));
+    //endregion
+
+    //region UPGRADE TEMPLATES
+    public static final Item IRON_UPGRADE_SMITHING_TEMPLATE = registerItem("iron_upgrade_smithing_template", new Item(new Item.Settings()));
+    public static final Item DIAMOND_UPGRADE_SMITHING_TEMPLATE = registerItem("diamond_upgrade_smithing_template", new Item(new Item.Settings()));
     //endregion
 
     //region STEEL ARMORS

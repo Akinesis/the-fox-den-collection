@@ -1,7 +1,7 @@
 package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
-import cutefox.foxden.Utils;
+import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.block.cauldron.CheeseCauldronBlock;
 import cutefox.foxden.block.cauldron.MilkCauldronBlock;
 import cutefox.foxden.block.cauldron.OilCauldronBlock;
@@ -24,8 +24,6 @@ public class ModBlocks {
 
     public static void registerModBlocks(){
         TheFoxDenCollection.LOGGER.info("Registering mod blocks for : "+ TheFoxDenCollection.MOD_ID);
-
-
     }
 
     static {

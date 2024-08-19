@@ -17,7 +17,7 @@ public abstract class SkeletonMixin extends LivingEntityMixin {
 
         if(target instanceof PlayerEntity player){
             if(player.getStatusEffect(ModStatusEffects.SKELETON_LOVE) != null)
-                cir.setReturnValue(false);//TODO check if player is in full armor
+                cir.setReturnValue(false);
         }
     }
 }

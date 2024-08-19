@@ -1,4 +1,9 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fox_den:poutine"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_brown_sauce": {

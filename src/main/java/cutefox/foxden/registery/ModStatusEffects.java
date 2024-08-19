@@ -1,7 +1,7 @@
 package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
-import cutefox.foxden.Utils;
+import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.entity.effect.SkeletonLoveStatusEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;

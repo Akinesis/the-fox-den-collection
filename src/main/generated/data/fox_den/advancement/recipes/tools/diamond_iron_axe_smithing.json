@@ -1,0 +1,37 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fox_den:upgrade_template"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond_upgrade_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:diamond_upgrade_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fox_den:diamond_iron_axe_smithing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_diamond_upgrade_smithing_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fox_den:diamond_iron_axe_smithing"
+    ]
+  }
+}

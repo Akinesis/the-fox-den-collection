@@ -2,7 +2,9 @@ package cutefox.foxden.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions;
 import net.minecraft.loot.LootTables;
+import net.minecraft.registry.Registries;
 
 public class ModDataGenerator implements DataGeneratorEntrypoint {
 
@@ -19,6 +21,7 @@ public class ModDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModBlockLootTableProvider::new);
         pack.addProvider(LootProvider::new);
         pack.addProvider(ModItemTagProvider::new);
+
     }
 
 }
