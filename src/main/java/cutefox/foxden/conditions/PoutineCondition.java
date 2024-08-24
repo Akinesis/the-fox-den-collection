@@ -18,6 +18,6 @@ public class PoutineCondition implements ResourceCondition {
 
     @Override
     public boolean test(@Nullable RegistryWrapper.WrapperLookup registryLookup) {
-        return ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.POUTINE);
+        return ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.POUTINE);
     }
 }

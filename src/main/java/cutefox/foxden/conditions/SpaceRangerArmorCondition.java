@@ -18,6 +18,6 @@ public class SpaceRangerArmorCondition implements ResourceCondition {
 
     @Override
     public boolean test(@Nullable RegistryWrapper.WrapperLookup registryLookup) {
-        return ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.SPACE_ARMOR);
+        return ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.SPACE_ARMOR);
     }
 }

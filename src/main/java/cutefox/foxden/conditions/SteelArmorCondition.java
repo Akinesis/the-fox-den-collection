@@ -18,6 +18,6 @@ public class SteelArmorCondition implements ResourceCondition {
 
     @Override
     public boolean test(@Nullable RegistryWrapper.WrapperLookup registryLookup) {
-        return ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.KNIGHT_ARMOR);
+        return ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.KNIGHT_ARMOR);
     }
 }

@@ -21,7 +21,7 @@ public class ModLootTableModifiers {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) ->  {
 
             if(EntityType.SKELETON.getLootTableId() == key && source.isBuiltin()
-                && ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.BONE_ARMOR)){
+                && ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.BONE_ARMOR)){
                 LootPool.Builder pool = LootPool.builder()
                         .conditionally(RandomChanceLootCondition.builder(.1f))
                         .with(ItemEntry.builder(ModItems.BONE_BOOTS))
@@ -33,7 +33,7 @@ public class ModLootTableModifiers {
             }
 
             if(LootTables.END_CITY_TREASURE_CHEST == key && source.isBuiltin()
-             && ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.SPACE_ARMOR)){
+             && ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.SPACE_ARMOR)){
                 LootPool.Builder pool = LootPool.builder()
                         .conditionally(RandomChanceLootCondition.builder(.15f))
                         .with(ItemEntry.builder(ModItems.SPACE_RANGER_BOOTS))

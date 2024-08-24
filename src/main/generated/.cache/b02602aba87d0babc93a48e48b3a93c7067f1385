@@ -1,4 +1,4 @@
-// 1.21	2024-08-19T20:48:59.4398169	The fox den collection/Model Definitions
+// 1.21	2024-08-24T15:39:49.434202	The fox den collection/Model Definitions
 e5260b144bab0239fc49ff9fbf86739d1ab4bdf8 assets\fox_den\models\item\bone_boots_redstone_trim.json
 1e2b1da0d4d0b3573fb09529659506ec998fdb69 assets\fox_den\models\item\bone_leggings_emerald_trim.json
 c762fff79e54a628a7d375b4e5552fcd87bd4173 assets\fox_den\models\item\steel_chestplate_redstone_trim.json
@@ -57,8 +57,8 @@ ce8db07d068685ee2eb24701bdad71a81c20d122 assets\fox_den\models\item\space_ranger
 46dff4fa0e742a94857db2159d8044d21ebc27b7 assets\fox_den\models\item\space_ranger_leggings_quartz_trim.json
 849e610a854d82fba50794086154dbb556e9de3e assets\fox_den\models\item\steel_leggings.json
 e3f8c85b7126dd41274d0196fab1fda3430d7f8d assets\fox_den\models\item\steel_chestplate_gold_trim.json
-a2e5a84add8250fb76f27b1f63d941546776585a assets\fox_den\models\item\bone_helmet.json
 cb7dd080190c7c7155b9b8a780c08f0277671b17 assets\fox_den\models\item\space_ranger_chestplate_iron_trim.json
+a2e5a84add8250fb76f27b1f63d941546776585a assets\fox_den\models\item\bone_helmet.json
 0014f20beedeb1d38ae485ef5e76874d72f50229 assets\fox_den\models\item\steel_helmet.json
 d4a92668023a580a0e500057558ae13b0a8e51a8 assets\fox_den\models\item\bone_chestplate_copper_trim.json
 d6428d82a1d1b706b1cf0b8fd1cfdaea3c248309 assets\fox_den\models\item\bone_leggings_quartz_trim.json
@@ -99,8 +99,8 @@ f48770ce1dd4bc4701be8f9d9ee7361858d73fe6 assets\fox_den\models\item\bone_helmet_
 6b6f52a97b78045ca4f7b585382bf559f1393e62 assets\fox_den\models\item\steel_chestplate_copper_trim.json
 0eb4066985825cba28eb822d1d7a73f0656133e6 assets\fox_den\models\item\bone_leggings_netherite_trim.json
 9521cf4a2c0b68ef2f30391f20c7c50792deeb3c assets\fox_den\models\item\steel_helmet_quartz_trim.json
-3511c763b9c45eb67edcb7e57528f774fe4ba035 assets\fox_den\models\item\bone_boots.json
 501fe6188587fc0e1e312e7e1fb18f05be34987c assets\fox_den\models\item\steel_leggings_amethyst_trim.json
+3511c763b9c45eb67edcb7e57528f774fe4ba035 assets\fox_den\models\item\bone_boots.json
 c809b5e30c1ca7bb8317f776e0d6f048fe06b879 assets\fox_den\models\item\space_ranger_leggings_redstone_trim.json
 fdaded414e28d2bee2a47d31c87fac91b5e55ba6 assets\fox_den\models\item\bone_chestplate_redstone_trim.json
 dbe2115e9636c1e9bca61384172e727ded64f8e5 assets\fox_den\models\item\bone_leggings_iron_trim.json

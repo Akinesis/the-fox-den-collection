@@ -27,6 +27,7 @@ repositories {
 	maven {
 		url = uri("https://yml.ccls.app/v${project.yaml_api_version}")
 	}
+	maven { url 'https://jitpack.io' }
 	mavenCentral()
 
 }
@@ -44,7 +45,9 @@ dependencies {
 	include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.3.6")))
 
 	modImplementation "app.ccls.yml:yamlapi:${project.yaml_api_version}"
-	
+	include 'com.github.Carleslc.Simple-YAML:Simple-Yaml:1.8.4'
+	implementation 'com.github.Carleslc.Simple-YAML:Simple-Yaml:1.8.4'
+
 }
 
 processResources {

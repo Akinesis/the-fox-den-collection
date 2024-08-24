@@ -18,6 +18,6 @@ public class UpgradeTemplateCondition implements ResourceCondition {
 
     @Override
     public boolean test(@Nullable RegistryWrapper.WrapperLookup registryLookup) {
-        return ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.UPGRADE_TEMPLATE);
+        return ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.UPGRADE_TEMPLATE);
     }
 }

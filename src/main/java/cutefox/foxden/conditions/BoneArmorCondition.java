@@ -18,6 +18,6 @@ public class BoneArmorCondition implements ResourceCondition {
 
     @Override
     public boolean test(@Nullable RegistryWrapper.WrapperLookup registryLookup) {
-        return ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.BONE_ARMOR);
+        return ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.BONE_ARMOR);
     }
 }

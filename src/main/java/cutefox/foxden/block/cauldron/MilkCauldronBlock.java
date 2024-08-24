@@ -46,7 +46,7 @@ public class MilkCauldronBlock extends AbstractCauldronBlock{
         Map<Item, CauldronBehavior> behaviorMap = this.behaviorMap.map();
 
 
-        if(ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.POUTINE)){
+        if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.POUTINE)){
             CauldronBehavior.EMPTY_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
             CauldronBehavior.LAVA_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);
             CauldronBehavior.WATER_CAULDRON_BEHAVIOR.map().put(Items.MILK_BUCKET, FILL_WITH_MILK);

@@ -145,7 +145,7 @@ public class TheFoxDenCollection implements ModInitializer {
 				.icon(() -> new ItemStack(Items.RABBIT_FOOT))
 				.displayName(Text.translatable("itemGroup.fox_den.item_group"))
 				.entries((context, entries) -> {
-					if(ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.POUTINE)){
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.POUTINE)){
 						entries.add(ModItems.CHEESE);
 						entries.add(ModItems.BLUE_CHEESE);
 						entries.add(ModItems.CHEESE_BLOCK);
@@ -154,7 +154,7 @@ public class TheFoxDenCollection implements ModInitializer {
 						entries.add(ModItems.FRIES);
 						entries.add(ModItems.BROWN_SAUCE);
 					}
-					if(ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.KNIGHT_ARMOR)){
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.KNIGHT_ARMOR)){
 						entries.add(ModItems.STEEL_BLEND);
 						entries.add(ModItems.STEEL_INGOT);
 						entries.add(ModItems.STEEL_BOOTS);
@@ -163,21 +163,21 @@ public class TheFoxDenCollection implements ModInitializer {
 						entries.add(ModItems.STEEL_LEGGINGS);
 					}
 
-					if(ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.BONE_ARMOR)){
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.BONE_ARMOR)){
 						entries.add(ModItems.BONE_BOOTS);
 						entries.add(ModItems.BONE_CHESTPLATE);
 						entries.add(ModItems.BONE_HELMET);
 						entries.add(ModItems.BONE_LEGGINGS);
 					}
 
-					if(ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.SPACE_ARMOR)){
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.SPACE_ARMOR)){
 						entries.add(ModItems.SPACE_RANGER_HELMET);
 						entries.add(ModItems.SPACE_RANGER_CHESTPLATE);
 						entries.add(ModItems.SPACE_RANGER_LEGGINGS);
 						entries.add(ModItems.SPACE_RANGER_BOOTS);
 					}
 
-					if(ConfigBuilder.globalConfig.get(FoxDenDefaultConfig.UPGRADE_TEMPLATE ) && !TheFoxDenCollection.isBetterEnchantingPresent){
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.UPGRADE_TEMPLATE ) && !TheFoxDenCollection.isBetterEnchantingPresent){
 						entries.add(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE);
 						entries.add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
 					}
