@@ -13,6 +13,17 @@
   "item.fox_den.steel_blend": "Steel Blend",
   "item.fox_den.rotten_leather": "Rotten Leather",
 
+  "block.fox_den.oak_leaves_wall": "Oak Leaves Wall",
+  "block.fox_den.spruce_leaves_wall": "Spruce Leaves Wall",
+  "block.fox_den.acacia_leaves_wall": "Acacia Leaves Wall",
+  "block.fox_den.birch_leaves_wall": "Birch Leaves Wall",
+  "block.fox_den.jungle_leaves_wall": "Jungle Leaves Wall",
+  "block.fox_den.mangrove_leaves_wall": "Mangrove Leaves Wall",
+  "block.fox_den.cherry_leaves_wall": "Cherry Leaves Wall",
+  "block.fox_den.dark_oak_leaves_wall": "Dark Oak Leaves Wall",
+  "block.fox_den.azalea_leaves_wall": "Azalea Leaves Wall",
+  "block.fox_den.flowering_azalea_leaves_wall": "Flowering Azalea Leaves Wall",
+
   "item.fox_den.iron_upgrade_smithing_template": "Iron Upgrade Smithing Template",
   "item.fox_den.diamond_upgrade_smithing_template": "Diamond Upgrade Smithing Template",
 

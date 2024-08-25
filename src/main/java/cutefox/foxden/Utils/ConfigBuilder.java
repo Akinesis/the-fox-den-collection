@@ -23,16 +23,17 @@ public class ConfigBuilder {
                 //init default file
                 yamlConfig.createNewFile();
 
-                FoxDenDefaultConfig.defaultConfig.entrySet().stream().forEach(
-                        entry -> {
-                            yamlConfig.addDefault(entry.getKey(), entry.getValue());
-                        });
-                yamlConfig.save();
-
-            }else{
-
             }
+
             yamlConfig.load();
+
+            FoxDenDefaultConfig.defaultConfig.entrySet().stream().forEach(
+                    entry -> {
+                        yamlConfig.addDefault(entry.getKey(), entry.getValue());
+                    });
+
+            yamlConfig.save();
+
         }catch (Exception e){
             throw new RuntimeException(e.toString());
         }

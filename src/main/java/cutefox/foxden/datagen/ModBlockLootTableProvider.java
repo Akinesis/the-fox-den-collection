@@ -24,6 +24,18 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MILK_CAULDRON, Items.CAULDRON);
         addDrop(ModBlocks.YEAST_MILK_CAULDRON, Items.CAULDRON);
         addDrop(ModBlocks.OIL_CAULDRON, Items.CAULDRON);
+
+        //Leaves wall
+        addDrop(ModBlocks.OAK_LEAVES_WALL, ModItems.OAK_LEAVES_WALL);
+        addDrop(ModBlocks.SPRUCE_LEAVES_WALL, ModItems.SPRUCE_LEAVES_WALL);
+        addDrop(ModBlocks.BIRCH_LEAVES_WALL, ModItems.BIRCH_LEAVES_WALL);
+        addDrop(ModBlocks.MANGROVE_LEAVES_WALL, ModItems.MANGROVE_LEAVES_WALL);
+        addDrop(ModBlocks.JUNGLE_LEAVES_WALL, ModItems.JUNGLE_LEAVES_WALL);
+        addDrop(ModBlocks.ACACIA_LEAVES_WALL, ModItems.ACACIA_LEAVES_WALL);
+        addDrop(ModBlocks.DARK_OAK_LEAVES_WALL, ModItems.DARK_OAK_LEAVES_WALL);
+        addDrop(ModBlocks.CHERRY_LEAVES_WALL, ModItems.CHERRY_LEAVES_WALL);
+        addDrop(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, ModItems.FLOWERING_AZALEA_LEAVES_WALL);
+        addDrop(ModBlocks.AZALEA_LEAVES_WALL, ModItems.AZALEA_LEAVES_WALL);
     }
 
     protected ModBlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {

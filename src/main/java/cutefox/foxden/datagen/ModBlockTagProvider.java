@@ -34,5 +34,41 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLUE_CHEESE_CAULDRON)
                 .add(ModBlocks.OIL_CAULDRON);
 
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.OAK_LEAVES_WALL)
+                .add(ModBlocks.SPRUCE_LEAVES_WALL)
+                .add(ModBlocks.BIRCH_LEAVES_WALL)
+                .add(ModBlocks.MANGROVE_LEAVES_WALL)
+                .add(ModBlocks.JUNGLE_LEAVES_WALL)
+                .add(ModBlocks.ACACIA_LEAVES_WALL)
+                .add(ModBlocks.DARK_OAK_LEAVES_WALL)
+                .add(ModBlocks.CHERRY_LEAVES_WALL)
+                .add(ModBlocks.AZALEA_LEAVES_WALL)
+                .add(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.OAK_LEAVES_WALL)
+                .add(ModBlocks.SPRUCE_LEAVES_WALL)
+                .add(ModBlocks.BIRCH_LEAVES_WALL)
+                .add(ModBlocks.MANGROVE_LEAVES_WALL)
+                .add(ModBlocks.JUNGLE_LEAVES_WALL)
+                .add(ModBlocks.ACACIA_LEAVES_WALL)
+                .add(ModBlocks.DARK_OAK_LEAVES_WALL)
+                .add(ModBlocks.CHERRY_LEAVES_WALL)
+                .add(ModBlocks.AZALEA_LEAVES_WALL)
+                .add(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.OAK_LEAVES_WALL)
+                .add(ModBlocks.SPRUCE_LEAVES_WALL)
+                .add(ModBlocks.BIRCH_LEAVES_WALL)
+                .add(ModBlocks.MANGROVE_LEAVES_WALL)
+                .add(ModBlocks.JUNGLE_LEAVES_WALL)
+                .add(ModBlocks.ACACIA_LEAVES_WALL)
+                .add(ModBlocks.DARK_OAK_LEAVES_WALL)
+                .add(ModBlocks.CHERRY_LEAVES_WALL)
+                .add(ModBlocks.AZALEA_LEAVES_WALL)
+                .add(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL);
+
     }
 }

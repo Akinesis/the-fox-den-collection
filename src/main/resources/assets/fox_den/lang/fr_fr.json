@@ -12,6 +12,17 @@
   "item.fox_den.iron_upgrade_smithing_template": "Amélioration en fer",
   "item.fox_den.diamond_upgrade_smithing_template": "Amélioration en diamant",
 
+  "block.fox_den.oak_leaves_wall": "Muret en feuilles de chêne",
+  "block.fox_den.spruce_leaves_wall": "Muret en feuilles de Sapin",
+  "block.fox_den.acacia_leaves_wall": "Muret en feuilles d'acacia",
+  "block.fox_den.birch_leaves_wall": "Muret en feuilles de bouleau",
+  "block.fox_den.jungle_leaves_wall": "Muret en feuilles d'acajou",
+  "block.fox_den.mangrove_leaves_wall": "Muret en feuilles de palétuvier",
+  "block.fox_den.cherry_leaves_wall": "Muret en feuilles de cerisier",
+  "block.fox_den.dark_oak_leaves_wall": "Muret en feuilles de chêne noir",
+  "block.fox_den.azalea_leaves_wall": "Muret en feuilles d'azalaée",
+  "block.fox_den.flowering_azalea_leaves_wall": "Muret en feuilles d'azalaée fleurie",
+
   "block.fox_den.cheese_block": "Bloc de fromage",
   "block.fox_den.milk_cauldron": "Chaudron de lait",
   "block.fox_den.yeast_milk_cauldron": "Chaudron de lait levuré",
@@ -46,4 +57,6 @@
 
   "key.fox_den.armor_action": "Actions d'armure",
   "category.fox_den.keys" : "The Fox Den Collection"
+
+
 }

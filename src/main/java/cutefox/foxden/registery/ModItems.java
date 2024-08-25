@@ -5,6 +5,7 @@ import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.item.BoneArmorItem;
 import cutefox.foxden.item.SpaceRangerArmorItem;
 import cutefox.foxden.item.SteelArmorItem;
+import net.minecraft.block.Block;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -13,7 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ModItems {
@@ -84,9 +87,54 @@ public class ModItems {
             new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(13))));
     //endregion
 
+    //region LEAVES WALL
+    public static Item OAK_LEAVES_WALL;
+    public static Item SPRUCE_LEAVES_WALL;
+    public static Item CHERRY_LEAVES_WALL;
+    public static Item BIRCH_LEAVES_WALL;
+    public static Item JUNGLE_LEAVES_WALL;
+    public static Item MANGROVE_LEAVES_WALL;
+    public static Item ACACIA_LEAVES_WALL;
+    public static Item DARK_OAK_LEAVES_WALL;
+    public static Item AZALEA_LEAVES_WALL;
+    public static Item FLOWERING_AZALEA_LEAVES_WALL;
+
+    public static List<Item> LEAVES_WALLS = new ArrayList<>();
+    //endregion
 
     public static void registerBlockItems(){
         CHEESE_BLOCK = registerItem("cheese_block", new BlockItem(ModBlocks.CHEESE_BLOCK, new Item.Settings()));
+
+        //Leaves wall
+        OAK_LEAVES_WALL = registerItem("oak_leaves_wall", new BlockItem(ModBlocks.OAK_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(OAK_LEAVES_WALL);
+
+        SPRUCE_LEAVES_WALL = registerItem("spruce_leaves_wall", new BlockItem(ModBlocks.SPRUCE_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(SPRUCE_LEAVES_WALL);
+
+        BIRCH_LEAVES_WALL = registerItem("birch_leaves_wall", new BlockItem(ModBlocks.BIRCH_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(BIRCH_LEAVES_WALL);
+
+        JUNGLE_LEAVES_WALL = registerItem("jungle_leaves_wall", new BlockItem(ModBlocks.JUNGLE_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(JUNGLE_LEAVES_WALL);
+
+        MANGROVE_LEAVES_WALL = registerItem("mangrove_leaves_wall", new BlockItem(ModBlocks.MANGROVE_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(MANGROVE_LEAVES_WALL);
+
+        ACACIA_LEAVES_WALL = registerItem("acacia_leaves_wall", new BlockItem(ModBlocks.ACACIA_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(ACACIA_LEAVES_WALL);
+
+        DARK_OAK_LEAVES_WALL = registerItem("dark_oak_leaves_wall", new BlockItem(ModBlocks.DARK_OAK_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(DARK_OAK_LEAVES_WALL);
+
+        CHERRY_LEAVES_WALL = registerItem("cherry_leaves_wall", new BlockItem(ModBlocks.CHERRY_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(CHERRY_LEAVES_WALL);
+
+        AZALEA_LEAVES_WALL = registerItem("azalea_leaves_wall", new BlockItem(ModBlocks.AZALEA_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(AZALEA_LEAVES_WALL);
+
+        FLOWERING_AZALEA_LEAVES_WALL = registerItem("flowering_azalea_leaves_wall", new BlockItem(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, new Item.Settings()));
+        LEAVES_WALLS.add(FLOWERING_AZALEA_LEAVES_WALL);
     }
 
     private static Item registerItem(String id, Item item){

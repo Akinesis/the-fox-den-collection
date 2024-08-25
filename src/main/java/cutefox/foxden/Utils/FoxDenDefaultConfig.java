@@ -12,6 +12,7 @@ public abstract class FoxDenDefaultConfig {
     public static final String KNIGHT_ARMOR = "enable_knight_armor";
     public static final String BONE_ARMOR = "enable_bone_armor";
     public static final String SPACE_ARMOR = "enable_space_ranger_armor";
+    public static final String LEAVES_WALL = "enable_leaves_wall";
 
     static {
         defaultConfig.put(POUTINE, true);
@@ -19,6 +20,7 @@ public abstract class FoxDenDefaultConfig {
         defaultConfig.put(KNIGHT_ARMOR, true);
         defaultConfig.put(BONE_ARMOR, true);
         defaultConfig.put(SPACE_ARMOR, true);
+        defaultConfig.put(LEAVES_WALL, true);
     }
 
 }

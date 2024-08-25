@@ -1,0 +1,6 @@
+{
+  "parent": "fox_den:block/leaves_wall_inventory",
+  "textures": {
+    "wall": "minecraft:block/oak_leaves"
+  }
+}

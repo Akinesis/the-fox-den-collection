@@ -7,6 +7,7 @@ import cutefox.foxden.conditions.ModConfigConditions;
 import cutefox.foxden.networking.SpaceRangerArmorWingsPayload;
 import cutefox.foxden.registery.*;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
@@ -17,6 +18,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
 import net.minecraft.entity.player.PlayerEntity;
@@ -32,6 +34,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.world.biome.GrassColors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,6 +53,8 @@ public class TheFoxDenCollection implements ModInitializer {
 		ModConfigConditions.registerConditions();
 
 		isBetterEnchantingPresent = FabricLoader.getInstance().isModLoaded("betterenchanting");
+
+		ModModels.loadModels();
 
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
@@ -180,6 +185,12 @@ public class TheFoxDenCollection implements ModInitializer {
 					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.UPGRADE_TEMPLATE ) && !TheFoxDenCollection.isBetterEnchantingPresent){
 						entries.add(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE);
 						entries.add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
+					}
+
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.LEAVES_WALL)){
+						ModItems.LEAVES_WALLS.stream().forEach(wall -> {
+							entries.add(wall);
+						});
 					}
 
 					entries.add(ModItems.ROTTEN_LEATHER);

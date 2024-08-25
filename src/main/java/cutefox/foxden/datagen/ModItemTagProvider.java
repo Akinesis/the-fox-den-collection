@@ -1,10 +1,12 @@
 package cutefox.foxden.datagen;
 
 import cutefox.foxden.TheFoxDenCollection;
+import cutefox.foxden.registery.ModBlocks;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -43,8 +45,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.SPACE_RANGER_BOOTS);
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE);
 
-
-
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModItems.OAK_LEAVES_WALL)
+                .add(ModItems.SPRUCE_LEAVES_WALL)
+                .add(ModItems.BIRCH_LEAVES_WALL)
+                .add(ModItems.ACACIA_LEAVES_WALL)
+                .add(ModItems.JUNGLE_LEAVES_WALL)
+                .add(ModItems.MANGROVE_LEAVES_WALL)
+                .add(ModItems.DARK_OAK_LEAVES_WALL)
+                .add(ModItems.CHERRY_LEAVES_WALL)
+                .add(ModItems.AZALEA_LEAVES_WALL)
+                .add(ModItems.FLOWERING_AZALEA_LEAVES_WALL);
 
     }
 }
