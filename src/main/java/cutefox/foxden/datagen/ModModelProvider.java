@@ -92,5 +92,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_BOOTS);
         //endregion
 
+        //region WOLF ARMORS
+        itemModelGenerator.registerWolfArmor(ModItems.IRON_WOLF_ARMOR);
+        itemModelGenerator.registerWolfArmor(ModItems.DIAMOND_WOLF_ARMOR);
+        //endregion
+
     }
 }

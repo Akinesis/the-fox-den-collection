@@ -113,54 +113,6 @@ public abstract class PlayerMixin extends LivingEntityMixin{
         playerArmor.add((slotId==2)?newArmor:player.getInventory().getArmorStack(2));
         playerArmor.add((slotId==3)?newArmor:player.getInventory().getArmorStack(3));
 
-        /*
-        ItemStack boots = (slotId==0)?newArmor:player.getInventory().getArmorStack(0);
-        if(!boots.isEmpty()){
-            if(boots.getItem() instanceof ArmorItem bootsArmor) {
-                materialSet = bootsArmor.getMaterial();
-                assertionFailed = false;
-            }
-        }
-
-        if(assertionFailed)
-            return null;
-
-        assertionFailed = true;
-
-        ItemStack leggings = (slotId==1)?newArmor:player.getInventory().getArmorStack(1);
-        if(!leggings.isEmpty()){
-            if(leggings.getItem() instanceof ArmorItem leggingsArmor) {
-                if (leggingsArmor.getMaterial() == materialSet)
-                    assertionFailed = false;
-            }
-        }
-
-        if(assertionFailed)
-            return null;
-
-        assertionFailed = true;
-
-        ItemStack chestplate = (slotId==2)?newArmor:player.getInventory().getArmorStack(2);
-        if(!chestplate.isEmpty()){
-            if(chestplate.getItem() instanceof ArmorItem chestplateArmor) {
-                if (chestplateArmor.getMaterial() == materialSet)
-                    assertionFailed = false;
-            }
-        }
-
-        if(assertionFailed)
-            return null;
-
-        assertionFailed = true;
-
-        ItemStack helmet = (slotId==3)?newArmor:player.getInventory().getArmorStack(3);
-        if(!helmet.isEmpty()){
-            if(helmet.getItem() instanceof ArmorItem helmetArmor) {
-                if (helmetArmor.getMaterial() == materialSet)
-                    assertionFailed = false;
-            }
-        }*/
-
         Item temp;
 
         for (ItemStack stack : playerArmor) {

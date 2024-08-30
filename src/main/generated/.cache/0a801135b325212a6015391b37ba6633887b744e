@@ -1,4 +1,4 @@
-// 1.21	2024-08-25T03:58:31.5920214	The fox den collection/Recipes
+// 1.21	2024-08-27T20:50:49.8939073	The fox den collection/Recipes
 9e65761ba1c03415eb20b638b21f5680fef2a1da data\fox_den\advancement\recipes\combat\steel_helmet.json
 ae9ae35cced17f190da4bb15d5b50dcf357434c6 data\fox_den\advancement\recipes\tools\diamond_gold_axe_smithing.json
 171836ad6b3093ff66559cb1d578bcdc7c892f05 data\fox_den\recipe\oak_leaves_wall.json
@@ -26,6 +26,8 @@ c5fefab3019d7210c833ee4ea04450fd7c30e9b7 data\fox_den\recipe\oil_bucket.json
 293330fb3ddf334627f720b2796c8d44a9ada215 data\fox_den\advancement\recipes\tools\diamond_gold_shovel_smithing.json
 e54679db2a0aa5168b5af20ca6b866e0696087ab data\fox_den\advancement\recipes\combat\diamond_gold_helmet_smithing.json
 01591e12a9a4c537d7cbd4e9a441ab55457b47d0 data\fox_den\recipe\spruce_leaves_wall.json
+f1f0b6074ca50787b5cc7d3e38162e2e9b3f40cf data\fox_den\recipe\iron_wolf_armor_smithing.json
+fbabca8d14a550452702a17f94459aee42ed89ab data\fox_den\recipe\diamond_wolf_armor_smithing.json
 728f5cbbab899eb98b2e63272ffff2c9f2877772 data\fox_den\advancement\recipes\tools\diamond_iron_pickaxe_smithing.json
 3504e8b06765135a87e81d0e3780e9193584e040 data\fox_den\recipe\jungle_leaves_wall.json
 4aac4d35536b75736a355687e496214b4f7ba77a data\fox_den\recipe\diamond_iron_sword_smithing.json
@@ -42,11 +44,13 @@ eaf7b15de7ab5d3f14bd24d22f4472eccbbe9160 data\fox_den\advancement\recipes\tools\
 861eee67fb7c07dbad05a032439c25d70c1d8409 data\fox_den\advancement\recipes\combat\steel_chestplate.json
 712260dc8b63f1dbd71328a62817ed60cd0149cc data\fox_den\recipe\iron_hoe_smithing.json
 69330786069794d0be2e1c87d8ab8bba6c0bcd69 data\fox_den\advancement\recipes\tools\iron_hoe_smithing.json
+1fccb3fdabfe8b1956b6ebaea15b4a1fe42f96a8 data\fox_den\advancement\recipes\combat\diamond_wolf_armor_smithing.json
 a660ad427da09080f15c5aef09bceae414a4335f data\fox_den\advancement\recipes\food\brown_sauce.json
 8ce02baecadaa0585b41b40e2b6d9deaa0e54440 data\fox_den\recipe\acacia_leaves_wall.json
 ea0633be5d38f69005e1ba3fb7b7b7106e54e231 data\fox_den\advancement\recipes\food\poutine.json
 ffb62303ea254dd0852dcff999a1c89b508536e2 data\fox_den\advancement\recipes\combat\diamond_iron_helmet_smithing.json
 2e36ad6d13bc9d405d49a8da8638f02d170704a6 data\fox_den\recipe\diamond_gold_boots_smithing.json
+438c134fc284a5ab49e2be38cf56cbf822dafbc0 data\fox_den\advancement\recipes\combat\iron_wolf_armor_smithing.json
 df4fed09832adbeaa8e42b0945b493b1aa9984da data\fox_den\recipe\diamond_iron_chestplate_smithing.json
 c1b40e3e7688c485727baa11e5988c9acabff6df data\fox_den\advancement\recipes\decorations\acacia_leaves_wall.json
 3f0745790ab53223088c763a53b23cabeabe1bed data\fox_den\recipe\poutine.json

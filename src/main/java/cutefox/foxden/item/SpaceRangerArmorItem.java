@@ -32,6 +32,7 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.constant.DefaultAnimations;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
+import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
 import javax.xml.crypto.Data;
 import java.util.List;
@@ -59,15 +60,15 @@ public class SpaceRangerArmorItem extends ArmorItem implements GeoItem {
                 if(this.renderer == null)
                     this.renderer = new SpaceRangerArmorRenderer();
 
-                    GeoModel geoModel = this.renderer.getGeoModel();
-                    GeoBone hips = (GeoBone) geoModel.getBone("hips").orElse(null);
-                    if(hips != null){
-                        if(equipmentSlot.equals(EquipmentSlot.LEGS))
-                            //Hide hips for boots
-                            hips.setHidden(false);
-                        else
-                            hips.setHidden(true);
-                    }
+                GeoModel geoModel = this.renderer.getGeoModel();
+                GeoBone hips = (GeoBone) geoModel.getBone("hips").orElse(null);
+                if(hips != null){
+                    if(equipmentSlot.equals(EquipmentSlot.LEGS))
+                        //Hide hips for boots
+                        hips.setHidden(false);
+                    else
+                        hips.setHidden(true);
+                }
 
 
                 return this.renderer;

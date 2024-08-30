@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fox_den:item/diamond_wolf_armor",
+    "layer1": "fox_den:item/diamond_wolf_armor_overlay"
+  }
+}

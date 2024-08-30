@@ -3,14 +3,12 @@ package cutefox.foxden.registery;
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.item.BoneArmorItem;
+import cutefox.foxden.item.ModWolfArmor;
 import cutefox.foxden.item.SpaceRangerArmorItem;
 import cutefox.foxden.item.SteelArmorItem;
 import net.minecraft.block.Block;
 import net.minecraft.component.type.FoodComponent;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
@@ -85,6 +83,17 @@ public class ModItems {
             new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(13))));
     public static final Item SPACE_RANGER_BOOTS = registerItem("space_ranger_boots",
             new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(13))));
+    //endregion
+
+    //region WOLF ARMORS
+    public static final Item IRON_WOLF_ARMOR = registerItem("iron_wolf_armor",
+            new ModWolfArmor(ModArmorMaterials.IRON_WOLF, ModWolfArmor.Type.IRON, false,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BODY.getMaxDamage(6))));
+
+    public static final Item DIAMOND_WOLF_ARMOR = registerItem("diamond_wolf_armor",
+            new ModWolfArmor(ModArmorMaterials.DIAMOND_WOLF, ModWolfArmor.Type.DIAMOND, false,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BODY.getMaxDamage(8))));
+
     //endregion
 
     //region LEAVES WALL

@@ -35,6 +35,7 @@ public class ModBlocks {
     public static final Block AZALEA_LEAVES_WALL;
     public static final Block FLOWERING_AZALEA_LEAVES_WALL;
 
+
     public static List<Block> LEAVES_WALL = new ArrayList<>();
 
     public static void registerModBlocks(){

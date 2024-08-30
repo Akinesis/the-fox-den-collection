@@ -18,7 +18,6 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
 import net.minecraft.entity.player.PlayerEntity;
@@ -34,7 +33,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.world.biome.GrassColors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -69,9 +67,6 @@ public class TheFoxDenCollection implements ModInitializer {
 		registerNetworking();
 
 		ModItems.registerBlockItems();
-
-		//DynamicRecipeProvider.loadRecipes();
-		//LOGGER.info(ModUpgradeTemplateRecipe.IRON_UPGRADE_SMITHING_TEMPLATE_RECIPE.toString());
 	}
 
 	private void addEventListner(){
@@ -194,6 +189,8 @@ public class TheFoxDenCollection implements ModInitializer {
 					}
 
 					entries.add(ModItems.ROTTEN_LEATHER);
+					entries.add(ModItems.IRON_WOLF_ARMOR);
+					entries.add(ModItems.DIAMOND_WOLF_ARMOR);
 
 				})
 				.build();

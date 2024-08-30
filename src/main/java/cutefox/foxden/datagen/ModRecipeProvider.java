@@ -350,6 +350,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(withConditions(exporter, UPGRADE_TEMPLATE), Utils.id("diamond_iron_boots_smithing"));
 
+        //Wolf armors
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.WOLF_ARMOR),
+                        Ingredient.ofItems(Items.IRON_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.IRON_WOLF_ARMOR)
+                .criterion(hasItem(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(withConditions(exporter, UPGRADE_TEMPLATE), Utils.id("iron_wolf_armor_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.IRON_WOLF_ARMOR),
+                        Ingredient.ofItems(Items.DIAMOND),
+                        RecipeCategory.COMBAT,
+                        ModItems.DIAMOND_WOLF_ARMOR)
+                .criterion(hasItem(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(withConditions(exporter, UPGRADE_TEMPLATE), Utils.id("diamond_wolf_armor_smithing"));
         //endregion
 
         //region LEAVES WALLS

@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fox_den:upgrade_template"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "minecraft:wolf_armor"
+  },
+  "result": {
+    "count": 1,
+    "id": "fox_den:iron_wolf_armor"
+  },
+  "template": {
+    "item": "fox_den:iron_upgrade_smithing_template"
+  }
+}

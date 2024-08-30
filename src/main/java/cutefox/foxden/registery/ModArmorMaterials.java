@@ -23,6 +23,8 @@ public class ModArmorMaterials {
     public static final RegistryEntry<ArmorMaterial> STEEL;
     public static final RegistryEntry<ArmorMaterial> BONE;
     public static final RegistryEntry<ArmorMaterial> SPACE_STEEL;
+    public static final RegistryEntry<ArmorMaterial> IRON_WOLF;
+    public static final RegistryEntry<ArmorMaterial> DIAMOND_WOLF;
 
     public static final HashMap<RegistryEntry<ArmorMaterial>, RegistryEntry<StatusEffect>> MATERIAL_TO_STATUS;
 
@@ -54,6 +56,23 @@ public class ModArmorMaterials {
             map.put(ArmorItem.Type.HELMET, 2);
             map.put(ArmorItem.Type.BODY, 10);
         }), 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2.0F, 0.1F, () -> Ingredient.ofItems(ModItems.STEEL_INGOT));
+
+        IRON_WOLF = register("iron_wolf", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+            map.put(ArmorItem.Type.BOOTS, 1);
+            map.put(ArmorItem.Type.LEGGINGS, 1);
+            map.put(ArmorItem.Type.CHESTPLATE, 1);
+            map.put(ArmorItem.Type.HELMET, 1);
+            map.put(ArmorItem.Type.BODY, 14);
+        }), 12, SoundEvents.ITEM_ARMOR_EQUIP_WOLF, 0.0F, 0.0F, () -> Ingredient.ofItems(Items.IRON_INGOT));
+
+        DIAMOND_WOLF = register("diamond_wolf", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+            map.put(ArmorItem.Type.BOOTS, 1);
+            map.put(ArmorItem.Type.LEGGINGS, 1);
+            map.put(ArmorItem.Type.CHESTPLATE, 1);
+            map.put(ArmorItem.Type.HELMET, 1);
+            map.put(ArmorItem.Type.BODY, 16);
+        }), 16, SoundEvents.ITEM_ARMOR_EQUIP_WOLF, 1.0F, 0.0F, () -> Ingredient.ofItems(Items.DIAMOND));
+
 
         MATERIAL_TO_STATUS = new HashMap<>();
         MATERIAL_TO_STATUS.put(BONE, ModStatusEffects.SKELETON_LOVE);
