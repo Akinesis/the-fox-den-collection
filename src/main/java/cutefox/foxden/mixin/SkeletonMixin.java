@@ -11,10 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class SkeletonMixin extends LivingEntityMixin {
 
     @Override
-    protected void preventTargetOnPlayerWithBuff(LivingEntity target, CallbackInfoReturnable<Boolean> cir){
-
-        SkeletonEntity skeleton = (SkeletonEntity) (Object)this;
-
+    protected void theFoxDenCollection$preventTargetOnPlayerWithBuff(LivingEntity target, CallbackInfoReturnable<Boolean> cir){
         if(target instanceof PlayerEntity player){
             if(player.getStatusEffect(ModStatusEffects.SKELETON_LOVE) != null)
                 cir.setReturnValue(false);

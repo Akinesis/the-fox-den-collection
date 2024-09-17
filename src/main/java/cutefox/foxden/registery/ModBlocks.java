@@ -7,6 +7,7 @@ import cutefox.foxden.block.cauldron.MilkCauldronBlock;
 import cutefox.foxden.block.cauldron.OilCauldronBlock;
 import cutefox.foxden.block.cauldron.YeastMilkCauldronBlock;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -34,6 +35,7 @@ public class ModBlocks {
     public static final Block CHERRY_LEAVES_WALL;
     public static final Block AZALEA_LEAVES_WALL;
     public static final Block FLOWERING_AZALEA_LEAVES_WALL;
+    public static final Block STEEL_BLOCK;
 
 
     public static List<Block> LEAVES_WALL = new ArrayList<>();
@@ -59,6 +61,11 @@ public class ModBlocks {
         CHERRY_LEAVES_WALL = registerLeavesWall("cherry_leaves_wall", new WallBlock(leavesCherryWallSettings()));
         AZALEA_LEAVES_WALL = registerLeavesWall("azalea_leaves_wall", new WallBlock(leavesWallSettings(BlockSoundGroup.AZALEA_LEAVES)));
         FLOWERING_AZALEA_LEAVES_WALL = registerLeavesWall("flowering_azalea_leaves_wall", new WallBlock(leavesWallSettings(BlockSoundGroup.AZALEA_LEAVES)));
+        STEEL_BLOCK = registerLeavesWall("steel_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.IRON_GRAY)
+                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                .requiresTool()
+                .strength(10.0F, 16.0F)
+                .sounds(BlockSoundGroup.METAL)));
     }
 
     public static Block register(String id, Block block) {

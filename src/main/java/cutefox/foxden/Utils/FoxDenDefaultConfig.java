@@ -13,6 +13,11 @@ public abstract class FoxDenDefaultConfig {
     public static final String BONE_ARMOR = "enable_bone_armor";
     public static final String SPACE_ARMOR = "enable_space_ranger_armor";
     public static final String LEAVES_WALL = "enable_leaves_wall";
+    public static final String RESPAWN_DRAGON_EGG = "respawn_dragon_egg";
+    public static final String RANDOM_MOB_SIZE = "random_mob_size";
+    public static final String RANDOM_NAME_TAG = "random_name_tag";
+    public static final String BIKE_ARMOR = "bike_armor";
+    public static final String WOLF_ARMOR = "wolf_armor";
 
     static {
         defaultConfig.put(POUTINE, true);
@@ -21,6 +26,11 @@ public abstract class FoxDenDefaultConfig {
         defaultConfig.put(BONE_ARMOR, true);
         defaultConfig.put(SPACE_ARMOR, true);
         defaultConfig.put(LEAVES_WALL, true);
+        defaultConfig.put(RESPAWN_DRAGON_EGG, true);
+        defaultConfig.put(RANDOM_MOB_SIZE, true);
+        defaultConfig.put(RANDOM_NAME_TAG, true);
+        defaultConfig.put(BIKE_ARMOR, true);
+        defaultConfig.put(WOLF_ARMOR, true);
     }
 
 }

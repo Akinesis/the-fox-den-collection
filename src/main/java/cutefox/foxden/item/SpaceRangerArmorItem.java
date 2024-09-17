@@ -9,6 +9,7 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -39,7 +40,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 
-public class SpaceRangerArmorItem extends ArmorItem implements GeoItem {
+public class SpaceRangerArmorItem extends ArmorItem implements GeoItem, ArmorWithEffect {
 
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
@@ -179,5 +180,16 @@ public class SpaceRangerArmorItem extends ArmorItem implements GeoItem {
 
     public void triggerDeploy(){
         isDeploy = ! isDeploy;
+    }
+
+    @Override
+    public void applyEffect(LivingEntity entity) {
+        if(entity instanceof PlayerEntity player){
+        }
+    }
+
+    @Override
+    public void removeEffect(LivingEntity entity) {
+
     }
 }

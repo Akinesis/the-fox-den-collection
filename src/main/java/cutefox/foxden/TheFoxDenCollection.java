@@ -7,7 +7,6 @@ import cutefox.foxden.conditions.ModConfigConditions;
 import cutefox.foxden.networking.SpaceRangerArmorWingsPayload;
 import cutefox.foxden.registery.*;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
@@ -161,6 +160,7 @@ public class TheFoxDenCollection implements ModInitializer {
 						entries.add(ModItems.STEEL_CHESTPLATE);
 						entries.add(ModItems.STEEL_HELMET);
 						entries.add(ModItems.STEEL_LEGGINGS);
+						entries.add(ModItems.STEEL_BLOCK);
 					}
 
 					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.BONE_ARMOR)){
@@ -188,9 +188,16 @@ public class TheFoxDenCollection implements ModInitializer {
 						});
 					}
 
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.BIKE_ARMOR)){
+						entries.add(ModItems.BIKE_HELMET);
+					}
+
+					if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.WOLF_ARMOR)){
+						entries.add(ModItems.IRON_WOLF_ARMOR);
+						entries.add(ModItems.DIAMOND_WOLF_ARMOR);
+					}
+
 					entries.add(ModItems.ROTTEN_LEATHER);
-					entries.add(ModItems.IRON_WOLF_ARMOR);
-					entries.add(ModItems.DIAMOND_WOLF_ARMOR);
 
 				})
 				.build();

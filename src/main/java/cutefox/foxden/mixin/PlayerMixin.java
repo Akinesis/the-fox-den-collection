@@ -1,6 +1,7 @@
 package cutefox.foxden.mixin;
 
 import cutefox.foxden.TheFoxDenCollection;
+import cutefox.foxden.item.ArmorWithEffect;
 import cutefox.foxden.registery.ModArmorMaterials;
 import cutefox.foxden.registery.ModItems;
 import cutefox.foxden.registery.ModStatusEffects;
@@ -17,6 +18,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Arm;
 import org.jetbrains.annotations.Blocking;
 import org.spongepowered.asm.mixin.Mixin;
@@ -33,35 +35,8 @@ import java.util.Set;
 @Mixin(PlayerEntity.class)
 public abstract class PlayerMixin extends LivingEntityMixin{
 
-    @Shadow public abstract void remove(Entity.RemovalReason reason);
-
-    @Shadow public abstract void setMainArm(Arm arm);
-
-    @Shadow public int experienceLevel;
-    private ModArmorMaterials FoxDen_fullSetBonus;
-
-    /*@Inject(method = "equipStack", at = @At(value = "INVOKE",
-            target = "Lnet/minecraft/entity/player/PlayerEntity;onEquipStack(Lnet/minecraft/entity/EquipmentSlot;Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V",
-            ordinal = 2), cancellable = true)*/
-    //@Inject(method = "equipStack", at=@At(value = "HEAD"))
-    public void onArmorEquip(EquipmentSlot slot, ItemStack stack, CallbackInfo ci){
-        PlayerEntity player = (PlayerEntity) (Object) this;
-        if(!player.getWorld().isClient){
-            if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR){
-                //Called armor equip from toolbar
-                Item oldItem = player.getInventory().getArmorStack(slot.getEntitySlotId()).getItem();
-                if((oldItem instanceof ArmorItem oldArmorItem)){
-                    RegistryEntry<StatusEffect> effect = ModArmorMaterials.MATERIAL_TO_STATUS.get(oldArmorItem.getMaterial());
-                    if(effect != null){
-                        player.removeStatusEffect(effect);
-                    }
-                }
-            }
-        }
-    }
-
     @Override
-    public void checkFormArmorBonus(EquipmentSlot slot, ItemStack oldStack, ItemStack newStack, CallbackInfo ci) {
+    public void theFoxDenCollection$checkFormArmorBonus(EquipmentSlot slot, ItemStack oldStack, ItemStack newStack, CallbackInfo ci) {
 
         PlayerEntity player = (PlayerEntity) (Object) this;
 
@@ -69,7 +44,7 @@ public abstract class PlayerMixin extends LivingEntityMixin{
             //If adding an armor
 
             //Remove all existing armor set status
-            //TODO : this will break for armor giving effect on less than a full set !
+            //TODO : this will break for armor giving status effect on less than a full set
             for(RegistryEntry<ArmorMaterial> key : ModArmorMaterials.MATERIAL_TO_STATUS.keySet()){
                 player.removeStatusEffect(ModArmorMaterials.MATERIAL_TO_STATUS.get(key));
             }
@@ -80,7 +55,7 @@ public abstract class PlayerMixin extends LivingEntityMixin{
                     //If material of armor add effect
 
                     //Checking for set
-                    RegistryEntry<ArmorMaterial> armorSetType = foxDen_hasFullArmorSet(player, slot.getEntitySlotId(), newStack );
+                    RegistryEntry<ArmorMaterial> armorSetType = theFoxDenCollection$hasFullArmorSet(player, slot.getEntitySlotId(), newStack );
 
                     if(armorSetType != null){
                         //applie set bonus
@@ -90,6 +65,12 @@ public abstract class PlayerMixin extends LivingEntityMixin{
 
                     }
                 }
+
+                //Check for individual bonuses
+                if(armorItem instanceof ArmorWithEffect armorWithEffect){
+                    armorWithEffect.applyEffect(player);
+                }
+
             }
         }else{
             //if removing an armor
@@ -102,18 +83,15 @@ public abstract class PlayerMixin extends LivingEntityMixin{
         }
     }
 
-    private RegistryEntry<ArmorMaterial> foxDen_hasFullArmorSet(PlayerEntity player, int slotId, ItemStack newArmor) {
+    private RegistryEntry<ArmorMaterial> theFoxDenCollection$hasFullArmorSet(PlayerEntity player, int slotId, ItemStack newArmor) {
 
         RegistryEntry<ArmorMaterial> setMaterial = null;
         List<ItemStack> playerArmor = new ArrayList<>();
-        boolean assertionFailed = true;
 
         playerArmor.add((slotId==0)?newArmor:player.getInventory().getArmorStack(0));
         playerArmor.add((slotId==1)?newArmor:player.getInventory().getArmorStack(1));
         playerArmor.add((slotId==2)?newArmor:player.getInventory().getArmorStack(2));
         playerArmor.add((slotId==3)?newArmor:player.getInventory().getArmorStack(3));
-
-        Item temp;
 
         for (ItemStack stack : playerArmor) {
             // We can stop immediately if any of the slots are empty

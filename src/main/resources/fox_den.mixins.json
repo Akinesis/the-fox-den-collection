@@ -8,7 +8,10 @@
 		"RangedWeaponItemMixin",
 		"PlayerMixin",
 		"WolfEntityMixin",
-		"WolfArmorFeatureRendererMixin"
+		"WolfArmorFeatureRendererMixin",
+		"EnderDragonFightMixin",
+		"MobEntityMixin",
+		"LootTableMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

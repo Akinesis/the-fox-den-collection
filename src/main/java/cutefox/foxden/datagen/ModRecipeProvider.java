@@ -23,6 +23,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final ResourceCondition KNIGHT_ARMOR = new SteelArmorCondition();
     private static final ResourceCondition SPACE_RANGER_ARMOR = new SpaceRangerArmorCondition();
     private static final ResourceCondition LEAVES_WALL = new LeavesWallCondition();
+    private static final ResourceCondition BIKE_ARMOR = new BikeArmorCondition();
 
 
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -82,6 +83,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
                 .criterion(hasItem(Items.CHARCOAL), conditionsFromItem(Items.CHARCOAL))
                 .offerTo(withConditions(exporter, KNIGHT_ARMOR), Utils.id(getRecipeName(ModItems.STEEL_BLEND)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_BLOCK, 1)
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.STEEL_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(withConditions(exporter, KNIGHT_ARMOR), Utils.id(getRecipeName(ModItems.STEEL_BLOCK)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_INGOT, 9)
+                .input(ModItems.STEEL_BLOCK)
+                .criterion(hasItem(ModItems.STEEL_BLOCK), conditionsFromItem(ModItems.STEEL_BLOCK))
+                .offerTo(withConditions(exporter, KNIGHT_ARMOR), Utils.id(getRecipeName(ModItems.STEEL_INGOT)+"_block"));
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ROTTEN_LEATHER, 1)

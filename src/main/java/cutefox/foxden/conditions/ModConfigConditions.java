@@ -15,6 +15,8 @@ public class ModConfigConditions {
     public static final ResourceConditionType<BoneArmorCondition> BONE_ARMOR = createResourceConditionType("bone_armor", BoneArmorCondition.CODEC);
     public static final ResourceConditionType<SpaceRangerArmorCondition> SPACE_ARMOR = createResourceConditionType("space_ranger_armor", SpaceRangerArmorCondition.CODEC);
     public static final ResourceConditionType<LeavesWallCondition> LEAVES_WALL = createResourceConditionType("leaves_wall", LeavesWallCondition.CODEC);
+    public static final ResourceConditionType<BikeArmorCondition> BIKE_ARMOR = createResourceConditionType("bike_armor", BikeArmorCondition.CODEC);
+    public static final ResourceConditionType<WolfArmorCondition> WOLF_ARMOR = createResourceConditionType("wolf_armor", WolfArmorCondition.CODEC);
 
     public static void registerConditions(){
         TheFoxDenCollection.LOGGER.info("Registering conditions for : "+TheFoxDenCollection.MOD_ID);
@@ -24,6 +26,8 @@ public class ModConfigConditions {
         ResourceConditions.register(BONE_ARMOR);
         ResourceConditions.register(SPACE_ARMOR);
         ResourceConditions.register(LEAVES_WALL);
+        ResourceConditions.register(BIKE_ARMOR);
+        ResourceConditions.register(WOLF_ARMOR);
     }
 
     private static <T extends ResourceCondition> ResourceConditionType<T> createResourceConditionType(String name, MapCodec<T> codec) {

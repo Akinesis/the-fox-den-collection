@@ -25,7 +25,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.YEAST_MILK_CAULDRON)
                 .add(ModBlocks.CHEESE_CAULDRON)
                 .add(ModBlocks.BLUE_CHEESE_CAULDRON)
-                .add(ModBlocks.OIL_CAULDRON);
+                .add(ModBlocks.OIL_CAULDRON)
+                .add(ModBlocks.STEEL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.CAULDRONS)
                 .add(ModBlocks.MILK_CAULDRON)

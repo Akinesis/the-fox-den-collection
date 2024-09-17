@@ -23,6 +23,8 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         TheFoxDenCollection.LOGGER.info("Generating block model data for : "+TheFoxDenCollection.MOD_ID);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
+
         createLeavesWallModel(blockStateModelGenerator, ModBlocks.OAK_LEAVES_WALL, Blocks.OAK_LEAVES, ModItems.OAK_LEAVES_WALL);
         createLeavesWallModel(blockStateModelGenerator, ModBlocks.SPRUCE_LEAVES_WALL, Blocks.SPRUCE_LEAVES, ModItems.SPRUCE_LEAVES_WALL);
         createLeavesWallModel(blockStateModelGenerator, ModBlocks.ACACIA_LEAVES_WALL, Blocks.ACACIA_LEAVES, ModItems.ACACIA_LEAVES_WALL);
@@ -90,6 +92,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SPACE_RANGER_BOOTS);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.BIKE_HELMET);
         //endregion
 
         //region WOLF ARMORS

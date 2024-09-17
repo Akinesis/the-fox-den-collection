@@ -25,6 +25,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.YEAST_MILK_CAULDRON, Items.CAULDRON);
         addDrop(ModBlocks.OIL_CAULDRON, Items.CAULDRON);
 
+        addDrop(ModBlocks.STEEL_BLOCK, ModItems.STEEL_BLOCK);
+
         //Leaves wall
         addDrop(ModBlocks.OAK_LEAVES_WALL, ModItems.OAK_LEAVES_WALL);
         addDrop(ModBlocks.SPRUCE_LEAVES_WALL, ModItems.SPRUCE_LEAVES_WALL);

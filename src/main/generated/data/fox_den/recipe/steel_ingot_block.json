@@ -1,0 +1,18 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fox_den:steel_armor"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fox_den:steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "fox_den:steel_ingot"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.21	2024-08-27T20:50:49.8959011	The fox den collection/Block Loot Tables
+// 1.21	2024-09-16T11:12:40.3735007	The fox den collection/Block Loot Tables
 fc51ee173bb347a8e0efbf722b8b056d617388c9 data\fox_den\loot_table\blocks\jungle_leaves_wall.json
 c0e6fcddee709849341171f1d3db6c777dcba0db data\fox_den\loot_table\blocks\dark_oak_leaves_wall.json
 6641d48047a11b659e530553b4a1f1812611a4d3 data\fox_den\loot_table\blocks\blue_cheese_cauldron.json
@@ -8,6 +8,7 @@ f026dcf7b6c01d5e6b075c2057602150fa9f4833 data\fox_den\loot_table\blocks\cheese_c
 548d115eeb79b74d3fbe03951bdc179110ed6f8a data\fox_den\loot_table\blocks\oil_cauldron.json
 bf3b653abe62d7a416173ac6fa50fee57b5e2c4d data\fox_den\loot_table\blocks\cherry_leaves_wall.json
 548d115eeb79b74d3fbe03951bdc179110ed6f8a data\fox_den\loot_table\blocks\yeast_milk_cauldron.json
+b15fc5df3c1efee62567b600286c3134d54e7b09 data\fox_den\loot_table\blocks\steel_block.json
 7600e0cfd804b1f00d10299f6d60c173896d46e7 data\fox_den\loot_table\blocks\birch_leaves_wall.json
 4620edf2e44c37a97f81edcd0fec23fef75fc377 data\fox_den\loot_table\blocks\azalea_leaves_wall.json
 548d115eeb79b74d3fbe03951bdc179110ed6f8a data\fox_den\loot_table\blocks\milk_cauldron.json

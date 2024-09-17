@@ -1,16 +1,26 @@
 package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
+import cutefox.foxden.Utils.ArmorAtributeBonuses;
 import cutefox.foxden.Utils.Utils;
-import cutefox.foxden.item.BoneArmorItem;
-import cutefox.foxden.item.ModWolfArmor;
-import cutefox.foxden.item.SpaceRangerArmorItem;
-import cutefox.foxden.item.SteelArmorItem;
+import cutefox.foxden.item.*;
 import net.minecraft.block.Block;
+import net.minecraft.component.ComponentType;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.EnchantmentEffectComponentTypes;
+import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.component.type.FoodComponent;
+import net.minecraft.component.type.ItemEnchantmentsComponent;
+import net.minecraft.enchantment.effect.AllOfEnchantmentEffects;
+import net.minecraft.enchantment.effect.EnchantmentEffectEntry;
+import net.minecraft.enchantment.effect.EnchantmentLocationBasedEffect;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.HoverEvent;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -45,6 +55,7 @@ public class ModItems {
     public static final Item STEEL_BLEND = registerItem("steel_blend", new Item(new Item.Settings()));
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
     public static final Item ROTTEN_LEATHER = registerItem("rotten_leather", new Item(new Item.Settings()));
+    public static Item STEEL_BLOCK;
     //endregion
 
     //region UPGRADE TEMPLATES
@@ -75,14 +86,23 @@ public class ModItems {
     //endregion
 
     //region SPACE RANGER ARMOR
+
     public static final Item SPACE_RANGER_HELMET = registerItem("space_ranger_helmet",
-            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(13))));
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))
+                    .attributeModifiers(ArmorAtributeBonuses.getSpaceRangerHelmetBonuses())));
     public static final Item SPACE_RANGER_CHESTPLATE = registerItem("space_ranger_chestplate",
-            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(13))));
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(35))
+                    .attributeModifiers(ArmorAtributeBonuses.getSpaceRangerChestplateBonuses())));
     public static final Item SPACE_RANGER_LEGGINGS = registerItem("space_ranger_leggings",
-            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(13))));
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS
+                    .getMaxDamage(35))
+                    .attributeModifiers(ArmorAtributeBonuses.getSpaceRangerLeggingsBonuses())));
     public static final Item SPACE_RANGER_BOOTS = registerItem("space_ranger_boots",
-            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(13))));
+            new SpaceRangerArmorItem(ModArmorMaterials.SPACE_STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS
+                    .getMaxDamage(35))
+                    .attributeModifiers(ArmorAtributeBonuses.getSpaceRangerBootBonuses())));
     //endregion
 
     //region WOLF ARMORS
@@ -93,7 +113,13 @@ public class ModItems {
     public static final Item DIAMOND_WOLF_ARMOR = registerItem("diamond_wolf_armor",
             new ModWolfArmor(ModArmorMaterials.DIAMOND_WOLF, ModWolfArmor.Type.DIAMOND, false,
                     new Item.Settings().maxDamage(ArmorItem.Type.BODY.getMaxDamage(8))));
+    //endregion
 
+    //region BIKE ARMOR
+    public static final Item BIKE_HELMET = registerItem("bike_helmet",
+            new BikeArmorItem(ModArmorMaterials.BIKE_GEAR, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET
+                    .getMaxDamage(18))
+                    .attributeModifiers(ArmorAtributeBonuses.getBikeHelmetBonuses())));
     //endregion
 
     //region LEAVES WALL
@@ -113,6 +139,7 @@ public class ModItems {
 
     public static void registerBlockItems(){
         CHEESE_BLOCK = registerItem("cheese_block", new BlockItem(ModBlocks.CHEESE_BLOCK, new Item.Settings()));
+        STEEL_BLOCK = registerItem("steel_block", new BlockItem(ModBlocks.STEEL_BLOCK, new Item.Settings()));
 
         //Leaves wall
         OAK_LEAVES_WALL = registerItem("oak_leaves_wall", new BlockItem(ModBlocks.OAK_LEAVES_WALL, new Item.Settings()));
