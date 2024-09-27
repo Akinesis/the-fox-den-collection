@@ -18,6 +18,7 @@ public abstract class FoxDenDefaultConfig {
     public static final String RANDOM_NAME_TAG = "random_name_tag";
     public static final String BIKE_ARMOR = "bike_armor";
     public static final String WOLF_ARMOR = "wolf_armor";
+    public static final String MORE_ATTRIBUTES = "more_attributes";
 
     static {
         defaultConfig.put(POUTINE, true);
@@ -31,6 +32,7 @@ public abstract class FoxDenDefaultConfig {
         defaultConfig.put(RANDOM_NAME_TAG, true);
         defaultConfig.put(BIKE_ARMOR, true);
         defaultConfig.put(WOLF_ARMOR, true);
+        defaultConfig.put(MORE_ATTRIBUTES, true);
     }
 
 }

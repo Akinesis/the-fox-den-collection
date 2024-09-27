@@ -1,14 +1,17 @@
 package cutefox.foxden.mixin;
 
 import cutefox.foxden.TheFoxDenCollection;
+import cutefox.foxden.Utils.ConfigBuilder;
 import cutefox.foxden.item.ArmorWithEffect;
 import cutefox.foxden.registery.ModArmorMaterials;
+import cutefox.foxden.registery.ModEntityAttributes;
 import cutefox.foxden.registery.ModItems;
 import cutefox.foxden.registery.ModStatusEffects;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
@@ -26,6 +29,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import software.bernie.geckolib.animation.PlayState;
 
 import java.util.ArrayList;
@@ -111,5 +115,17 @@ public abstract class PlayerMixin extends LivingEntityMixin{
 
         //return assertionFailed?null:materialSet;
         return setMaterial;
+    }
+
+    @Inject(method = "createPlayerAttributes", at = @At(value = "RETURN"))
+    private static void theFoxDenCollection$registerCustomAttributes(CallbackInfoReturnable<DefaultAttributeContainer.Builder> cir){
+        TheFoxDenCollection.LOGGER.info("Registering custom attributes for player");
+        if(ConfigBuilder.moreAttributes())
+            cir.getReturnValue()
+                    .add(ModEntityAttributes.PLAYER_BONUS_BREAKING)
+                    .add(ModEntityAttributes.PLAYER_BONUS_HARVEST)
+                    .add(ModEntityAttributes.PLAYER_BONUS_LOGGING)
+                    .add(ModEntityAttributes.PLAYER_BONUS_SHOVELING)
+                    .add(ModEntityAttributes.PLAYER_BONUS_MINING);
     }
 }

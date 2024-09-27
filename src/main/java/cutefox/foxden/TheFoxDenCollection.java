@@ -1,5 +1,6 @@
 package cutefox.foxden;
 
+import cutefox.foxden.Utils.BonusDropHelper;
 import cutefox.foxden.Utils.ConfigBuilder;
 import cutefox.foxden.Utils.FoxDenDefaultConfig;
 import cutefox.foxden.Utils.Utils;
@@ -9,6 +10,7 @@ import cutefox.foxden.registery.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
@@ -57,6 +59,8 @@ public class TheFoxDenCollection implements ModInitializer {
 		ModItems.registerModItems();
 		ModArmorMaterials.registerModItems();
 		ModBlockEntityType.registerModBlocksEntities();
+		if(ConfigBuilder.moreAttributes())
+			ModEntityAttributes.registerAttributes();
 
 		Registry.register(Registries.ITEM_GROUP, Utils.id("item_group"), generateItemGroup());
 
@@ -69,6 +73,7 @@ public class TheFoxDenCollection implements ModInitializer {
 	}
 
 	private void addEventListner(){
+
 		UseBlockCallback.EVENT.register((player, world, hand, pos) -> {
 			BlockState state = world.getBlockState(pos.getBlockPos());
 			if (!player.isSpectator() && hand == Hand.MAIN_HAND) {
@@ -120,6 +125,8 @@ public class TheFoxDenCollection implements ModInitializer {
 		ServerLifecycleEvents.START_DATA_PACK_RELOAD.register((e,p) -> {
 			//ModEnchantIngredientMap.genMapFromJson(e.getWorld(ServerWorld.OVERWORLD));
 		});
+
+		PlayerBlockBreakEvents.BEFORE.register(BonusDropHelper::handleBlockBreak);
 
 	}
 

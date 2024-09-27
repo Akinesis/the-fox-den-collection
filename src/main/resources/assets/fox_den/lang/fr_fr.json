@@ -12,6 +12,11 @@
   "item.fox_den.iron_upgrade_smithing_template": "Amélioration en fer",
   "item.fox_den.diamond_upgrade_smithing_template": "Amélioration en diamant",
 
+  "item.fox_den.iron_wolf_armor": "Armure de loup en fer",
+  "item.fox_den.diamond_wolf_armor": "Armure de loup en diamant",
+
+  "item.fox_den.bike_helmet": "Casque de vélo",
+
   "block.fox_den.oak_leaves_wall": "Muret en feuilles de chêne",
   "block.fox_den.spruce_leaves_wall": "Muret en feuilles de Sapin",
   "block.fox_den.acacia_leaves_wall": "Muret en feuilles d'acacia",

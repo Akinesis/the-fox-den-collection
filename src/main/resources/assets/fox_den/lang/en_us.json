@@ -29,6 +29,11 @@
   "item.fox_den.iron_upgrade_smithing_template": "Iron Upgrade Smithing Template",
   "item.fox_den.diamond_upgrade_smithing_template": "Diamond Upgrade Smithing Template",
 
+  "item.fox_den.iron_wolf_armor": "Iron Wolf Armor",
+  "item.fox_den.diamond_wolf_armor": "Diamond Wolf Armor",
+
+  "item.fox_den.bike_helmet": "Bike Helmet",
+
   "block.fox_den.cheese_block": "Cheese Block",
   "block.fox_den.milk_cauldron": "Milk Cauldron",
   "block.fox_den.yeast_milk_cauldron": "Yeast Milk Cauldron",
@@ -56,6 +61,8 @@
   "container.foxden.enchant.material.one": "%s %s",
 
   "tag.item.fox_den.enchantment_ingredients":"Enchantment Ingredients",
+
+  "attribute.name.fox_den.player.bonus_breaking":"Bonus Breaking",
 
   "key.fox_den.armor_action": "Armor Actions",
   "category.fox_den.keys" : "The Fox Den Collection"
