@@ -119,13 +119,12 @@ public abstract class PlayerMixin extends LivingEntityMixin{
 
     @Inject(method = "createPlayerAttributes", at = @At(value = "RETURN"))
     private static void theFoxDenCollection$registerCustomAttributes(CallbackInfoReturnable<DefaultAttributeContainer.Builder> cir){
-        TheFoxDenCollection.LOGGER.info("Registering custom attributes for player");
-        if(ConfigBuilder.moreAttributes())
-            cir.getReturnValue()
-                    .add(ModEntityAttributes.PLAYER_BONUS_BREAKING)
-                    .add(ModEntityAttributes.PLAYER_BONUS_HARVEST)
-                    .add(ModEntityAttributes.PLAYER_BONUS_LOGGING)
-                    .add(ModEntityAttributes.PLAYER_BONUS_SHOVELING)
-                    .add(ModEntityAttributes.PLAYER_BONUS_MINING);
+        TheFoxDenCollection.LOGGER.info("Registering custom attributes for players");
+        cir.getReturnValue()
+                .add(ModEntityAttributes.PLAYER_BONUS_BREAKING)
+                .add(ModEntityAttributes.PLAYER_BONUS_HARVEST)
+                .add(ModEntityAttributes.PLAYER_BONUS_LOGGING)
+                .add(ModEntityAttributes.PLAYER_BONUS_SHOVELING)
+                .add(ModEntityAttributes.PLAYER_BONUS_MINING);
     }
 }
