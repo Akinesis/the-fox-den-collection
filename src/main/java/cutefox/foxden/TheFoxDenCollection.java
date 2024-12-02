@@ -1,5 +1,6 @@
 package cutefox.foxden;
 
+import cutefox.betterenchanting.Util.BetterEnchantingApi;
 import cutefox.foxden.Utils.BonusDropHelper;
 import cutefox.foxden.Utils.ConfigBuilder;
 import cutefox.foxden.Utils.FoxDenDefaultConfig;
@@ -21,6 +22,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -37,6 +39,8 @@ import net.minecraft.util.math.random.Random;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 public class TheFoxDenCollection implements ModInitializer {
 
 	public static final String MOD_ID = "TheFoxDenCollection";
@@ -52,12 +56,12 @@ public class TheFoxDenCollection implements ModInitializer {
 		ModConfigConditions.registerConditions();
 
 		isBetterEnchantingPresent = FabricLoader.getInstance().isModLoaded("betterenchanting");
-
 		ModModels.loadModels();
 
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModArmorMaterials.registerModItems();
+		ModItemTags.registerModTags();
 		ModBlockEntityType.registerModBlocksEntities();
 		if(ConfigBuilder.moreAttributes())
 			ModEntityAttributes.registerAttributes();

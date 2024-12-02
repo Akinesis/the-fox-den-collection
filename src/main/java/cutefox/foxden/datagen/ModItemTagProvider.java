@@ -2,9 +2,11 @@ package cutefox.foxden.datagen;
 
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.registery.ModBlocks;
+import cutefox.foxden.registery.ModItemTags;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
@@ -25,7 +27,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BONE_BOOTS)
                 .add(ModItems.STEEL_BOOTS)
                 .add(ModItems.SPACE_RANGER_BOOTS);
+
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE);
+
+        getOrCreateTagBuilder(ModItemTags.CHEESE)
+                .add(ModItems.CHEESE)
+                .add(ModItems.BLUE_CHEESE);
 
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
                 .add(ModItems.BONE_LEGGINGS)

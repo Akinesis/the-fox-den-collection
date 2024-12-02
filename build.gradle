@@ -27,6 +27,19 @@ repositories {
 	maven {
 		url = uri("https://yml.ccls.app/v${project.yaml_api_version}")
 	}
+
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+
 	maven { url 'https://jitpack.io' }
 	mavenCentral()
 
@@ -45,6 +58,8 @@ dependencies {
 
 	include 'com.github.Carleslc.Simple-YAML:Simple-Yaml:1.8.4'
 	implementation 'com.github.Carleslc.Simple-YAML:Simple-Yaml:1.8.4'
+
+	modCompileOnly "maven.modrinth:better-enchanting:${project.betterenchant_version}"
 
 }
 

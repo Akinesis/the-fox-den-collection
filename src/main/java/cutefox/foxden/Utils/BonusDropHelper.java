@@ -34,9 +34,14 @@ public abstract class BonusDropHelper {
 
         boolean canDoubleDrop = false;
 
-        if (blockState.isIn(BlockTags.CROPS) || blockState.getBlock().equals(Blocks.MELON)) {
-            CropBlock cropBlock = (CropBlock) blockState.getBlock();
-            if (cropBlock.isMature(blockState)) {
+        if (blockState.isIn(BlockTags.CROPS) || blockState.getBlock().equals(Blocks.MELON) || blockState.getBlock().equals(Blocks.PUMPKIN)) {
+
+            if(blockState.getBlock() instanceof CropBlock cropblock){
+                if (cropblock.isMature(blockState)) {
+                    handleBonusDrop(serverWorld, player, blockPos, blockState, blockEntity, (float) player.getAttributeValue(ModEntityAttributes.PLAYER_BONUS_HARVEST));
+                    canDoubleDrop = true;
+                }
+            }else{
                 handleBonusDrop(serverWorld, player, blockPos, blockState, blockEntity, (float) player.getAttributeValue(ModEntityAttributes.PLAYER_BONUS_HARVEST));
                 canDoubleDrop = true;
             }
