@@ -8,8 +8,6 @@ import cutefox.foxden.block.cauldron.OilCauldronBlock;
 import cutefox.foxden.block.cauldron.YeastMilkCauldronBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -36,6 +34,12 @@ public class ModBlocks {
     public static final Block AZALEA_LEAVES_WALL;
     public static final Block FLOWERING_AZALEA_LEAVES_WALL;
     public static final Block STEEL_BLOCK;
+
+
+
+
+    //Bakery
+    private static final List<Block> BAKERY_STORAGE = new ArrayList<>();
 
 
     public static List<Block> LEAVES_WALL = new ArrayList<>();
@@ -66,7 +70,10 @@ public class ModBlocks {
                 .requiresTool()
                 .strength(10.0F, 16.0F)
                 .sounds(BlockSoundGroup.METAL)));
+
+
     }
+
 
     public static Block register(String id, Block block) {
         return Registry.register(Registries.BLOCK, Utils.id(id), block);

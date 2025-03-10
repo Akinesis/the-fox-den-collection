@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:buckets/water"
+    },
+    {
+      "tag": "c:foods/yeast"
+    },
+    {
+      "tag": "c:foods/doughs"
+    },
+    {
+      "item": "fox_den:rolling_pin"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "fox_den:crusty_bread_raw"
+  }
+}

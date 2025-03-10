@@ -1,11 +1,17 @@
-// 1.21	2024-11-16T14:50:44.8213502	The fox den collection/Tags for minecraft:item
+// 1.21.1	2024-12-19T00:05:48.5103452	The fox den collection/Tags for minecraft:item
 97486d45a46daff3035ba3f69abd3a765725042e data\c\tags\item\foods\cheese.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\leg_armor.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\head_armor.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\foot_armor.json
+08791393356cb6f5d4315d1e6a93bf7027f0b8c5 data\c\tags\item\foods\doughs.json
+d8be3673ffa37f5bf8f35b703ff0e1a96b262d8a data\c\tags\item\foods\yeast.json
 7c011fa1cd205b1e5a1b2fbabb8b9cb915c42819 data\minecraft\tags\item\chest_armor.json
 f5ccdba8db4f3fbb663a77a7e5c0e62669deb5ba data\minecraft\tags\item\walls.json
-480373eab86e969251caa3ce293550c6e8374877 data\minecraft\tags\item\head_armor.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\chest_armor.json
 b8b54cf60c73c88492bb81f0ee18e733d57cc425 data\minecraft\tags\item\foot_armor.json
+c80a1efd00d9f85cae990889a4313cc74d12cf78 data\fox_den\tags\item\bread.json
 40e849872acb3cb5b6bd2743d37f7caa82638e9a data\minecraft\tags\item\leg_armor.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\head_armor.json
+33a27be2c67af49d987604e09c577ea5636c798d data\fox_den\tags\item\knives.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\foot_armor.json
+8ac6b6063dc39d30691b4480855bdd5857444dc8 data\fox_den\tags\item\jam.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\chest_armor.json
+480373eab86e969251caa3ce293550c6e8374877 data\minecraft\tags\item\head_armor.json
+3b018832c3cc886ad9c3e487c3e388978a79e1fc data\c\tags\item\foods\eggs.json

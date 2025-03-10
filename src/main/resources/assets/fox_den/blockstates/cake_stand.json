@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=east": [
+      { "model": "fox_den:block/cake_stand",  "y": 90}
+    ],
+    "facing=north": [
+      { "model": "fox_den:block/cake_stand", "weight":1 }
+    ],
+    "facing=south": [
+      { "model": "fox_den:block/cake_stand",  "y": 180}
+    ],
+    "facing=west": [
+      { "model": "fox_den:block/cake_stand",  "y": 270}
+    ]
+  }
+}

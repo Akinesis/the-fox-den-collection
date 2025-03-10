@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:egg",
+    {
+      "id": "#vegandelight:applesauce",
+      "required": false
+    }
+  ]
+}

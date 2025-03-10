@@ -4,23 +4,10 @@ import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.ArmorAtributeBonuses;
 import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.item.*;
-import net.minecraft.block.Block;
-import net.minecraft.component.ComponentType;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.EnchantmentEffectComponentTypes;
-import net.minecraft.component.type.AttributeModifierSlot;
-import net.minecraft.component.type.AttributeModifiersComponent;
-import net.minecraft.component.type.FoodComponent;
-import net.minecraft.component.type.ItemEnchantmentsComponent;
-import net.minecraft.enchantment.effect.AllOfEnchantmentEffects;
-import net.minecraft.enchantment.effect.EnchantmentEffectEntry;
-import net.minecraft.enchantment.effect.EnchantmentLocationBasedEffect;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.component.type.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.HoverEvent;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -137,6 +124,10 @@ public class ModItems {
     public static List<Item> LEAVES_WALLS = new ArrayList<>();
     //endregion
 
+    //region BAKERY
+
+    //endregion
+
     public static void registerBlockItems(){
         CHEESE_BLOCK = registerItem("cheese_block", new BlockItem(ModBlocks.CHEESE_BLOCK, new Item.Settings()));
         STEEL_BLOCK = registerItem("steel_block", new BlockItem(ModBlocks.STEEL_BLOCK, new Item.Settings()));
@@ -171,12 +162,12 @@ public class ModItems {
 
         FLOWERING_AZALEA_LEAVES_WALL = registerItem("flowering_azalea_leaves_wall", new BlockItem(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, new Item.Settings()));
         LEAVES_WALLS.add(FLOWERING_AZALEA_LEAVES_WALL);
+
+
     }
 
     private static Item registerItem(String id, Item item){
         return Registry.register(Registries.ITEM, Utils.id(id), item);
     }
-
-
 
 }

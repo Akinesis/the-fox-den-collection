@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "fox_den:bun"
+    },
+    "T": {
+      "item": "fox_den:tray"
+    },
+    "U": {
+      "tag": "fox_den:bread"
+    },
+    "V": {
+      "item": "fox_den:braided_bread"
+    },
+    "_": {
+      "item": "fox_den:baguette"
+    }
+  },
+  "pattern": [
+    " U ",
+    "_BV",
+    " T "
+  ],
+  "result": {
+    "count": 1,
+    "id": "fox_den:bread_crate"
+  }
+}

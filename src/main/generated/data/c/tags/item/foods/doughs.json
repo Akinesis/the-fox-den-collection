@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "farmersdelights:wheat_dought",
+      "required": false
+    },
+    "fox_den:dough"
+  ]
+}

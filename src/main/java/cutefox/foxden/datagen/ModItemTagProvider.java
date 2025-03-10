@@ -1,15 +1,14 @@
 package cutefox.foxden.datagen;
 
 import cutefox.foxden.TheFoxDenCollection;
-import cutefox.foxden.registery.ModBlocks;
 import cutefox.foxden.registery.ModItemTags;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -62,7 +61,21 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DARK_OAK_LEAVES_WALL)
                 .add(ModItems.CHERRY_LEAVES_WALL)
                 .add(ModItems.AZALEA_LEAVES_WALL)
-                .add(ModItems.FLOWERING_AZALEA_LEAVES_WALL);
+                .add(ModItems.FLOWERING_AZALEA_LEAVES_WALL);;
 
+        getOrCreateTagBuilder(ModItemTags.YEAST)
+                .add(ModItems.YEAST)
+                .addOptionalTag(Identifier.of("farm_and_charm:yeast"));
+
+        getOrCreateTagBuilder(ModItemTags.EGG)
+                .add(Items.EGG)
+                .addOptionalTag(Identifier.of("vegandelight:applesauce"));
+
+        getOrCreateTagBuilder(ModItemTags.BREAD)
+                .add(Items.BREAD);
+
+
+        getOrCreateTagBuilder(ModItemTags.DOUGHT)
+                .addOptional(Identifier.of("farmersdelights:wheat_dought"));
     }
 }

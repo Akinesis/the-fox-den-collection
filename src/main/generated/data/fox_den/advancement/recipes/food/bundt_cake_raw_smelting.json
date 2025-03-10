@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bundt_cake_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:bundt_cake_raw"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fox_den:bundt_cake_raw_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bundt_cake_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fox_den:bundt_cake_raw_smelting"
+    ]
+  }
+}

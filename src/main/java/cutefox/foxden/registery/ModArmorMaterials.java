@@ -29,7 +29,7 @@ public class ModArmorMaterials {
 
     public static final HashMap<RegistryEntry<ArmorMaterial>, RegistryEntry<StatusEffect>> MATERIAL_TO_STATUS;
 
-    public static void registerModItems(){
+    public static void registerModMaterials(){
         TheFoxDenCollection.LOGGER.info("Registering mod armor materials for : "+ TheFoxDenCollection.MOD_ID);
     }
 

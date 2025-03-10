@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/yeast"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:foods/eggs"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "fox_den:bundt_cake_raw"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "SWS",
+    "SWS",
+    "SWS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fox_den:wall_display"
+  }
+}

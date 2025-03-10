@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fox_den:sweet_dough"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "fox_den:rolling_pin"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "fox_den:linzer_tart_raw"
+  }
+}

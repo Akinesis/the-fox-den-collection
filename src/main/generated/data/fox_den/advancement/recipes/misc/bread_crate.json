@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_baguette": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:baguette"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_braided_bread": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:braided_bread"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bread_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:bread_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bun": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:bun"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fox_den:bread_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tray": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:tray"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tray",
+      "has_bread_crate",
+      "has_bun",
+      "has_baguette",
+      "has_braided_bread"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fox_den:bread_crate"
+    ]
+  }
+}

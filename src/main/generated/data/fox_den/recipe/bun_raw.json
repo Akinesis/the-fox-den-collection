@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/doughs"
+    },
+    {
+      "tag": "c:foods/yeast"
+    },
+    {
+      "tag": "c:foods/eggs"
+    },
+    {
+      "item": "fox_den:rolling_pin"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "id": "fox_den:bun_raw"
+  }
+}

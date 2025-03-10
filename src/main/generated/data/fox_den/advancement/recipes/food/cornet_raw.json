@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_apple_jam": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:apple_jam"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rolling_pin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:rolling_pin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sweet_dough": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:sweet_dough"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fox_den:cornet_raw"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sweet_dough",
+      "has_apple_jam",
+      "has_rolling_pin"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fox_den:cornet_raw"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "fox_den:apple_jam",
+    "fox_den:strawberry_jam",
+    "fox_den:chocolate_jam",
+    "fox_den:glowberry_jam",
+    "fox_den:sweetberry_jam",
+    {
+      "id": "#c:jams",
+      "required": false
+    }
+  ]
+}

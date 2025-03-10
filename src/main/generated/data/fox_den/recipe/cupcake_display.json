@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "W": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "NWN",
+    "NWN"
+  ],
+  "result": {
+    "count": 2,
+    "id": "fox_den:cupcake_display"
+  }
+}

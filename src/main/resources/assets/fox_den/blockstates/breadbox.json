@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=east": [
+      {
+        "model": "fox_den:block/breadbox",
+        "y": 90
+      }
+    ],
+    "facing=north": [
+      {
+        "model": "fox_den:block/breadbox",
+        "weight": 1
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "fox_den:block/breadbox",
+        "y": 180
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "fox_den:block/breadbox",
+        "y": 270
+      }
+    ]
+  }
+}

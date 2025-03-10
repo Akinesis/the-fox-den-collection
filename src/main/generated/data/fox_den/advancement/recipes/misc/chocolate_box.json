@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chocolate_truffle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:chocolate_truffle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fox_den:chocolate_box"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chocolate_truffle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fox_den:chocolate_box"
+    ]
+  }
+}

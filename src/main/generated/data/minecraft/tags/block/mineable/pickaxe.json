@@ -5,6 +5,12 @@
     "fox_den:cheese_cauldron",
     "fox_den:blue_cheese_cauldron",
     "fox_den:oil_cauldron",
-    "fox_den:steel_block"
+    "fox_den:steel_block",
+    "fox_den:kitchen_sink",
+    "fox_den:baker_station",
+    "fox_den:brick_counter",
+    "fox_den:iron_bench",
+    "fox_den:iron_table",
+    "fox_den:iron_chair"
   ]
 }

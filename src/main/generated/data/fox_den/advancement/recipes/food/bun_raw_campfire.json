@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bun_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:bun_raw"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fox_den:bun_raw_campfire"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bun_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fox_den:bun_raw_campfire"
+    ]
+  }
+}

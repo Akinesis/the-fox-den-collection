@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fox_den:sweet_dough"
+    },
+    {
+      "tag": "c:foods/yeast"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "fox_den:rolling_pin"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "fox_den:croissant_raw"
+  }
+}

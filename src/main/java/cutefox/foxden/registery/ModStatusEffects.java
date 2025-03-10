@@ -13,8 +13,10 @@ public class ModStatusEffects {
 
     public static final RegistryEntry<StatusEffect> SKELETON_LOVE;
 
+
     static {
         SKELETON_LOVE = registerStatusEffect("skeleton_love", new SkeletonLoveStatusEffect());
+
     }
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String id, StatusEffect statusEffect){

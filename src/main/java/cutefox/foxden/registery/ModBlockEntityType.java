@@ -2,11 +2,12 @@ package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
-import cutefox.foxden.block.entity.OilCauldronBlockEntity;
-import cutefox.foxden.block.entity.YeastMilkBlockEntity;
+import cutefox.foxden.block.entity.*;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+
+import java.util.List;
 
 public class ModBlockEntityType {
 

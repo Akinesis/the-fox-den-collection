@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_baguette_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fox_den:baguette_raw"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fox_den:baguette_raw_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_baguette_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fox_den:baguette_raw_smoking"
+    ]
+  }
+}

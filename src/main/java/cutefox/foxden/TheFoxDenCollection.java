@@ -1,6 +1,5 @@
 package cutefox.foxden;
 
-import cutefox.betterenchanting.Util.BetterEnchantingApi;
 import cutefox.foxden.Utils.BonusDropHelper;
 import cutefox.foxden.Utils.ConfigBuilder;
 import cutefox.foxden.Utils.FoxDenDefaultConfig;
@@ -22,8 +21,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -39,11 +38,11 @@ import net.minecraft.util.math.random.Random;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
+import java.util.Map;
 
 public class TheFoxDenCollection implements ModInitializer {
 
-	public static final String MOD_ID = "TheFoxDenCollection";
+	public static final String MOD_ID = "fox_den";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static boolean isBetterEnchantingPresent;
@@ -55,14 +54,17 @@ public class TheFoxDenCollection implements ModInitializer {
 		loadConfig();
 		ModConfigConditions.registerConditions();
 
+
 		isBetterEnchantingPresent = FabricLoader.getInstance().isModLoaded("betterenchanting");
 		ModModels.loadModels();
 
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
-		ModArmorMaterials.registerModItems();
+		ModArmorMaterials.registerModMaterials();
+		ModItems.registerBlockItems();
 		ModItemTags.registerModTags();
 		ModBlockEntityType.registerModBlocksEntities();
+		ModStatusEffects.registerModStatusEffects();
 		if(ConfigBuilder.moreAttributes())
 			ModEntityAttributes.registerAttributes();
 
@@ -72,8 +74,6 @@ public class TheFoxDenCollection implements ModInitializer {
 
 		addEventListner();
 		registerNetworking();
-
-		ModItems.registerBlockItems();
 	}
 
 	private void addEventListner(){
@@ -209,6 +209,7 @@ public class TheFoxDenCollection implements ModInitializer {
 					}
 
 					entries.add(ModItems.ROTTEN_LEATHER);
+
 
 				})
 				.build();

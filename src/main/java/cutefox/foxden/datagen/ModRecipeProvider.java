@@ -3,15 +3,20 @@ package cutefox.foxden.datagen;
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.conditions.*;
+import cutefox.foxden.registery.ModBlocks;
+import cutefox.foxden.registery.ModItemTags;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceCondition;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.data.server.recipe.*;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -73,6 +78,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.POTATO), conditionsFromItem(Items.POTATO))
                 .offerTo(withConditions(exporter, POUTINE), Utils.id(getRecipeName(ModItems.POUTINE)));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, Items.POISONOUS_POTATO)
+                .input(Items.POTATO)
+                .input(Items.SPIDER_EYE)
+                .input(ModItemTags.YEAST)
+                .criterion(hasItem(Items.POTATO), conditionsFromItem(Items.POTATO))
+                .offerTo(exporter, Utils.id(getRecipeName(Items.POISONOUS_POTATO)));
+
         //endregion
 
         //region CRAFTING COMPONENTS
@@ -105,6 +117,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
                 .criterion(hasItem(Items.ROTTEN_FLESH), conditionsFromItem(Items.ROTTEN_FLESH))
                 .offerTo(exporter, Utils.id(getRecipeName(ModItems.ROTTEN_LEATHER)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BONE_MEAL, 6)
+                .input(ModItems.BONE_BOOTS)
+                .criterion(hasItem(ModItems.BONE_BOOTS), conditionsFromItem(ModItems.BONE_BOOTS))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE_MEAL)+"_from_bone_boots"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BONE_MEAL, 9)
+                .input(ModItems.BONE_LEGGINGS)
+                .criterion(hasItem(ModItems.BONE_LEGGINGS), conditionsFromItem(ModItems.BONE_LEGGINGS))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE_MEAL)+"_from_bone_leggings"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BONE_MEAL, 10)
+                .input(ModItems.BONE_CHESTPLATE)
+                .criterion(hasItem(ModItems.BONE_CHESTPLATE), conditionsFromItem(ModItems.BONE_CHESTPLATE))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE_MEAL)+"_from_bone_chestplate"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BONE_MEAL, 7)
+                .input(ModItems.BONE_HELMET)
+                .criterion(hasItem(ModItems.BONE_HELMET), conditionsFromItem(ModItems.BONE_HELMET))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE_MEAL)+"_from_bone_helmet"));
+
         //endregion
 
         //region SMELTING
@@ -466,5 +499,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(withConditions(exporter, LEAVES_WALL), Utils.id(getRecipeName(ModItems.FLOWERING_AZALEA_LEAVES_WALL)));
         //endregion
 
+    }
+
+    private void addCookRecipe(Item input, Item output, float experience, RecipeExporter exporter){
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(input),RecipeCategory.FOOD,output,experience, 300)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter,Utils.id(getRecipeName(input)+"_smelting"));
+        CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(input),RecipeCategory.FOOD,output,experience, 600)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter,Utils.id(getRecipeName(input)+"_campfire"));
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(input),RecipeCategory.FOOD,output,experience, 200)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter,Utils.id(getRecipeName(input)+"_smoking"));
     }
 }

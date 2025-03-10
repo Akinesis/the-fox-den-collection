@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "T": {
+      "item": "fox_den:chocolate_truffle"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TCT",
+    "TTT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fox_den:chocolate_box"
+  }
+}

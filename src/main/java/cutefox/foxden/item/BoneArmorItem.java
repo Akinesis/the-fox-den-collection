@@ -74,7 +74,7 @@ public class BoneArmorItem extends ArmorItem implements GeoItem {
             Entity entity = state.getData(DataTickets.ENTITY);
 
             // We'll just have ArmorStands always animate, so we can return here
-            if (entity instanceof ArmorStandEntity)
+            if (!(entity instanceof PlayerEntity))
                 return PlayState.CONTINUE;
 
             // For this example, we only want the animation to play if the entity is wearing all pieces of the armor

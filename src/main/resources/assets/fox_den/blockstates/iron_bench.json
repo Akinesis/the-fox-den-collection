@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,type=none": {
+      "model": "fox_den:block/iron_bench_single"
+    },
+    "facing=east,type=none": {
+      "model": "fox_den:block/iron_bench_single",
+      "y": 90
+    },
+    "facing=south,type=none": {
+      "model": "fox_den:block/iron_bench_single",
+      "y": 180
+    },
+    "facing=west,type=none": {
+      "model": "fox_den:block/iron_bench_single",
+      "y": 270
+    },
+    "facing=north,type=middle": {
+      "model": "fox_den:block/iron_bench_middle"
+    },
+    "facing=east,type=middle": {
+      "model": "fox_den:block/iron_bench_middle",
+      "y": 90
+    },
+    "facing=south,type=middle": {
+      "model": "fox_den:block/iron_bench_middle",
+      "y": 180
+    },
+    "facing=west,type=middle": {
+      "model": "fox_den:block/iron_bench_middle",
+      "y": 270
+    },
+    "facing=north,type=left": {
+      "model": "fox_den:block/iron_bench_extended"
+    },
+    "facing=east,type=left": {
+      "model": "fox_den:block/iron_bench_extended",
+      "y": 90
+    },
+    "facing=south,type=left": {
+      "model": "fox_den:block/iron_bench_extended",
+      "y": 180
+    },
+    "facing=west,type=left": {
+      "model": "fox_den:block/iron_bench_extended",
+      "y": 270
+    },
+    "facing=north,type=right": {
+      "model": "fox_den:block/iron_bench_extended",
+      "y": 180
+    },
+    "facing=east,type=right": {
+      "model": "fox_den:block/iron_bench_extended",
+      "y": 270
+    },
+    "facing=south,type=right": {
+      "model": "fox_den:block/iron_bench_extended"
+    },
+    "facing=west,type=right": {
+      "model": "fox_den:block/iron_bench_extended",
+      "y": 90
+    }
+  }
+}

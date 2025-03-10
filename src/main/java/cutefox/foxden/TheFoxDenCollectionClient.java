@@ -1,7 +1,12 @@
 package cutefox.foxden;
 
+import cutefox.foxden.client.ChairRenderer;
+import cutefox.foxden.client.ClientStorageTypes;
+import cutefox.foxden.client.StorageBlockEntityRenderer;
+import cutefox.foxden.client.WaterSprinklerModel;
 import cutefox.foxden.item.SpaceRangerArmorItem;
 import cutefox.foxden.networking.SpaceRangerArmorWingsPayload;
+import cutefox.foxden.registery.ModBlockEntityType;
 import cutefox.foxden.registery.ModBlocks;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.api.ClientModInitializer;
@@ -9,10 +14,16 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRenderer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
@@ -27,7 +38,23 @@ public class TheFoxDenCollectionClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         registerKeybind();
+
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
+                ModBlocks.STRAWBERRY_JAM,ModBlocks.SWEETBERRY_JAM,ModBlocks.JAR,ModBlocks.CHOCOLATE_JAM,ModBlocks.APPLE_JAM, ModBlocks.GLOWBERRY_JAM,
+                ModBlocks.BAKER_STATION,ModBlocks.IRON_CHAIR,ModBlocks.IRON_BENCH,ModBlocks.IRON_TABLE,
+                ModBlocks.TRAY, ModBlocks.CAKE_STAND, ModBlocks.CAKE_DISPLAY,ModBlocks.CUPCAKE_DISPLAY,ModBlocks.BREADBOX,ModBlocks.WALL_DISPLAY,
+                ModBlocks.WATER_SPRINKLER);
+
         registerLeavesWall();
+        registerBakeryRenderers();
+        ClientStorageTypes.init();
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CAKE_STAND, RenderLayer.getTranslucent());
+        EntityModelLayerRegistry.registerModelLayer(WaterSprinklerModel.LAYER_LOCATION,WaterSprinklerModel::getTexturedModelData);
+    }
+
+    public static void registerBakeryRenderers() {
+        EntityRendererRegistry.register(ModBlockEntityType.CHAIR, ChairRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntityType.STORAGE_ENTITY, StorageBlockEntityRenderer::new);
     }
 
     private void registerLeavesWall(){
