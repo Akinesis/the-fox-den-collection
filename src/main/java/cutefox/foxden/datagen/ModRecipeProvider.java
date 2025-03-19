@@ -105,6 +105,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
                 .criterion(hasItem(Items.ROTTEN_FLESH), conditionsFromItem(Items.ROTTEN_FLESH))
                 .offerTo(exporter, Utils.id(getRecipeName(ModItems.ROTTEN_LEATHER)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BONE, 5)
+                .input(ModItems.BONE_CHESTPLATE)
+                .criterion(hasItem(ModItems.BONE_CHESTPLATE), conditionsFromItem(ModItems.BONE_CHESTPLATE))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE)+"_from_chestplate"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BONE, 4)
+                .input(ModItems.BONE_LEGGINGS)
+                .criterion(hasItem(ModItems.BONE_LEGGINGS), conditionsFromItem(ModItems.BONE_LEGGINGS))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE)+"_from_leggings"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BONE, 3)
+                .input(ModItems.BONE_HELMET)
+                .criterion(hasItem(ModItems.BONE_HELMET), conditionsFromItem(ModItems.BONE_HELMET))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE)+"_from_helmet"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.BONE, 2)
+                .input(ModItems.BONE_BOOTS)
+                .criterion(hasItem(ModItems.BONE_BOOTS), conditionsFromItem(ModItems.BONE_BOOTS))
+                .offerTo(withConditions(exporter, BONE_ARMOR), Utils.id(getRecipeName(Items.BONE)+"_from_boots"));
+
         //endregion
 
         //region SMELTING
