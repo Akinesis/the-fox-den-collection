@@ -4,6 +4,11 @@
     {
       "id": "#farm_and_charm:yeast",
       "required": false
+    },
+    "fox_den:yeast",
+    {
+      "id": "#farm_and_charm:yeast",
+      "required": false
     }
   ]
 }

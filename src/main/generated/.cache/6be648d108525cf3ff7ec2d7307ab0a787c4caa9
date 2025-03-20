@@ -1,8 +1,8 @@
-// 1.21.1	2024-12-19T00:05:48.5103452	The fox den collection/Tags for minecraft:item
+// 1.21.1	2025-03-20T23:58:42.6311355	The fox den collection/Tags for minecraft:item
 97486d45a46daff3035ba3f69abd3a765725042e data\c\tags\item\foods\cheese.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\leg_armor.json
-08791393356cb6f5d4315d1e6a93bf7027f0b8c5 data\c\tags\item\foods\doughs.json
-d8be3673ffa37f5bf8f35b703ff0e1a96b262d8a data\c\tags\item\foods\yeast.json
+c6bb0b19edd34f2e875191edf43892ba1629e8ce data\c\tags\item\foods\doughs.json
+4652e3a8828e5c9c951b397cc44a88dde75212ec data\c\tags\item\foods\yeast.json
 7c011fa1cd205b1e5a1b2fbabb8b9cb915c42819 data\minecraft\tags\item\chest_armor.json
 f5ccdba8db4f3fbb663a77a7e5c0e62669deb5ba data\minecraft\tags\item\walls.json
 b8b54cf60c73c88492bb81f0ee18e733d57cc425 data\minecraft\tags\item\foot_armor.json

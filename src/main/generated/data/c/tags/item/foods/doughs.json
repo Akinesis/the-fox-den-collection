@@ -4,6 +4,10 @@
       "id": "farmersdelights:wheat_dought",
       "required": false
     },
+    {
+      "id": "farmersdelights:wheat_dought",
+      "required": false
+    },
     "fox_den:dough"
   ]
 }

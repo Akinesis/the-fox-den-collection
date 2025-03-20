@@ -71,11 +71,33 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.EGG)
                 .addOptionalTag(Identifier.of("vegandelight:applesauce"));
 
-        getOrCreateTagBuilder(ModItemTags.BREAD)
-                .add(Items.BREAD);
-
-
         getOrCreateTagBuilder(ModItemTags.DOUGHT)
                 .addOptional(Identifier.of("farmersdelights:wheat_dought"));
+
+        getOrCreateTagBuilder(ModItemTags.KNIVES)
+                .add(ModItems.BREAD_KNIFE);
+        getOrCreateTagBuilder(ModItemTags.YEAST)
+                .add(ModItems.YEAST)
+                .addOptionalTag(Identifier.of("farm_and_charm:yeast"));
+
+        getOrCreateTagBuilder(ModItemTags.BREAD)
+                .add(Items.BREAD)
+                .add(ModItems.CRUSTY_BREAD)
+                .add(ModItems.BAGUETTE)
+                .add(ModItems.BRAIDED_BREAD)
+                .add(ModItems.BUN).add(ModItems.TOAST)
+                .add(ModItems.BREAD);
+
+        getOrCreateTagBuilder(ModItemTags.JAM)
+                .add(ModItems.APPLE_JAM)
+                .add(ModItems.STRAWBERRY_JAM)
+                .add(ModItems.CHOCOLATE_JAM)
+                .add(ModItems.GLOWBERRY_JAM)
+                .add(ModItems.SWEETBERRY_JAM)
+                .addOptionalTag(Identifier.of("c:jams"));
+
+        getOrCreateTagBuilder(ModItemTags.DOUGHT)
+                .addOptional(Identifier.of("farmersdelights:wheat_dought"))
+                .add(ModItems.DOUGHT);
     }
 }
