@@ -10,11 +10,11 @@ import cutefox.foxden.block.cauldron.OilCauldronBlock;
 import cutefox.foxden.block.cauldron.YeastMilkCauldronBlock;
 import cutefox.foxden.block.storage.*;
 import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.AbstractBlock.Settings;
 
 import java.util.ArrayList;
 import java.util.List;

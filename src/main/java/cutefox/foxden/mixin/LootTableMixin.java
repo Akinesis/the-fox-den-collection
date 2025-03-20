@@ -11,7 +11,6 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
-
 import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.random.Random;

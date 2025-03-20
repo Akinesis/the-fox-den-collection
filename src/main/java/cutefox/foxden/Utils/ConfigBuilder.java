@@ -1,9 +1,9 @@
 package cutefox.foxden.Utils;
 
-import java.io.File;
-
-import org.simpleyaml.configuration.file.YamlFile;
 import net.fabricmc.loader.api.FabricLoader;
+import org.simpleyaml.configuration.file.YamlFile;
+
+import java.io.File;
 
 public class ConfigBuilder {
 

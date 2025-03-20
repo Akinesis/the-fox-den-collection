@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "result": {
+    "id": "fox_den:sweetberry_jam",
+    "count": 1
+  },
+  "container": {
+    "id": "fox_den:jar",
+    "count": 1
+  },
+  "cookingtime": 200,
+  "experience": 1.0
+}

@@ -9,7 +9,6 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -33,10 +32,7 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.constant.DefaultAnimations;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
-import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
-import javax.xml.crypto.Data;
-import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 

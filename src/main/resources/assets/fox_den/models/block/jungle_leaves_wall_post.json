@@ -1,6 +1,0 @@
-{
-  "parent": "fox_den:block/template_leaves_wall_post",
-  "textures": {
-    "wall": "minecraft:block/jungle_leaves"
-  }
-}

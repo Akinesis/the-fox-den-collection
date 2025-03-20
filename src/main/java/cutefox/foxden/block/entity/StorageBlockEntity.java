@@ -2,25 +2,25 @@ package cutefox.foxden.block.entity;
 
 import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.registery.ModBlockEntityType;
-import java.util.Iterator;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.network.packet.Packet;
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.network.listener.ClientPlayPacketListener;
+import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
-import net.minecraft.block.BlockState;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.collection.DefaultedList;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Iterator;
 
 public class StorageBlockEntity extends BlockEntity implements Inventory {
    private int size;

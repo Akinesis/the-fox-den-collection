@@ -9,7 +9,6 @@ import net.minecraft.client.render.entity.feature.WolfArmorFeatureRenderer;
 import net.minecraft.client.render.entity.model.WolfEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.passive.WolfEntity;
-import net.minecraft.item.AnimalArmorItem;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;

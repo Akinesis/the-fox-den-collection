@@ -1,7 +1,6 @@
 package cutefox.foxden.block.cauldron;
 
 import com.mojang.serialization.MapCodec;
-import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.block.entity.OilCauldronBlockEntity;
 import cutefox.foxden.registery.ModBlockEntityType;
 import cutefox.foxden.registery.ModBlocks;

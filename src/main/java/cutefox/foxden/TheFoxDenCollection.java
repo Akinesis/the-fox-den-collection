@@ -22,10 +22,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -38,6 +35,7 @@ import net.minecraft.util.math.random.Random;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Iterator;
 import java.util.Map;
 
 public class TheFoxDenCollection implements ModInitializer {
@@ -209,6 +207,32 @@ public class TheFoxDenCollection implements ModInitializer {
 					}
 
 					entries.add(ModItems.ROTTEN_LEATHER);
+
+					Iterator var2 = ModItems.BAKERY_BLOCK_ITEMS.entrySet().iterator();
+
+					while(var2.hasNext()) {
+						Map.Entry<String, Item> block = (Map.Entry)var2.next();
+						entries.add((ItemConvertible)block.getValue());
+					}
+
+					entries.addAll(ModItems.BAKERY_ITEMS.stream().map((item) -> {
+						return item.getDefaultStack();
+					}).toList());
+					entries.add(ModItems.CRUSTY_BREAD);
+					entries.add(ModItems.BAGUETTE);
+					entries.add(ModItems.TOAST);
+					entries.add(ModItems.BUN);
+					entries.add(ModItems.BRAIDED_BREAD);
+					entries.add(ModItems.WAFFLE);
+					entries.add(ModItems.APPLE_PIE);
+					entries.add(ModItems.LINZER_TART);
+					entries.add(ModItems.BUNDT_CAKE);
+					entries.add(ModItems.JAR);
+					entries.add(ModItems.CHOCOLATE_JAM);
+					entries.add(ModItems.GLOWBERRY_JAM);
+					entries.add(ModItems.STRAWBERRY_JAM);
+					entries.add(ModItems.SWEETBERRY_JAM);
+					entries.add(ModItems.APPLE_JAM);
 
 
 				})

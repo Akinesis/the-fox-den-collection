@@ -1,15 +1,9 @@
 package cutefox.foxden.mixin;
 
 import cutefox.foxden.TheFoxDenCollection;
-import cutefox.foxden.Utils.ConfigBuilder;
 import cutefox.foxden.item.ArmorWithEffect;
 import cutefox.foxden.registery.ModArmorMaterials;
 import cutefox.foxden.registery.ModEntityAttributes;
-import cutefox.foxden.registery.ModItems;
-import cutefox.foxden.registery.ModStatusEffects;
-import it.unimi.dsi.fastutil.objects.ObjectArrayList;
-import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.effect.StatusEffect;
@@ -17,24 +11,16 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.util.Arm;
-import org.jetbrains.annotations.Blocking;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import software.bernie.geckolib.animation.PlayState;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerMixin extends LivingEntityMixin{

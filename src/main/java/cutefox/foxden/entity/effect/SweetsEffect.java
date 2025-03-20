@@ -2,7 +2,10 @@ package cutefox.foxden.entity.effect;
 
 import cutefox.foxden.Utils.Utils;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.*;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeInstance;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;

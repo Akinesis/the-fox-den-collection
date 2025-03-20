@@ -1,7 +1,6 @@
 package cutefox.foxden.item.renderer;
 
 import cutefox.foxden.item.BoneArmorItem;
-import cutefox.foxden.item.SteelArmorItem;
 import cutefox.foxden.item.model.BoneArmorModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 

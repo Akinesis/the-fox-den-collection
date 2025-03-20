@@ -4,7 +4,6 @@ import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.TextureKey;
-import net.minecraft.util.Identifier;
 
 import java.util.Optional;
 

@@ -1,22 +1,22 @@
 package cutefox.foxden.block;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import net.minecraft.item.Item;
-import net.minecraft.util.Formatting;
-import net.minecraft.util.ActionResult;
+import net.minecraft.block.Block;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.component.type.FoodComponent.StatusEffectEntry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
-import net.minecraft.block.Block;
 import net.minecraft.text.Text;
-import net.minecraft.component.type.FoodComponent;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.FoodComponent.StatusEffectEntry;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class EffectBlockItem extends BlockItem {
    public EffectBlockItem(Block block, Item.Settings settings) {

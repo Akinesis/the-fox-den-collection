@@ -2,7 +2,10 @@ package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
-import cutefox.foxden.block.entity.*;
+import cutefox.foxden.block.entity.ChairEntity;
+import cutefox.foxden.block.entity.OilCauldronBlockEntity;
+import cutefox.foxden.block.entity.StorageBlockEntity;
+import cutefox.foxden.block.entity.YeastMilkBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;

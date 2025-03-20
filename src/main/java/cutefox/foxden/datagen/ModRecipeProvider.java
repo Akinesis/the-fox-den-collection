@@ -3,20 +3,17 @@ package cutefox.foxden.datagen;
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
 import cutefox.foxden.conditions.*;
-import cutefox.foxden.registery.ModBlocks;
 import cutefox.foxden.registery.ModItemTags;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceCondition;
-import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 

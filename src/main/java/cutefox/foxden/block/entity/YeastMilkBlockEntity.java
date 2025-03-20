@@ -1,13 +1,11 @@
 package cutefox.foxden.block.entity;
 
-import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.registery.ModBlockEntityType;
 import cutefox.foxden.registery.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CampfireBlock;
 import net.minecraft.block.FireBlock;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;

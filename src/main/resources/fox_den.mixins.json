@@ -2,17 +2,7 @@
 	"required": true,
 	"package": "cutefox.foxden.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"LivingEntityMixin",
-		"SkeletonMixin",
-		"RangedWeaponItemMixin",
-		"PlayerMixin",
-		"WolfEntityMixin",
-		"WolfArmorFeatureRendererMixin",
-		"EnderDragonFightMixin",
-		"MobEntityMixin",
-		"LootTableMixin"
-	],
+	"mixins": ["EnderDragonFightMixin","LivingEntityMixin","LootTableMixin","MobEntityMixin","PlayerMixin","RangedWeaponItemMixin","SkeletonMixin","WolfArmorFeatureRendererMixin","WolfEntityMixin"],
 	"injectors": {
 		"defaultRequire": 1
 	}

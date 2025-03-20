@@ -2,23 +2,24 @@ package cutefox.foxden.block.storage;
 
 import com.mojang.serialization.MapCodec;
 import cutefox.foxden.Utils.Utils;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.Util;
+import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import org.jetbrains.annotations.Nullable;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.function.Supplier;
-import net.minecraft.util.Util;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.Direction;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.util.function.BooleanBiFunction;
-import net.minecraft.util.shape.VoxelShapes;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.block.BlockState;
-import net.minecraft.util.Identifier;
-import net.minecraft.component.DataComponentTypes;
-import org.jetbrains.annotations.Nullable;
 
 public class BreadBox extends StorageBlock {
    public static final MapCodec<BreadBox> CODEC = createCodec(BreadBox::new);

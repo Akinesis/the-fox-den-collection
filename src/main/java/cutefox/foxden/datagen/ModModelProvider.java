@@ -8,7 +8,10 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.client.*;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TextureMap;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -99,6 +102,22 @@ public class ModModelProvider extends FabricModelProvider {
         //region WOLF ARMORS
         itemModelGenerator.registerWolfArmor(ModItems.IRON_WOLF_ARMOR);
         itemModelGenerator.registerWolfArmor(ModItems.DIAMOND_WOLF_ARMOR);
+        //endregion
+
+        //region BAKERY
+        itemModelGenerator.register(ModItems.BAKING_STATION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CROISSANT_RAW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_BAGUETTE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_CORNET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_BUN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_BREAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_TOAST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_BRAIDED_BREAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_WAFFLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_CRUSTY_BREAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_LINZER_TART, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_BUNDT_CAKE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_APPLE_PIE, Models.GENERATED);
         //endregion
 
     }

@@ -4,7 +4,6 @@ import com.mojang.datafixers.util.Pair;
 import cutefox.foxden.block.entity.ChairEntity;
 import cutefox.foxden.registery.ModBlockEntityType;
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
