@@ -3,16 +3,16 @@ package cutefox.foxden.registery;
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.ArmorAtributeBonuses;
 import cutefox.foxden.Utils.Utils;
+import cutefox.foxden.block.EffectBlockItem;
 import cutefox.foxden.item.*;
+import net.minecraft.block.Block;
 import net.minecraft.component.type.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.Rarity;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ModItems {
 
@@ -125,8 +125,115 @@ public class ModItems {
     //endregion
 
     //region BAKERY
-
+    public static Map<String, Item> BAKERY_BLOCK_ITEMS;
+    public static List<Item> BAKERY_ITEMS;
+    public static Item BAKING_STATION;
+    public static final Item CAKE_DOUGH;
+    public static final Item SWEET_DOUGH;
+    public static final Item DOUGHT;
+    public static final Item ROLLING_PIN;
+    public static final Item BREAD_KNIFE;
+    public static final Item CROISSANT;
+    public static final Item CROISSANT_RAW;
+    public static final Item CORNET;
+    public static final Item RAW_CORNET;
+    public static final Item JAM_ROLL;
+    public static final Item CHOCOLATE_TRUFFLE;
+    public static Item JAR;
+    public static Item STRAWBERRY_JAM;
+    public static Item GLOWBERRY_JAM;
+    public static Item SWEETBERRY_JAM;
+    public static Item CHOCOLATE_JAM;
+    public static Item APPLE_JAM;
+    public static final Item SANDWICH;
+    public static final Item VEGETABLE_SANDWICH;
+    public static final Item GRILLED_SALMON_SANDWICH;
+    public static final Item GRILLED_BACON_SANDWICH;
+    public static final Item BREAD_WITH_JAM;
+    public static final Item STRAWBERRY_CAKE_SLICE;
+    public static final Item SWEETBERRY_CAKE_SLICE;
+    public static final Item CHOCOLATE_CAKE_SLICE;
+    public static final Item CHOCOLATE_GATEAU_SLICE;
+    public static final Item BUNDT_CAKE_SLICE;
+    public static final Item LINZER_TART_SLICE;
+    public static final Item APPLE_PIE_SLICE;
+    public static final Item GLOWBERRY_PIE_SLICE;
+    public static final Item CHOCOLATE_TART_SLICE;
+    public static final Item PUDDING_SLICE;
+    public static final Item STRAWBERRY_CUPCAKE;
+    public static final Item SWEETBERRY_CUPCAKE;
+    public static final Item APPLE_CUPCAKE;
+    public static final Item STRAWBERRY_GLAZED_COOKIE;
+    public static final Item SWEETBERRY_GLAZED_COOKIE;
+    public static final Item CHOCOLATE_GLAZED_COOKIE;
+    public static Item CRUSTY_BREAD;
+    public static Item RAW_CRUSTY_BREAD;
+    public static Item BREAD;
+    public static Item RAW_BREAD;
+    public static Item BAGUETTE;
+    public static Item RAW_BAGUETTE;
+    public static Item TOAST;
+    public static Item RAW_TOAST;
+    public static Item BRAIDED_BREAD;
+    public static Item RAW_BRAIDED_BREAD;
+    public static Item BUN;
+    public static Item RAW_BUN;
+    public static Item WAFFLE;
+    public static Item RAW_WAFFLE;
+    public static Item BUNDT_CAKE;
+    public static Item RAW_BUNDT_CAKE;
+    public static Item LINZER_TART;
+    public static Item RAW_LINZER_TART;
+    public static Item APPLE_PIE;
+    public static Item RAW_APPLE_PIE;
     //endregion
+
+    static {
+        BAKERY_BLOCK_ITEMS = new HashMap();
+        BAKERY_ITEMS = new ArrayList();
+        CAKE_DOUGH = registerBackeryItem("cake_dough", new Item((new Item.Settings()).food(FoodComponents.SWEET_BERRIES)));
+        SWEET_DOUGH = registerBackeryItem("sweet_dough", new Item((new Item.Settings()).food(FoodComponents.SWEET_BERRIES)));
+        DOUGHT = registerBackeryItem("dough", new Item((new Item.Settings()).food(FoodComponents.SWEET_BERRIES)));
+        ROLLING_PIN = registerBackeryItem("rolling_pin", new RollingPinItem(ToolMaterials.WOOD, (new Item.Settings()).rarity(Rarity.COMMON).recipeRemainder(Items.OAK_PLANKS)));
+        BREAD_KNIFE = registerBackeryItem("bread_knife", new SwordItem(ToolMaterials.IRON, (new Item.Settings()).rarity(Rarity.COMMON)));
+        CROISSANT = registerBackeryItem("croissant", new Item(foodItem(ModFoodComponents.PASTRIES)));
+        CROISSANT_RAW = registerBackeryItem("croissant_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        CORNET = registerBackeryItem("cornet", new Item(foodItem(ModFoodComponents.PASTRIES)));
+        RAW_CORNET = registerBackeryItem("cornet_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        JAM_ROLL = registerBackeryItem("jam_roll", new Item(foodItem(ModFoodComponents.PASTRIES)));
+        CHOCOLATE_TRUFFLE = registerBackeryItem("chocolate_truffle", new Item(foodItem(ModFoodComponents.PASTRIES)));
+        SANDWICH = registerBackeryItem("sandwich", new Item(foodItem(ModFoodComponents.SANDWICH)));
+        VEGETABLE_SANDWICH = registerBackeryItem("vegetable_sandwich", new Item(foodItem(ModFoodComponents.SANDWICH)));
+        GRILLED_SALMON_SANDWICH = registerBackeryItem("grilled_salmon_sandwich", new Item(foodItem(ModFoodComponents.SANDWICH)));
+        GRILLED_BACON_SANDWICH = registerBackeryItem("grilled_bacon_sandwich", new Item(foodItem(ModFoodComponents.SANDWICH)));
+        BREAD_WITH_JAM = registerBackeryItem("bread_with_jam", new Item(foodItem(ModFoodComponents.BREAD_JAMED)));
+        STRAWBERRY_CAKE_SLICE = registerBackeryItem("strawberry_cake_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        SWEETBERRY_CAKE_SLICE = registerBackeryItem("sweetberry_cake_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        CHOCOLATE_CAKE_SLICE = registerBackeryItem("chocolate_cake_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        CHOCOLATE_GATEAU_SLICE = registerBackeryItem("chocolate_gateau_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        BUNDT_CAKE_SLICE = registerBackeryItem("bundt_cake_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        LINZER_TART_SLICE = registerBackeryItem("linzer_tart_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        APPLE_PIE_SLICE = registerBackeryItem("apple_pie_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        GLOWBERRY_PIE_SLICE = registerBackeryItem("glowberry_pie_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        CHOCOLATE_TART_SLICE = registerBackeryItem("chocolate_tart_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        PUDDING_SLICE = registerBackeryItem("pudding_slice", new Item(foodItem(ModFoodComponents.CAKE_SLICE)));
+        STRAWBERRY_CUPCAKE = registerBackeryItem("strawberry_cupcake", new Item(foodItem(ModFoodComponents.COOKIES_N_CUPCAKE)));
+        SWEETBERRY_CUPCAKE = registerBackeryItem("sweetberry_cupcake", new Item(foodItem(ModFoodComponents.COOKIES_N_CUPCAKE)));
+        APPLE_CUPCAKE = registerBackeryItem("apple_cupcake", new Item(foodItem(ModFoodComponents.COOKIES_N_CUPCAKE)));
+        STRAWBERRY_GLAZED_COOKIE = registerBackeryItem("strawberry_glazed_cookie", new Item(foodItem(ModFoodComponents.COOKIES_N_CUPCAKE)));
+        SWEETBERRY_GLAZED_COOKIE = registerBackeryItem("sweetberry_glazed_cookie", new Item(foodItem(ModFoodComponents.COOKIES_N_CUPCAKE)));
+        CHOCOLATE_GLAZED_COOKIE = registerBackeryItem("chocolate_glazed_cookie", new Item(foodItem(ModFoodComponents.COOKIES_N_CUPCAKE)));
+        RAW_CRUSTY_BREAD = registerBackeryItem("crusty_bread_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_BREAD = registerBackeryItem("bread_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_BAGUETTE = registerBackeryItem("baguette_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_TOAST = registerBackeryItem("toast_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_BRAIDED_BREAD = registerBackeryItem("braided_bread_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_BUN = registerBackeryItem("bun_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_WAFFLE = registerBackeryItem("waffle_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_BUNDT_CAKE = registerBackeryItem("bundt_cake_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_LINZER_TART = registerBackeryItem("linzer_tart_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+        RAW_APPLE_PIE = registerBackeryItem("apple_pie_raw", new Item(foodItem(FoodComponents.SWEET_BERRIES)));
+    }
 
     public static void registerBlockItems(){
         CHEESE_BLOCK = registerItem("cheese_block", new BlockItem(ModBlocks.CHEESE_BLOCK, new Item.Settings()));
@@ -163,7 +270,41 @@ public class ModItems {
         FLOWERING_AZALEA_LEAVES_WALL = registerItem("flowering_azalea_leaves_wall", new BlockItem(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, new Item.Settings()));
         LEAVES_WALLS.add(FLOWERING_AZALEA_LEAVES_WALL);
 
+        Iterator var0 = BAKERY_BLOCK_ITEMS.entrySet().iterator();
 
+        while(var0.hasNext()) {
+            Map.Entry<String, Item> block = (Map.Entry)var0.next();
+            registerItem((String)block.getKey(), (Item)block.getValue());
+        }
+
+        JAR = registerItem("jar", new BlockItem(ModBlocks.JAR, new Item.Settings()));
+        STRAWBERRY_JAM = registerItem("strawberry_jam", new BlockItem(ModBlocks.STRAWBERRY_JAM, new Item.Settings()));
+        GLOWBERRY_JAM = registerItem("glowberry_jam", new BlockItem(ModBlocks.GLOWBERRY_JAM, new Item.Settings()));
+        SWEETBERRY_JAM = registerItem("sweetberry_jam", new BlockItem(ModBlocks.SWEETBERRY_JAM, new Item.Settings()));
+        CHOCOLATE_JAM = registerItem("chocolate_jam", new BlockItem(ModBlocks.CHOCOLATE_JAM, new Item.Settings()));
+        APPLE_JAM = registerItem("apple_jam", new BlockItem(ModBlocks.APPLE_JAM, new Item.Settings()));
+        CRUSTY_BREAD = registerItem("crusty_bread", new EffectBlockItem(ModBlocks.CRUSTY_BREAD_BLOCK, foodItem(ModFoodComponents.BREAD_LIKE)));
+        BREAD = registerItem("bread", new EffectBlockItem(ModBlocks.BREAD_BLOCK, foodItem(ModFoodComponents.BREAD_LIKE)));
+        BAGUETTE = registerItem("baguette", new EffectBlockItem(ModBlocks.BAGUETTE_BLOCK, foodItem(ModFoodComponents.BREAD_LIKE)));
+        TOAST = registerItem("toast", new EffectBlockItem(ModBlocks.TOAST_BLOCK, foodItem(ModFoodComponents.BREAD_LIKE)));
+        BRAIDED_BREAD = registerItem("braided_bread", new EffectBlockItem(ModBlocks.BRAIDED_BREAD_BLOCK, foodItem(ModFoodComponents.BREAD_LIKE)));
+        BUN = registerItem("bun", new EffectBlockItem(ModBlocks.BUN_BLOCK, foodItem(ModFoodComponents.BREAD_LIKE)));
+        WAFFLE = registerItem("waffle", new EffectBlockItem(ModBlocks.WAFFLE_BLOCK, foodItem(ModFoodComponents.BREAD_LIKE)));
+        LINZER_TART = registerItem("linzer_tart", new EffectBlockItem(ModBlocks.LINZER_TART, foodItem(ModFoodComponents.CAKE_SLICE)));
+        APPLE_PIE = registerItem("apple_pie", new EffectBlockItem(ModBlocks.APPLE_PIE, foodItem(ModFoodComponents.CAKE_SLICE)));
+        BUNDT_CAKE = registerItem("bundt_cake", new EffectBlockItem(ModBlocks.BUNDT_CAKE, foodItem(ModFoodComponents.CAKE_SLICE)));
+
+
+    }
+
+    public static void addBackeryBlockItem(String id, Block block) {
+        BAKERY_BLOCK_ITEMS.put(id, new BlockItem(block, new Item.Settings()));
+    }
+
+    private static Item registerBackeryItem(String id, Item item) {
+        Item newItem = (Item)Registry.register(Registries.ITEM, Utils.id(id), item);
+        BAKERY_ITEMS.add(newItem);
+        return newItem;
     }
 
     private static Item registerItem(String id, Item item){

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fox_den:item/crusty_bread_raw"
+  }
+}
