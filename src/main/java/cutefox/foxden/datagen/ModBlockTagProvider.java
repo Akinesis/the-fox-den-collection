@@ -28,6 +28,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OIL_CAULDRON)
                 .add(ModBlocks.STEEL_BLOCK);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.SHIP_MAST);
 
         getOrCreateTagBuilder(BlockTags.CAULDRONS)
                 .add(ModBlocks.MILK_CAULDRON)

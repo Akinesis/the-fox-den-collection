@@ -13,6 +13,7 @@ public class ModItemTags {
     public static final TagKey<Item> YEAST = TagKey.of(RegistryKeys.ITEM, Identifier.of("c","foods/yeast"));
     public static final TagKey<Item> DOUGHT = TagKey.of(RegistryKeys.ITEM, Identifier.of("c","foods/doughs"));
     public static final TagKey<Item> EGG = TagKey.of(RegistryKeys.ITEM, Identifier.of("c","foods/eggs"));
+    public static final TagKey<Item> ROPES = TagKey.of(RegistryKeys.ITEM, Identifier.of("farmersdelight","rope"));
     public static final TagKey<Item> BREAD = TagKey.of(RegistryKeys.ITEM, Utils.id("bread"));
     public static final TagKey<Item> KNIVES = TagKey.of(RegistryKeys.ITEM, Utils.id("knives"));
     public static final TagKey<Item> JAM = TagKey.of(RegistryKeys.ITEM, Utils.id("jam"));

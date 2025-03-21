@@ -189,6 +189,10 @@ public class ModItems {
     public static Item RAW_APPLE_PIE;
     //endregion
 
+    //region SHIPS
+    public static Item SHIP_MAST;
+    //endregion
+
     static {
         BAKERY_BLOCK_ITEMS = new HashMap();
         BAKERY_ITEMS = new ArrayList();
@@ -295,7 +299,7 @@ public class ModItems {
         APPLE_PIE = registerItem("apple_pie", new EffectBlockItem(ModBlocks.APPLE_PIE, foodItem(ModFoodComponents.CAKE_SLICE)));
         BUNDT_CAKE = registerItem("bundt_cake", new EffectBlockItem(ModBlocks.BUNDT_CAKE, foodItem(ModFoodComponents.CAKE_SLICE)));
 
-
+        SHIP_MAST = registerItem("ship_mast", new BlockItem(ModBlocks.SHIP_MAST, new Item.Settings()));
     }
 
     public static void addBackeryBlockItem(String id, Block block) {

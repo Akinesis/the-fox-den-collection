@@ -15,6 +15,7 @@ import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.math.Direction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,6 +82,8 @@ public class ModBlocks {
     public static final Block WAFFLE_BLOCK;
     public static final Block BAKER_STATION;
     public static final Block BLANK_CAKE;
+
+    public static final Block SHIP_MAST;
 
     public static List<Block> LEAVES_WALL = new ArrayList();
 
@@ -163,6 +166,14 @@ public class ModBlocks {
         BRAIDED_BREAD_BLOCK = register("braided_bread_block", new StackableEatableBlock(Settings.copy(Blocks.CAKE), 3));
         WAFFLE_BLOCK = register("waffle_block", new StackableEatableBlock(Settings.copy(Blocks.CAKE), 4));
 
+        SHIP_MAST = register("ship_mast", new PillarBlock(AbstractBlock.Settings.create()
+                .mapColor((state) -> {
+                    return state.get(PillarBlock.AXIS) == Direction.Axis.Y ? MapColor.GRAY : MapColor.BROWN;
+                })
+                .sounds(BlockSoundGroup.WOOD)
+                .requiresTool()
+                .burnable()
+                .strength(9f,10f)));
 
     }
 

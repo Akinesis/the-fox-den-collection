@@ -39,6 +39,10 @@ public class ModModelProvider extends FabricModelProvider {
         createLeavesWallModel(blockStateModelGenerator, ModBlocks.AZALEA_LEAVES_WALL, Blocks.AZALEA_LEAVES, ModItems.AZALEA_LEAVES_WALL);
         createLeavesWallModel(blockStateModelGenerator, ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, Blocks.FLOWERING_AZALEA_LEAVES, ModItems.FLOWERING_AZALEA_LEAVES_WALL);
 
+        //region SHIPS
+        blockStateModelGenerator.registerLog(ModBlocks.SHIP_MAST).log(ModBlocks.SHIP_MAST);
+        //endregion
+
     }
 
     private void createLeavesWallModel(BlockStateModelGenerator blockStateModelGenerator,Block leavesWall, Block textureBlock, Item wallItem){
@@ -118,6 +122,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_LINZER_TART, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_BUNDT_CAKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_APPLE_PIE, Models.GENERATED);
+        //endregion
+
+        //region SHIPS
+
         //endregion
 
     }

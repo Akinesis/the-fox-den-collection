@@ -15,8 +15,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -785,6 +787,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .addIngredient(ModItemTags.JAM)
                 .addIngredient(ConventionalItemTags.MILK_BUCKETS)
                 .addContainer(Items.BOWL));
+
+        //endregion
+
+        //region SHIPS
+        /*ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BEETROOT_SOUP)
+                .pattern("WWW")
+                .pattern("WMW")
+                .pattern("RMR")
+                .input('W', ItemTags.WOOL)
+                .input('M', ModBlocks.SHIP_MAST)
+                .input('R', ModItemTags.ROPES)
+                .criterion(hasItem(ModItems.SHIP_MAST),conditionsFromItem(ModItems.SHIP_MAST))
+                .offerTo(exporter, "smallships:sail_item");*/
+
 
         //endregion
 

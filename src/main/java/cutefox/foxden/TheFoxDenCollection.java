@@ -233,6 +233,7 @@ public class TheFoxDenCollection implements ModInitializer {
 					entries.add(ModItems.STRAWBERRY_JAM);
 					entries.add(ModItems.SWEETBERRY_JAM);
 					entries.add(ModItems.APPLE_JAM);
+					entries.add(ModItems.SHIP_MAST);
 
 
 				})

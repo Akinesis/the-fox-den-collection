@@ -74,7 +74,6 @@ dependencies {
 
 	modCompileOnly "maven.modrinth:better-enchanting:${project.betterenchant_version}"
 
-
 }
 
 processResources {
