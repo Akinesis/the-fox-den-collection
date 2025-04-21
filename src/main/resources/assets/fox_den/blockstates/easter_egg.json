@@ -9,7 +9,12 @@
       {"model": "fox_den:block/easter_egg6"},
       {"model": "fox_den:block/easter_egg7"},
       {"model": "fox_den:block/easter_egg8"},
-      {"model": "fox_den:block/easter_egg9"}
+      {"model": "fox_den:block/easter_egg9"},
+      {"model": "fox_den:block/easter_egg10"},
+      {"model": "fox_den:block/easter_egg11"},
+      {"model": "fox_den:block/easter_egg12"},
+      {"model": "fox_den:block/easter_egg13"},
+      {"model": "fox_den:block/easter_egg14"}
     ]
   }
 }

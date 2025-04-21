@@ -37,7 +37,6 @@ import net.minecraft.util.math.random.Random;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
 
 public class TheFoxDenCollection implements ModInitializer {
 
@@ -65,7 +64,9 @@ public class TheFoxDenCollection implements ModInitializer {
 			ModEntityAttributes.registerAttributes();
 
 		Registry.register(Registries.ITEM_GROUP, Utils.id("item_group"), generateItemGroup());
-		Registry.register(Registries.ITEM_GROUP, Utils.id("easter_eggs"), generateEasterItemGroup());
+
+		if(ConfigBuilder.yamlConfig.getBoolean(FoxDenDefaultConfig.EASTER_EGGS))
+			Registry.register(Registries.ITEM_GROUP, Utils.id("easter_eggs"), generateEasterItemGroup());
 
 		ModLootTableModifiers.modifyLootTables();
 

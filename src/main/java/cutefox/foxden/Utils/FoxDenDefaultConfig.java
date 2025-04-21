@@ -19,6 +19,7 @@ public abstract class FoxDenDefaultConfig {
     public static final String BIKE_ARMOR = "bike_armor";
     public static final String WOLF_ARMOR = "wolf_armor";
     public static final String MORE_ATTRIBUTES = "more_attributes";
+    public static final String EASTER_EGGS = "easer_eggs";
 
     static {
         defaultConfig.put(POUTINE, true);
@@ -33,6 +34,7 @@ public abstract class FoxDenDefaultConfig {
         defaultConfig.put(BIKE_ARMOR, true);
         defaultConfig.put(WOLF_ARMOR, true);
         defaultConfig.put(MORE_ATTRIBUTES, true);
+        defaultConfig.put(EASTER_EGGS, true);
     }
 
 }
