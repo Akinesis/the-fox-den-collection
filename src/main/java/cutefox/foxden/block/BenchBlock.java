@@ -38,6 +38,8 @@ public class BenchBlock extends LineConnectingBlock {
 
    });
 
+
+
    public BenchBlock(Settings settings) {
       super(settings);
    }

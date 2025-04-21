@@ -43,6 +43,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.SHIP_MAST).log(ModBlocks.SHIP_MAST);
         //endregion
 
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CHOCOLATE_CHICKEN);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CHOCOLATE_RABBIT);
+        //blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.EASTER_EGG);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.WHITE_CHOCOLATE_RABBIT);
+
     }
 
     private void createLeavesWallModel(BlockStateModelGenerator blockStateModelGenerator,Block leavesWall, Block textureBlock, Item wallItem){
@@ -124,9 +129,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_APPLE_PIE, Models.GENERATED);
         //endregion
 
-        //region SHIPS
 
-        //endregion
 
     }
 }

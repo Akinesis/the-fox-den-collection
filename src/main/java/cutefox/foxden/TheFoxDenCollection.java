@@ -67,6 +67,7 @@ public class TheFoxDenCollection implements ModInitializer {
 			ModEntityAttributes.registerAttributes();
 
 		Registry.register(Registries.ITEM_GROUP, Utils.id("item_group"), generateItemGroup());
+		Registry.register(Registries.ITEM_GROUP, Utils.id("easter_eggs"), generateEasterItemGroup());
 
 		ModLootTableModifiers.modifyLootTables();
 
@@ -148,6 +149,22 @@ public class TheFoxDenCollection implements ModInitializer {
 		});
 	}
 
+	private ItemGroup generateEasterItemGroup(){
+		ItemGroup itemGroup = FabricItemGroup.builder()
+				.icon(() -> new ItemStack(ModItems.CHOCOLATE_CHICKEN))
+				.displayName(Text.translatable("itemGroup.fox_den.item_group"))
+				.entries((context, entries) -> {
+					entries.add(ModItems.EASTER_EGG);
+					entries.add(ModItems.CHOCOLATE_CHICKEN);
+					entries.add(ModItems.CHOCOLATE_RABBIT);
+					entries.add(ModItems.WHITE_CHOCOLATE_RABBIT);
+
+				})
+				.build();
+
+		return itemGroup;
+	}
+
 	private ItemGroup generateItemGroup(){
 		ItemGroup itemGroup = FabricItemGroup.builder()
 				.icon(() -> new ItemStack(Items.RABBIT_FOOT))
@@ -212,7 +229,7 @@ public class TheFoxDenCollection implements ModInitializer {
 
 					while(var2.hasNext()) {
 						Map.Entry<String, Item> block = (Map.Entry)var2.next();
-						entries.add((ItemConvertible)block.getValue());
+						entries.add(block.getValue());
 					}
 
 					entries.addAll(ModItems.BAKERY_ITEMS.stream().map((item) -> {

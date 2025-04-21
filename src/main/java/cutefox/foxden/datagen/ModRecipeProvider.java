@@ -401,7 +401,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         //Wolf armors
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.fromTag(ModItemTags.IRON_UPGRADE_TEMPLATE),
                         Ingredient.ofItems(Items.WOLF_ARMOR),
                         Ingredient.ofItems(Items.IRON_INGOT),
                         RecipeCategory.COMBAT,
@@ -410,7 +410,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(withConditions(exporter, UPGRADE_TEMPLATE), Utils.id("iron_wolf_armor_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.fromTag(ModItemTags.DIAMOND_UPGRADE_TEMPLATE),
                         Ingredient.ofItems(ModItems.IRON_WOLF_ARMOR),
                         Ingredient.ofItems(Items.DIAMOND),
                         RecipeCategory.COMBAT,
@@ -791,16 +791,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //endregion
 
         //region SHIPS
-        /*ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BEETROOT_SOUP)
-                .pattern("WWW")
-                .pattern("WMW")
-                .pattern("RMR")
-                .input('W', ItemTags.WOOL)
-                .input('M', ModBlocks.SHIP_MAST)
-                .input('R', ModItemTags.ROPES)
-                .criterion(hasItem(ModItems.SHIP_MAST),conditionsFromItem(ModItems.SHIP_MAST))
-                .offerTo(exporter, "smallships:sail_item");*/
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHIP_MAST)
+                .pattern("IWI")
+                .pattern("IWI")
+                .pattern("IWI")
+                .input('W', ItemTags.LOGS)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.OAK_LOG), conditionsFromTag(ItemTags.LOGS))
+                .offerTo(exporter, Utils.id(getRecipeName(ModItems.SHIP_MAST)));
 
         //endregion
 

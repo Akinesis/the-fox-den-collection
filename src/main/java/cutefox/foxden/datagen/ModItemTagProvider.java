@@ -5,6 +5,8 @@ import cutefox.foxden.registery.ModItemTags;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -85,7 +87,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.CRUSTY_BREAD)
                 .add(ModItems.BAGUETTE)
                 .add(ModItems.BRAIDED_BREAD)
-                .add(ModItems.BUN).add(ModItems.TOAST)
+                .add(ModItems.BUN)
+                .add(ModItems.TOAST)
                 .add(ModItems.BREAD);
 
         getOrCreateTagBuilder(ModItemTags.JAM)
@@ -99,5 +102,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModItemTags.DOUGHT)
                 .addOptional(Identifier.of("farmersdelights:wheat_dought"))
                 .add(ModItems.DOUGHT);
+
+        getOrCreateTagBuilder(ConventionalItemTags.BREAD_FOODS)
+                .add(ModItems.CRUSTY_BREAD)
+                .add(ModItems.BAGUETTE)
+                .add(ModItems.BRAIDED_BREAD)
+                .add(ModItems.BUN).add(ModItems.TOAST)
+                .add(ModItems.BREAD);
+
+        getOrCreateTagBuilder(ModItemTags.ORIGINS_VEGETARIAN)
+                .add(ModItems.BAKERY_ITEMS.toArray(Item[]::new));
+
+        getOrCreateTagBuilder(ModItemTags.IRON_UPGRADE_TEMPLATE)
+                .add(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ModItemTags.DIAMOND_UPGRADE_TEMPLATE)
+                .add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
+
     }
 }

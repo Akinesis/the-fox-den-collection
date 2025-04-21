@@ -56,6 +56,8 @@
   "item.fox_den.space_ranger_leggings": "Space Ranger Leggings",
   "item.fox_den.space_ranger_boots": "Space Ranger Boots",
 
+  "item.fox_den.ship_mast": "Ship Mast",
+
   "effect.fox_den.skeleton_love": "Skeleton Love",
 
   "container.foxden.enchant.material.one": "%s %s",
@@ -245,5 +247,10 @@
   "item.fox_den.cornet_raw": "Raw Cornet",
   "item.fox_den.linzer_tart_raw": "Linzer Tart Raw",
   "item.fox_den.apple_pie_raw": "Apple Pie",
-  "item.fox_den.bundt_cake_raw": "Bundt Cake Raw"
+  "item.fox_den.bundt_cake_raw": "Bundt Cake Raw",
+
+  "block.fox_den.easter_egg": "Easter Egg",
+  "block.fox_den.chocolate_chicken": "Chocolate Chicken",
+  "block.fox_den.chocolate_rabbit": "Chocolate Rabbit",
+  "block.fox_den.white_chocolate_rabbit": "White Chocolate Rabbit"
 }

@@ -2,10 +2,7 @@ package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
-import cutefox.foxden.block.entity.ChairEntity;
-import cutefox.foxden.block.entity.OilCauldronBlockEntity;
-import cutefox.foxden.block.entity.StorageBlockEntity;
-import cutefox.foxden.block.entity.YeastMilkBlockEntity;
+import cutefox.foxden.block.entity.*;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -45,6 +42,7 @@ public class ModBlockEntityType {
         CHAIR = Registry.register(
                 Registries.ENTITY_TYPE, Utils.id("chair"),
                 EntityType.Builder.create(ChairEntity::new, SpawnGroup.MISC).dimensions(0.001F, 0.001F).build(Utils.id("chair").toString()));
+
 
     }
 

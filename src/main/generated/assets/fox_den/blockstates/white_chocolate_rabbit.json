@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "fox_den:block/white_chocolate_rabbit",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "fox_den:block/white_chocolate_rabbit"
+    },
+    "facing=south": {
+      "model": "fox_den:block/white_chocolate_rabbit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fox_den:block/white_chocolate_rabbit",
+      "y": 270
+    }
+  }
+}

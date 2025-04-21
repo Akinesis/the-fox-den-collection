@@ -88,6 +88,12 @@ public class ModBlocks {
     public static List<Block> LEAVES_WALL = new ArrayList();
 
 
+    public static final Block EASTER_EGG;
+    public static final Block CHOCOLATE_CHICKEN;
+    public static final Block CHOCOLATE_RABBIT;
+    public static final Block WHITE_CHOCOLATE_RABBIT;
+
+
     //Bakery
     private static final List<Block> BAKERY_STORAGE = new ArrayList<>();
 
@@ -175,6 +181,12 @@ public class ModBlocks {
                 .burnable()
                 .strength(9f,10f)));
 
+
+        //EASTER
+        EASTER_EGG = register("easter_egg", new EasterEgg(Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
+        CHOCOLATE_CHICKEN = register("chocolate_chicken", new EasterEgg(Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
+        CHOCOLATE_RABBIT = register("chocolate_rabbit", new EasterEgg(Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
+        WHITE_CHOCOLATE_RABBIT = register("white_chocolate_rabbit", new EasterEgg(Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
     }
 
 
@@ -196,7 +208,7 @@ public class ModBlocks {
     }
 
     public static Block registerWithItem(String id, Block block) {
-        Block registeredBlock = (Block)Registry.register(Registries.BLOCK, Utils.id(id), block);
+        Block registeredBlock = Registry.register(Registries.BLOCK, Utils.id(id), block);
         ModItems.addBackeryBlockItem(id, registeredBlock);
         return registeredBlock;
     }
