@@ -56,6 +56,8 @@
   "item.fox_den.space_ranger_leggings": "Space Ranger Leggings",
   "item.fox_den.space_ranger_boots": "Space Ranger Boots",
 
+  "item.fox_den.ship_mast": "Ship Mast",
+
   "effect.fox_den.skeleton_love": "Skeleton Love",
 
   "container.foxden.enchant.material.one": "%s %s",
@@ -65,6 +67,11 @@
   "attribute.name.fox_den.player.bonus_breaking":"Bonus Breaking",
 
   "key.fox_den.armor_action": "Armor Actions",
-  "category.fox_den.keys" : "The Fox Den Collection"
+  "category.fox_den.keys" : "The Fox Den Collection",
 
+
+  "block.fox_den.easter_egg": "Easter Egg",
+  "block.fox_den.chocolate_chicken": "Chocolate Chicken",
+  "block.fox_den.white_chocolate_rabbit": "White Chocolate Rabbit",
+  "block.fox_den.chocolate_rabbit": "Chocolate Rabbit"
 }

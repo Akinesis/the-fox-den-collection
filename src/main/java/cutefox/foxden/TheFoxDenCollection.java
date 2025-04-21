@@ -1,6 +1,5 @@
 package cutefox.foxden;
 
-import cutefox.betterenchanting.Util.BetterEnchantingApi;
 import cutefox.foxden.Utils.BonusDropHelper;
 import cutefox.foxden.Utils.ConfigBuilder;
 import cutefox.foxden.Utils.FoxDenDefaultConfig;
@@ -22,7 +21,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -67,6 +65,7 @@ public class TheFoxDenCollection implements ModInitializer {
 			ModEntityAttributes.registerAttributes();
 
 		Registry.register(Registries.ITEM_GROUP, Utils.id("item_group"), generateItemGroup());
+		Registry.register(Registries.ITEM_GROUP, Utils.id("easter_eggs"), generateEasterItemGroup());
 
 		ModLootTableModifiers.modifyLootTables();
 
@@ -148,6 +147,22 @@ public class TheFoxDenCollection implements ModInitializer {
 
 			context.player().getInventory().getArmorStack(2).set(DataComponentTypes.CUSTOM_DATA, component);
 		});
+	}
+
+	private ItemGroup generateEasterItemGroup(){
+		ItemGroup itemGroup = FabricItemGroup.builder()
+				.icon(() -> new ItemStack(ModItems.CHOCOLATE_CHICKEN))
+				.displayName(Text.translatable("itemGroup.fox_den.item_group"))
+				.entries((context, entries) -> {
+					entries.add(ModItems.EASTER_EGG);
+					entries.add(ModItems.CHOCOLATE_CHICKEN);
+					entries.add(ModItems.CHOCOLATE_RABBIT);
+					entries.add(ModItems.WHITE_CHOCOLATE_RABBIT);
+
+				})
+				.build();
+
+		return itemGroup;
 	}
 
 	private ItemGroup generateItemGroup(){

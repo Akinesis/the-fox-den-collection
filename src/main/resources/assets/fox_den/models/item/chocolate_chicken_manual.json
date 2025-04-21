@@ -1,0 +1,8 @@
+{
+  "parent": "tutorialmod:block/chocolate_chicken",
+  "display": {
+    "gui": {
+      "rotation": [ 0, 180, 0 ]
+    }
+  }
+}

@@ -1,14 +1,32 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // 1.21	2025-03-10T20:19:59.5254398	The fox den collection/Tags for minecraft:item
 =======
 // 1.21.1	2025-03-21T01:20:42.276775	The fox den collection/Tags for minecraft:item
 >>>>>>> b1d7a59 (Added Ship Mast)
+=======
+// 1.21.1	2025-04-20T16:27:08.3324435	The fox den collection/Tags for minecraft:item
+>>>>>>> 8e2465b (Added Easter Eggs)
 97486d45a46daff3035ba3f69abd3a765725042e data\c\tags\item\foods\cheese.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\leg_armor.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\head_armor.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\foot_armor.json
 7c011fa1cd205b1e5a1b2fbabb8b9cb915c42819 data\minecraft\tags\item\chest_armor.json
 f5ccdba8db4f3fbb663a77a7e5c0e62669deb5ba data\minecraft\tags\item\walls.json
+<<<<<<< HEAD
+=======
+b8b54cf60c73c88492bb81f0ee18e733d57cc425 data\minecraft\tags\item\foot_armor.json
+c80a1efd00d9f85cae990889a4313cc74d12cf78 data\fox_den\tags\item\bread.json
+40e849872acb3cb5b6bd2743d37f7caa82638e9a data\minecraft\tags\item\leg_armor.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\head_armor.json
+33a27be2c67af49d987604e09c577ea5636c798d data\fox_den\tags\item\knives.json
+b542798568a6db311845576a630a0ff55a9c116a data\c\tags\item\foods\bread.json
+ae13e8aaed2ad45d30a064edf9b0f92144ee3de3 data\fox_den\tags\item\iron_upgrade_template.json
+c2c7c91e5ccbcd7d49425c7cc4d5fe1230aabe21 data\fox_den\tags\item\diamond_upgrade_template.json
+ca8823b34dbe6723467443b8c30e721ebc3c888c data\origins\tags\item\vegetarian.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\foot_armor.json
+8ac6b6063dc39d30691b4480855bdd5857444dc8 data\fox_den\tags\item\jam.json
+>>>>>>> 8e2465b (Added Easter Eggs)
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\enchantable\chest_armor.json
 480373eab86e969251caa3ce293550c6e8374877 data\minecraft\tags\item\head_armor.json
 b8b54cf60c73c88492bb81f0ee18e733d57cc425 data\minecraft\tags\item\foot_armor.json

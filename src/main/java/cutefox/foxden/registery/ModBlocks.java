@@ -2,14 +2,13 @@ package cutefox.foxden.registery;
 
 import cutefox.foxden.TheFoxDenCollection;
 import cutefox.foxden.Utils.Utils;
+import cutefox.foxden.block.EasterEgg;
 import cutefox.foxden.block.cauldron.CheeseCauldronBlock;
 import cutefox.foxden.block.cauldron.MilkCauldronBlock;
 import cutefox.foxden.block.cauldron.OilCauldronBlock;
 import cutefox.foxden.block.cauldron.YeastMilkCauldronBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -41,6 +40,11 @@ public class ModBlocks {
     public static final Block SHIP_MAST;
 
     public static List<Block> LEAVES_WALL = new ArrayList();
+
+    public static final Block EASTER_EGG;
+    public static final Block CHOCOLATE_CHICKEN;
+    public static final Block CHOCOLATE_RABBIT;
+    public static final Block WHITE_CHOCOLATE_RABBIT;
 
     public static void registerModBlocks(){
         TheFoxDenCollection.LOGGER.info("Registering mod blocks for : "+ TheFoxDenCollection.MOD_ID);
@@ -77,6 +81,12 @@ public class ModBlocks {
                 .burnable()
                 .strength(9f,10f)));
 
+
+        //EASTER
+        EASTER_EGG = register("easter_egg", new EasterEgg(AbstractBlock.Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
+        CHOCOLATE_CHICKEN = register("chocolate_chicken", new EasterEgg(AbstractBlock.Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
+        CHOCOLATE_RABBIT = register("chocolate_rabbit", new EasterEgg(AbstractBlock.Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
+        WHITE_CHOCOLATE_RABBIT = register("white_chocolate_rabbit", new EasterEgg(AbstractBlock.Settings.copy(Blocks.FLOWER_POT).sounds(BlockSoundGroup.SLIME)));
     }
 
     public static Block register(String id, Block block) {

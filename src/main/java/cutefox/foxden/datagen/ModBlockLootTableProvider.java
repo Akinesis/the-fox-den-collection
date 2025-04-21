@@ -38,6 +38,11 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHERRY_LEAVES_WALL, ModItems.CHERRY_LEAVES_WALL);
         addDrop(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, ModItems.FLOWERING_AZALEA_LEAVES_WALL);
         addDrop(ModBlocks.AZALEA_LEAVES_WALL, ModItems.AZALEA_LEAVES_WALL);
+
+        addDrop(ModBlocks.EASTER_EGG, ModItems.EASTER_EGG);
+        addDrop(ModBlocks.CHOCOLATE_RABBIT, ModItems.CHOCOLATE_RABBIT);
+        addDrop(ModBlocks.CHOCOLATE_CHICKEN, ModItems.CHOCOLATE_CHICKEN);
+        addDrop(ModBlocks.WHITE_CHOCOLATE_RABBIT, ModItems.WHITE_CHOCOLATE_RABBIT);
     }
 
     protected ModBlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {

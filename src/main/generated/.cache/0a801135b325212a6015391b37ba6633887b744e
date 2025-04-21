@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // 1.21	2025-03-10T20:19:59.5284313	The fox den collection/Recipes
 =======
 // 1.21.1	2025-03-21T01:20:42.2797676	The fox den collection/Recipes
 >>>>>>> b1d7a59 (Added Ship Mast)
+=======
+// 1.21.1	2025-04-20T16:27:08.33743	The fox den collection/Recipes
+>>>>>>> 8e2465b (Added Easter Eggs)
 9e65761ba1c03415eb20b638b21f5680fef2a1da data\fox_den\advancement\recipes\combat\steel_helmet.json
 171836ad6b3093ff66559cb1d578bcdc7c892f05 data\fox_den\recipe\oak_leaves_wall.json
 cc8ab5d09be4f4c56c06b5db04d9036151e86de3 data\fox_den\advancement\recipes\decorations\spruce_leaves_wall.json
@@ -18,9 +22,14 @@ ecb5fe98937898cffa3fece3dce441bb036254d9 data\fox_den\recipe\bone_from_leggings.
 ac66b3fd086eea9d1834d3eb69a392b7173cf54f data\fox_den\advancement\recipes\combat\diamond_gold_sword_smithing.json
 c5fefab3019d7210c833ee4ea04450fd7c30e9b7 data\fox_den\recipe\oil_bucket.json
 e54679db2a0aa5168b5af20ca6b866e0696087ab data\fox_den\advancement\recipes\combat\diamond_gold_helmet_smithing.json
+<<<<<<< HEAD
 4c33318f47904ab4649ea7bfe678656ca30a33f9 data\fox_den\recipe\diamond_gold_pickaxe_smithing.json
 f1f0b6074ca50787b5cc7d3e38162e2e9b3f40cf data\fox_den\recipe\iron_wolf_armor_smithing.json
 fbabca8d14a550452702a17f94459aee42ed89ab data\fox_den\recipe\diamond_wolf_armor_smithing.json
+=======
+10450425d50cc25799f7f74ee9f5cfe9399cb199 data\fox_den\recipe\crusty_bread_raw_smoking.json
+fb64b86e97ce71e1830a676fd9e6e867210fc3fa data\fox_den\recipe\iron_wolf_armor_smithing.json
+>>>>>>> 8e2465b (Added Easter Eggs)
 3504e8b06765135a87e81d0e3780e9193584e040 data\fox_den\recipe\jungle_leaves_wall.json
 4aac4d35536b75736a355687e496214b4f7ba77a data\fox_den\recipe\diamond_iron_sword_smithing.json
 a5259e8caa54b7a7189873b7c1ae132153d74f59 data\fox_den\advancement\recipes\misc\leather.json
@@ -36,8 +45,14 @@ a5259e8caa54b7a7189873b7c1ae132153d74f59 data\fox_den\advancement\recipes\misc\l
 df4fed09832adbeaa8e42b0945b493b1aa9984da data\fox_den\recipe\diamond_iron_chestplate_smithing.json
 3f0745790ab53223088c763a53b23cabeabe1bed data\fox_den\recipe\poutine.json
 ff6f3aa8b9aa3567b501da1fe4185b9e30f99869 data\fox_den\advancement\recipes\combat\diamond_gold_chestplate_smithing.json
+<<<<<<< HEAD
 4f36f1cdb01dd01b4d9f540aa87029cf5ae7f319 data\fox_den\recipe\mangrove_leaves_wall.json
 2c2ab57a18f74c10a4d8939ef9adefe33df36230 data\fox_den\recipe\diamond_iron_pickaxe_smithing.json
+=======
+32cff1f50a036f524ae0b7fb15f43735ee519d45 data\fox_den\recipe\toast_raw_campfire.json
+b971a9ba63e90f3abef641d95fba37d0aa601e1c data\fox_den\advancement\recipes\food\cornet_raw_campfire.json
+cb5f67d505c806ecd878206d51b2162e60ef3a51 data\fox_den\recipe\ship_mast.json
+>>>>>>> 8e2465b (Added Easter Eggs)
 24904714a78c50bd4431313180c205728c8bf70f data\fox_den\recipe\birch_leaves_wall.json
 c5f1fc445fb6e7f4da3ef954ea324885cd6f2950 data\fox_den\recipe\diamond_gold_chestplate_smithing.json
 555d0e7b47bcb44cfb7c9017a5031e8064807f30 data\fox_den\advancement\recipes\combat\diamond_iron_sword_smithing.json
@@ -63,9 +78,13 @@ a4c9fd4d0caf8dc483c1f3f718b9181c9df99077 data\fox_den\recipe\diamond_iron_helmet
 4e7d5e515fc72d8cd85caf9684e253d4219f3900 data\fox_den\recipe\diamond_iron_boots_smithing.json
 853c41de29b3b7ef244e93f0eb2bbb2ff5f1a0e9 data\fox_den\recipe\diamond_gold_leggings_smithing.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ceae20453cf225d0040c716240ae3b6073dc3999 data\fox_den\recipe\cornet_raw_campfire.json
+=======
+>>>>>>> 8e2465b (Added Easter Eggs)
 e4b1585b05b525abbe3dca00d2f031a4f296a4d3 data\fox_den\recipe\braided_bread_raw.json
+ceae20453cf225d0040c716240ae3b6073dc3999 data\fox_den\recipe\cornet_raw_campfire.json
 7a04a138a4ac04ae004fa758c8b4ff2ae23d17bd data\fox_den\recipe\crusty_bread_raw_smelting.json
 b7bf7d5fbdbfa5d836626a1687637bef04e99619 data\fox_den\advancement\recipes\food\bundt_cake_raw_campfire.json
 >>>>>>> b1d7a59 (Added Ship Mast)
@@ -112,6 +131,119 @@ dc60f9af0432724611a5a93d1292e9319ff2b896 data\fox_den\recipe\diamond_gold_hoe_sm
 457fbcc7ac75e6f070605db6f9f046965c2837ed data\fox_den\recipe\iron_axe_smithing.json
 e2a1b4abf05afff69d20978cd8442594c4e2fdfd data\fox_den\advancement\recipes\combat\diamond_iron_leggings_smithing.json
 f12a8500976ccb03d71a66c5ed20717e6c582b62 data\fox_den\recipe\flowering_azalea_leaves_wall.json
+<<<<<<< HEAD
+=======
+0f6280b58f14091ce7b61f391e58baac09c8828c data\fox_den\advancement\recipes\food\baguette_raw.json
+a7ba137384920370232392204f8aceb84305eb58 data\fox_den\recipe\bundt_cake_raw_smoking.json
+499ffea63764757409866fcb79bfac2b4440ff83 data\fox_den\recipe\toast_raw.json
+0639f31b2410f46e8872c0135fb1c8add4c8109d data\fox_den\recipe\apple_pie_raw.json
+160d8e96ee3d825b3797bb05ff525585fd4660a1 data\fox_den\advancement\recipes\misc\ship_mast.json
+598a5d0129721316e38c4833582b1ce5927cd35e data\fox_den\recipe\cherry_leaves_wall.json
+23e623ace8c019225d90636628f60d14348e0005 data\fox_den\recipe\croissant_raw_smoking.json
+c81185440f663985e340c3348156b53f2e530de8 data\fox_den\recipe\baguette_raw_smoking.json
+799d4549f085ee5024afa86b4ef05c4717f92c18 data\fox_den\recipe\bundt_cake_raw.json
+67cd68a8b3a6d59c5d18e5cf44bc93c980812838 data\fox_den\recipe\diamond_gold_shovel_smithing.json
+c5699ea7284c7adf44f306fabcd302578cb59fd6 data\fox_den\recipe\crusty_bread_raw_campfire.json
+d173f9ab53280ce0741d3fcb9cf6aa8f29090536 data\fox_den\recipe\linzer_tart_raw_campfire.json
+c302bec5c71396fe56ca5944953495b44dcd376b data\fox_den\advancement\recipes\food\croissant_raw_smoking.json
+2823b665edfe7ec0f7b239fc3b018698497d1eea data\fox_den\recipe\waffle_raw_smoking.json
+1cea8c839098b1e5c52e73ee6d2051efdeba1229 data\fox_den\recipe\leather.json
+224ab4208a9c83fdb356b1d5889f13898608518f data\fox_den\recipe\braided_bread_raw_campfire.json
+7ecf26c32b9c87f9ff947c54a409e223614a7353 data\fox_den\advancement\recipes\decorations\oak_leaves_wall.json
+9eea68a1ae4b222cd6d7f36e0ea06820fd234838 data\fox_den\recipe\baguette_raw_smelting.json
+ac66b3fd086eea9d1834d3eb69a392b7173cf54f data\fox_den\advancement\recipes\combat\diamond_gold_sword_smithing.json
+c4f818b6fb6af4a3f38b6d55dad01b0265d318df data\fox_den\advancement\recipes\food\baguette_raw_smelting.json
+c5fefab3019d7210c833ee4ea04450fd7c30e9b7 data\fox_den\recipe\oil_bucket.json
+a0ff93976d84caf92332e2de43a470e7fb89a770 data\fox_den\recipe\croissant_raw_smelting.json
+4c33318f47904ab4649ea7bfe678656ca30a33f9 data\fox_den\recipe\diamond_gold_pickaxe_smithing.json
+c20236993205e882d08ff0ae78f513a6578b5e0d data\fox_den\recipe\diamond_wolf_armor_smithing.json
+4aac4d35536b75736a355687e496214b4f7ba77a data\fox_den\recipe\diamond_iron_sword_smithing.json
+ca54e6c7ca98e48956a2101c60e45b3e4063f27a data\fox_den\advancement\recipes\food\sweet_dough.json
+fcbfe00f5e411f0eaf0465c3d15b90d8456cb330 data\fox_den\advancement\recipes\food\baguette_raw_smoking.json
+8b722cf28f1f052ce33b7055f5e039128117f30c data\fox_den\advancement\recipes\food\bundt_cake_raw_smelting.json
+a6f637017a998bee00702a608a7766ef80785050 data\fox_den\advancement\recipes\food\braided_bread_raw_smelting.json
+cde83b5c8d6d7f03c77b419065bd90023b787020 data\fox_den\recipe\cornet_raw_smelting.json
+51340e18a9f620c9009839250315be5e8400d428 data\fox_den\recipe\waffle_raw_smelting.json
+1fccb3fdabfe8b1956b6ebaea15b4a1fe42f96a8 data\fox_den\advancement\recipes\combat\diamond_wolf_armor_smithing.json
+02605b7042602a0ff637a701e6748dc10c521e28 data\fox_den\recipe\cake_dough.json
+c4db1f955cde7342e448cc02bf523f90d61c2a81 data\fox_den\advancement\recipes\misc\jar.json
+2e36ad6d13bc9d405d49a8da8638f02d170704a6 data\fox_den\recipe\diamond_gold_boots_smithing.json
+450a930e1e98e9cc3482d1091d3273b2b553c0f6 data\fox_den\advancement\recipes\food\bun_raw_campfire.json
+8efe0252855bd4e07e3e93db3cc7a17ed982961d data\fox_den\advancement\recipes\food\linzer_tart_raw_campfire.json
+24865d2c78c6c6b5469c309d3164c26a19b2adb4 data\fox_den\advancement\recipes\food\waffle_raw_smoking.json
+3f0745790ab53223088c763a53b23cabeabe1bed data\fox_den\recipe\poutine.json
+9e5c16202ff1b60835790cc85fa84881f2497232 data\fox_den\advancement\recipes\misc\breadbox.json
+4f36f1cdb01dd01b4d9f540aa87029cf5ae7f319 data\fox_den\recipe\mangrove_leaves_wall.json
+2c2ab57a18f74c10a4d8939ef9adefe33df36230 data\fox_den\recipe\diamond_iron_pickaxe_smithing.json
+eebff43939a01ed31efd3e4483135253221403da data\fox_den\advancement\recipes\food\poisonous_potato.json
+c5f1fc445fb6e7f4da3ef954ea324885cd6f2950 data\fox_den\recipe\diamond_gold_chestplate_smithing.json
+c5dc5f0847ae60fd9085bc8637729d17394257c1 data\fox_den\advancement\recipes\food\croissant_raw_smelting.json
+555d0e7b47bcb44cfb7c9017a5031e8064807f30 data\fox_den\advancement\recipes\combat\diamond_iron_sword_smithing.json
+0ba15547677de97b72df5541446513425999ab21 data\fox_den\recipe\rotten_leather.json
+85b18ee29284b32367397d4007be027b567f7bf1 data\fox_den\advancement\recipes\combat\steel_leggings.json
+df019b0123a6eedf2ba4a1d608b1bfb19a279c2b data\fox_den\recipe\iron_pickaxe_smithing.json
+2ee8ff843aa1e0368b48af0773ab6296cd598ba2 data\fox_den\recipe\bone_meal_from_bone_leggings.json
+df7121ba4f9a64eaf3310fa401f0092cbb2a10d8 data\fox_den\recipe\baguette_raw.json
+3468b54448de65bf5fe184dd68065245f22880c9 data\fox_den\advancement\recipes\combat\diamond_iron_chestplate_smithing.json
+b76f57442017903732f5d4a3da20c933e0943d7b data\fox_den\advancement\recipes\decorations\cherry_leaves_wall.json
+21c0cb9eaa0cd0e540dcfe8b38e1a131c4ddc9ef data\fox_den\recipe\bun_raw_smelting.json
+e49f32c2df5844ae0011e72586bc01eb9c88a3d4 data\fox_den\recipe\bun_raw_campfire.json
+79ff066d39d89fcf69a6612de46d283b1dbaf91f data\fox_den\advancement\recipes\tools\iron_pickaxe_smithing.json
+4532cf0c722a2fd327ad6f856eb134b502aaf8f7 data\fox_den\advancement\recipes\tools\iron_shovel_smithing.json
+ad92fd6adfa8fb2dde0694121ebf461055e6204d data\fox_den\advancement\recipes\food\cake_dough.json
+8c38c2f22a0f0813b5f7d8d4dff1f081be28e59b data\fox_den\recipe\bread_crate.json
+3d75ab696a55574587ff6f75aecbe9a4ca59b402 data\fox_den\advancement\recipes\misc\rotten_leather.json
+1ade1c03ce6f4c281be8b27e54028483275b017b data\fox_den\recipe\toast_raw_smelting.json
+4b1f435f55577fcfa0d2e8c1daad6222f53f9185 data\fox_den\advancement\recipes\food\toast_raw_smelting.json
+1299f16477b701b52824266235c4a3aa14edd9e6 data\fox_den\recipe\diamond_gold_axe_smithing.json
+fb6eef2f90e77750a78d8b5cfc7d8354b87b3009 data\fox_den\advancement\recipes\food\bun_raw.json
+de780230fda5501e339f94539e562da35ea3684c data\fox_den\advancement\recipes\food\baguette_raw_campfire.json
+bcc1b1ba796128ae00ddb11e3b5cb31f40bdf2d4 data\fox_den\recipe\chocolate_box.json
+f6d8cb73f3ce914fe07bba5d82ad29ff81945640 data\fox_den\recipe\cornet_raw_smoking.json
+bb5fb7b9fde232981217448681ab6d9b74aae6c9 data\fox_den\recipe\linzer_tart_raw_smelting.json
+d450246387ac859d01d446d1697b207249c4ad4b data\fox_den\recipe\steel_block.json
+2c951037194f9a883ddc7a5d863ee91d4c6b56a8 data\fox_den\recipe\bundt_cake_raw_smelting.json
+4bbe3f27e5d85154615351a71fbd9ec6f101284f data\fox_den\recipe\baguette_raw_campfire.json
+a1aa2919118ca6958e94a8818c75bfb0cd97d91d data\fox_den\recipe\diamond_gold_sword_smithing.json
+58b4ccae7a64f456ce79e159bcd9968aea13e97c data\fox_den\recipe\diamond_iron_shovel_smithing.json
+a07ecc3e99c1383ee26b0b132962cba9e026aacf data\fox_den\advancement\recipes\combat\diamond_gold_leggings_smithing.json
+b72626b90dfaa1f1774fa18567946bf09a80ed1f data\fox_den\recipe\croissant_raw_campfire.json
+899afd4ee6cd7bf2091be0729ca520c7a306877d data\fox_den\advancement\recipes\food\cornet_raw.json
+93814c591a8afeba0e73c730c35962c53b64b627 data\fox_den\recipe\cupcake_display.json
+728f5cbbab899eb98b2e63272ffff2c9f2877772 data\fox_den\advancement\recipes\tools\diamond_iron_pickaxe_smithing.json
+db241ce7488614349f63c35fe9420fc5e24337a9 data\fox_den\recipe\waffle_raw_campfire.json
+09d7011c12ddcec2bd88074509696dc46a0fdffd data\fox_den\advancement\recipes\food\toast_raw_smoking.json
+69d02430af0adbc7ccf02a034d774fb275f679c4 data\fox_den\recipe\toast_raw_smoking.json
+8ec85bb38460f3b39c616017e46197f5d7e4caeb data\fox_den\recipe\bread_with_jam.json
+eaf7b15de7ab5d3f14bd24d22f4472eccbbe9160 data\fox_den\advancement\recipes\tools\diamond_gold_pickaxe_smithing.json
+a660ad427da09080f15c5aef09bceae414a4335f data\fox_den\advancement\recipes\food\brown_sauce.json
+8ce02baecadaa0585b41b40e2b6d9deaa0e54440 data\fox_den\recipe\acacia_leaves_wall.json
+ea0633be5d38f69005e1ba3fb7b7b7106e54e231 data\fox_den\advancement\recipes\food\poutine.json
+5faedabbc6ffc2c0379a5729c31b775f094d1d9e data\fox_den\recipe\bone_meal_from_bone_boots.json
+fe6c0b2d66ea34c811daaebb69cadeaf53a097b7 data\fox_den\advancement\recipes\misc\wall_display.json
+8b72285e7bbb2f263e25ae807733e8437ab7f475 data\fox_den\recipe\bone_meal_from_bone_helmet.json
+ec56931be63155c0aee0ba50eed17177673cde31 data\fox_den\advancement\recipes\food\bread_with_jam.json
+ffb62303ea254dd0852dcff999a1c89b508536e2 data\fox_den\advancement\recipes\combat\diamond_iron_helmet_smithing.json
+438c134fc284a5ab49e2be38cf56cbf822dafbc0 data\fox_den\advancement\recipes\combat\iron_wolf_armor_smithing.json
+5fc582f63960b421d85922f75694aaf343e3b430 data\fox_den\advancement\recipes\food\bundt_cake_raw.json
+5b36dfe18bb567ace6f0f467837776a970dc6f0f data\fox_den\advancement\recipes\food\apple_pie_raw_campfire.json
+0f5722a730337a6934f5d20387db0221a31cb17c data\fox_den\recipe\waffle_raw.json
+7d7268d13dd8fd1da271c756462fa3ead645ba99 data\fox_den\advancement\recipes\food\apple_pie_raw_smoking.json
+da7abf43cade44d6b182dfc2be04356730281bd8 data\fox_den\advancement\recipes\food\crusty_bread_raw_campfire.json
+42c890969673e86c48fe05ac5acdf24f6fd292ae data\fox_den\recipe\breadbox.json
+ffdee4c3953686349fd87e2b9533054add1a6b96 data\fox_den\recipe\dark_oak_leaves_wall.json
+5085ebce4706cb4a60acdc8c00489408fe604612 data\fox_den\recipe\diamond_gold_helmet_smithing.json
+3ab80936b7fc9b7710cca47de0070caa09bc2b70 data\fox_den\advancement\recipes\food\waffle_raw_campfire.json
+da3081707e0d55b87c73eda87ee883126afb2660 data\fox_den\advancement\recipes\food\waffle_raw_smelting.json
+a3fb735d12d86c003b099aa9d980b00a5d6258ad data\fox_den\recipe\steel_leggings.json
+e2b5fdd297b40a78297210abd49b9fed71defea6 data\fox_den\advancement\recipes\food\cornet_raw_smoking.json
+3572674330f47e2fffb45c8ccdea1098249a14dd data\fox_den\recipe\steel_ingot_block.json
+1f72922fb29dda98041f83a587d29397ca8cd226 data\fox_den\advancement\recipes\misc\bone_meal_from_bone_helmet.json
+dc60f9af0432724611a5a93d1292e9319ff2b896 data\fox_den\recipe\diamond_gold_hoe_smithing.json
+4145b8ad706ba60ce991a19a7bc27997592ecc67 data\fox_den\advancement\recipes\misc\steel_ingot.json
+8e60604e6eca9a8456e64fd584933c318ddc3dbc data\fox_den\advancement\recipes\food\croissant_raw.json
+a53efe6bde1088bfc8c2aea22f043ac74ffec740 data\fox_den\advancement\recipes\food\apple_pie_raw_smelting.json
+>>>>>>> 8e2465b (Added Easter Eggs)
 9225eb0d383b2d65e3cd3eba99c8d3193b364540 data\fox_den\advancement\recipes\combat\iron_sword_smithing.json
 25603e8667b3a4077867c5d5e343f5633ad275a7 data\fox_den\advancement\recipes\combat\diamond_gold_boots_smithing.json
 c9b5ac44b5e32e9e91c1b44961903ceaf0503d7c data\fox_den\advancement\recipes\tools\diamond_iron_shovel_smithing.json

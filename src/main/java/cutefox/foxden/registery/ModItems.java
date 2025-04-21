@@ -137,6 +137,12 @@ public class ModItems {
     public static List<Item> LEAVES_WALLS = new ArrayList<>();
     //endregion
 
+    public static Item EASTER_EGG;
+    public static Item CHOCOLATE_CHICKEN;
+    public static Item CHOCOLATE_RABBIT;
+    public static Item WHITE_CHOCOLATE_RABBIT;
+
+
     //region SHIPS
     public static Item SHIP_MAST;
     //endregion
@@ -175,6 +181,12 @@ public class ModItems {
         FLOWERING_AZALEA_LEAVES_WALL = registerItem("flowering_azalea_leaves_wall", new BlockItem(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, new Item.Settings()));
         LEAVES_WALLS.add(FLOWERING_AZALEA_LEAVES_WALL);
         SHIP_MAST = registerItem("ship_mast", new BlockItem(ModBlocks.SHIP_MAST, new Item.Settings()));
+
+        EASTER_EGG = registerItem("easter_egg", new BlockItem(ModBlocks.EASTER_EGG, foodItem(ModFoodComponents.CHOCOLATE)));
+        CHOCOLATE_CHICKEN = registerItem("chocolate_chicken", new BlockItem(ModBlocks.CHOCOLATE_CHICKEN, foodItem(ModFoodComponents.CHOCOLATE)));
+        CHOCOLATE_RABBIT = registerItem("chocolate_rabbit", new BlockItem(ModBlocks.CHOCOLATE_RABBIT, foodItem(ModFoodComponents.CHOCOLATE)));
+        WHITE_CHOCOLATE_RABBIT = registerItem("white_chocolate_rabbit", new BlockItem(ModBlocks.WHITE_CHOCOLATE_RABBIT, foodItem(ModFoodComponents.CHOCOLATE)));
+
     }
 
     private static Item registerItem(String id, Item item){

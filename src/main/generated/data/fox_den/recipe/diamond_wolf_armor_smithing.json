@@ -16,6 +16,6 @@
     "id": "fox_den:diamond_wolf_armor"
   },
   "template": {
-    "item": "fox_den:diamond_upgrade_smithing_template"
+    "tag": "fox_den:diamond_upgrade_template"
   }
 }

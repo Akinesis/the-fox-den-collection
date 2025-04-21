@@ -6,7 +6,9 @@ import cutefox.foxden.registery.ModItemTags;
 import cutefox.foxden.registery.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Item;
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
@@ -64,5 +66,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.AZALEA_LEAVES_WALL)
                 .add(ModItems.FLOWERING_AZALEA_LEAVES_WALL);
 
+        getOrCreateTagBuilder(ModItemTags.DIAMOND_UPGRADE_TEMPLATE)
+                .add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
+        getOrCreateTagBuilder(ModItemTags.IRON_UPGRADE_TEMPLATE)
+                .add(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE);
     }
 }

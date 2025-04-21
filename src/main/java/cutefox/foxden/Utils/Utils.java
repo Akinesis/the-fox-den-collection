@@ -1,9 +1,11 @@
 package cutefox.foxden.Utils;
 
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.input.RecipeInput;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.World;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -73,5 +75,11 @@ public class Utils {
         } while(matches);
 
         return false;
+    }
+
+    public static void spawnSlice(World level, ItemStack stack, double x, double y, double z, double xMotion, double yMotion, double zMotion) {
+        ItemEntity entity = new ItemEntity(level, x, y, z, stack);
+        entity.setVelocity(xMotion, yMotion, zMotion);
+        level.spawnEntity(entity);
     }
 }

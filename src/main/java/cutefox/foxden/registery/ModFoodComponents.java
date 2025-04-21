@@ -18,6 +18,14 @@ public class ModFoodComponents {
             .nutrition(3).saturationModifier(1.2f)
             .build();
 
+    public static final FoodComponent CHOCOLATE = new FoodComponent.Builder()
+            .nutrition(2).saturationModifier(1.2f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20*20, 0),0.75f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*30, 0),1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 20*30, 0),0.1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*20, 0),0.05f)
+            .build();
+
     public static final FoodComponent POUTINE = new FoodComponent.Builder()
             .nutrition(10).saturationModifier(2f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20*30,0),1)

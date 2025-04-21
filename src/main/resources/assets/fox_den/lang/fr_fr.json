@@ -56,6 +56,8 @@
   "item.fox_den.space_ranger_leggings": "Jambières de ranger de l'espace",
   "item.fox_den.space_ranger_boots": "Bottes de ranger de l'espace",
 
+  "item.fox_den.ship_mast": "Mât de navire",
+
   "effect.fox_den.skeleton_love": "Amour squelettique",
 
   "container.foxden.enchant.material.one": "%s %s",
@@ -63,7 +65,11 @@
   "tag.item.fox_den.enchantment_ingredients":"Ingredients d'enchentement",
 
   "key.fox_den.armor_action": "Actions d'armure",
-  "category.fox_den.keys" : "The Fox Den Collection"
+  "category.fox_den.keys" : "The Fox Den Collection",
 
 
+  "block.fox_den.chocolate_chicken": "Poule en chocolat",
+  "block.fox_den.easter_egg": "Œuf de Pâques",
+  "block.fox_den.chocolate_rabbit": "Lapin en chocolat",
+  "block.fox_den.white_chocolate_rabbit": "Lapin au chocolat blanc"
 }
