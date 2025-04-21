@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.math.Direction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,8 +38,9 @@ public class ModBlocks {
     public static final Block FLOWERING_AZALEA_LEAVES_WALL;
     public static final Block STEEL_BLOCK;
 
+    public static final Block SHIP_MAST;
 
-    public static List<Block> LEAVES_WALL = new ArrayList<>();
+    public static List<Block> LEAVES_WALL = new ArrayList();
 
     public static void registerModBlocks(){
         TheFoxDenCollection.LOGGER.info("Registering mod blocks for : "+ TheFoxDenCollection.MOD_ID);
@@ -66,6 +68,15 @@ public class ModBlocks {
                 .requiresTool()
                 .strength(10.0F, 16.0F)
                 .sounds(BlockSoundGroup.METAL)));
+        SHIP_MAST = register("ship_mast", new PillarBlock(AbstractBlock.Settings.create()
+                .mapColor((state) -> {
+                    return state.get(PillarBlock.AXIS) == Direction.Axis.Y ? MapColor.GRAY : MapColor.BROWN;
+                })
+                .sounds(BlockSoundGroup.WOOD)
+                .requiresTool()
+                .burnable()
+                .strength(9f,10f)));
+
     }
 
     public static Block register(String id, Block block) {

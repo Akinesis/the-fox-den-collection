@@ -210,6 +210,7 @@ public class TheFoxDenCollection implements ModInitializer {
 
 					entries.add(ModItems.ROTTEN_LEATHER);
 
+					entries.add(ModItems.SHIP_MAST);
 				})
 				.build();
 

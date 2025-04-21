@@ -137,6 +137,9 @@ public class ModItems {
     public static List<Item> LEAVES_WALLS = new ArrayList<>();
     //endregion
 
+    //region SHIPS
+    public static Item SHIP_MAST;
+    //endregion
     public static void registerBlockItems(){
         CHEESE_BLOCK = registerItem("cheese_block", new BlockItem(ModBlocks.CHEESE_BLOCK, new Item.Settings()));
         STEEL_BLOCK = registerItem("steel_block", new BlockItem(ModBlocks.STEEL_BLOCK, new Item.Settings()));
@@ -171,6 +174,7 @@ public class ModItems {
 
         FLOWERING_AZALEA_LEAVES_WALL = registerItem("flowering_azalea_leaves_wall", new BlockItem(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL, new Item.Settings()));
         LEAVES_WALLS.add(FLOWERING_AZALEA_LEAVES_WALL);
+        SHIP_MAST = registerItem("ship_mast", new BlockItem(ModBlocks.SHIP_MAST, new Item.Settings()));
     }
 
     private static Item registerItem(String id, Item item){

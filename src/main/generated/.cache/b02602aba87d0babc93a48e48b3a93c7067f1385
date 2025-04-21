@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // 1.21	2025-03-10T20:19:59.5354414	The fox den collection/Model Definitions
+=======
+// 1.21.1	2025-03-21T01:20:42.2847541	The fox den collection/Model Definitions
+>>>>>>> b1d7a59 (Added Ship Mast)
 dfd83ebc65c3435220cae85c725b28d97cc9c431 assets\fox_den\models\item\bike_helmet.json
 e5260b144bab0239fc49ff9fbf86739d1ab4bdf8 assets\fox_den\models\item\bone_boots_redstone_trim.json
 1e2b1da0d4d0b3573fb09529659506ec998fdb69 assets\fox_den\models\item\bone_leggings_emerald_trim.json
@@ -9,6 +13,7 @@ bb3fe90b7b76c7190a513b44a1022dfb5541bcd9 assets\fox_den\models\item\steel_boots.
 4f1e9d1d8ee93de6e1b20d3fa5ae52077b10db3d assets\fox_den\models\item\bone_leggings_lapis_trim.json
 ba20190b9a7a72421785a3a84a901e7353a38838 assets\fox_den\models\item\bike_helmet_copper_trim.json
 a6317c37eb610052273cd150729fd869f261bc35 assets\fox_den\models\item\steel_blend.json
+f3d7138075b0c40d69d3501df712adee5c2fea31 assets\fox_den\models\block\ship_mast.json
 2106df09fb958be541c2a8c5389af74d55117323 assets\fox_den\models\item\steel_leggings_redstone_trim.json
 82e6af44d22c97682ae2aab05819dc5d15d09e8a assets\fox_den\models\item\space_ranger_helmet_amethyst_trim.json
 af7e3db980b950c8a4ba74e7e6bfd404b8fa6700 assets\fox_den\models\item\bone_boots_netherite_trim.json
@@ -58,6 +63,7 @@ bcf12902892981cb7bf60b3535fb99c758ddf500 assets\fox_den\models\item\space_ranger
 f48b73a37e62ebbe0f82ac8ad1c0adce1856944b assets\fox_den\models\item\bone_leggings_amethyst_trim.json
 1380d2aa40c8f77cbd4c73f7b03c0b57d1587722 assets\fox_den\models\item\bike_helmet_gold_trim.json
 713e03d93d1579770913be5a47c9de8dcaea1546 assets\fox_den\models\block\cherry_leaves_wall_post.json
+b4665be11cd288578c6c677ca03b0ca0ab713203 assets\fox_den\models\item\ship_mast.json
 3a97f2009b75457a1c33213c735783c27a59f728 assets\fox_den\models\block\jungle_leaves_wall_inventory.json
 d3bb2a6ec0bf5b4d8b1b52035e7d5799541f1509 assets\fox_den\models\item\space_ranger_boots_gold_trim.json
 729704d2d278953ac3d75c4170d55b3a3b032712 assets\fox_den\models\item\space_ranger_boots_copper_trim.json
@@ -160,6 +166,7 @@ af5bfec1cb5f1ebe827625707378935b514c1685 assets\fox_den\models\item\steel_chestp
 94c370de4bfe7a280f3def804cf05d82930f8b68 assets\fox_den\blockstates\dark_oak_leaves_wall.json
 f2c7e69562752fc72c5a5e32eef19add9e1d4bc2 assets\fox_den\models\block\dark_oak_leaves_wall_side.json
 e3f8c85b7126dd41274d0196fab1fda3430d7f8d assets\fox_den\models\item\steel_chestplate_gold_trim.json
+2026b9274151adb0bee57ed253f2337ea5da6dac assets\fox_den\models\block\ship_mast_horizontal.json
 d7372cb4610cad480db5db1f443f488b437306a4 assets\fox_den\models\item\steel_boots_iron_trim.json
 b221acbe61b0d3d629b93937ce3a55d19b7328ae assets\fox_den\models\item\steel_boots_copper_trim.json
 070bec4b33b35e38a115dce9b07429c936bc2826 assets\fox_den\models\block\dark_oak_leaves_wall_side_tall.json
@@ -186,6 +193,11 @@ a9d8fefcdd843cd65e6ee25e844a0e04b766ae13 assets\fox_den\models\item\bone_chestpl
 379360b964a147208eee6ff9402d31e6200683eb assets\fox_den\models\item\bone_helmet_lapis_trim.json
 909cf64eaa74ce4b050c56c2d2a249bd4564a6d2 assets\fox_den\models\item\azalea_leaves_wall.json
 550edc0e89af1f07025e53fb0a9aaf5529cfd1e6 assets\fox_den\blockstates\azalea_leaves_wall.json
+<<<<<<< HEAD
+=======
+3865a9d0cabaf48c919fcc5a9929f625a57fc664 assets\fox_den\models\item\braided_bread_raw.json
+5a13c6a14d9515fa5750345a11d4c95f41102315 assets\fox_den\blockstates\ship_mast.json
+>>>>>>> b1d7a59 (Added Ship Mast)
 28d2ed338eac18bb705035450920e1d626169c37 assets\fox_den\models\item\space_ranger_leggings_iron_trim.json
 2dd0d340688305d9febce64f86de38710e218b47 assets\fox_den\models\item\space_ranger_boots_diamond_trim.json
 7158c6ac68eab193bcb4bc4912b0c6bbc6222747 assets\fox_den\models\item\bone_chestplate_diamond_trim.json

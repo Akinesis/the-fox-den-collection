@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // 1.21	2025-03-10T20:19:59.531942	The fox den collection/Block Loot Tables
+=======
+// 1.21.1	2025-03-21T01:20:42.2827596	The fox den collection/Block Loot Tables
+>>>>>>> b1d7a59 (Added Ship Mast)
 fc51ee173bb347a8e0efbf722b8b056d617388c9 data\fox_den\loot_table\blocks\jungle_leaves_wall.json
 c0e6fcddee709849341171f1d3db6c777dcba0db data\fox_den\loot_table\blocks\dark_oak_leaves_wall.json
 6641d48047a11b659e530553b4a1f1812611a4d3 data\fox_den\loot_table\blocks\blue_cheese_cauldron.json

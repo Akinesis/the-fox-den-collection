@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fox_den:block/ship_mast_top",
+    "side": "fox_den:block/ship_mast"
+  }
+}

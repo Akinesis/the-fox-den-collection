@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "fox_den:block/ship_mast_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "fox_den:block/ship_mast"
+    },
+    "axis=z": {
+      "model": "fox_den:block/ship_mast_horizontal",
+      "x": 90
+    }
+  }
+}

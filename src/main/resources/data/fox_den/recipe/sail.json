@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "fox_den:ship_mast"
+    },
+    "R": {
+      "tag": "farmersdelight:rope"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WMW",
+    "RMR"
+  ],
+  "result": {
+    "id": "smallships:sail"
+  }
+}
